@@ -1,0 +1,117 @@
+
+/* 
+source for wrapper: https://css-tricks.com/best-way-implement-wrapper-css/ 
+source for pallette: https://coolors.co/image-picker
+*/
+.wrapper{
+    max-width: 80%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color:hsla(178, 50%, 91%, .8);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    margin-left: -20px;
+    padding: 0;
+    max-width: 78.52%;
+    overflow: hidden;
+    background-color: hsla(160, 30%, 44%, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav li{
+    float: left;
+    font-size: 20px;
+    /*border-right: 1px solid #bbb; */
+}
+
+nav li a{
+    display: block;
+    color: hsla(178, 50%, 91%, 1);
+    text-shadow: 1px 1px 3px hsla(42, 50%, 46%, 1);
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/*change link on hover */
+nav li a:hover{
+    background-color: #111;
+}
+
+
+body{ /* found imgs https://wallpaperaccess.com/teal-marble */
+   background-image: url(img/3.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   color:brown;
+   text-decoration: none;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   padding-left: 5%;
+}
+
+body h1{
+    color:hsla(42, 50%, 55%, 1);
+    text-transform:uppercase;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 6px gold ;
+    font-family:'Garamond', serif;
+}
+
+body h2{
+    color:hsla(160, 30%, 44%, 1);
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color:black;
+    text-shadow: 2px 2px 5px hsla(42, 50%, 50%, 1);
+}
+
+/* about specific */
+#imgabout{
+    width: 300px;
+    float: left;
+    padding: 14px;
+}
+
+.about ul{
+    font-weight: 700;
+    list-style-type: none;    
+}
+
+/* table referenced https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Tables*/
+table{
+    table-layout: fixed;
+    width: 80%;
+    min-width: fit-content;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+table caption{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px pink;
+    color: hsla(42, 50%, 46%, 1);
+}
+
+th, td{
+    padding: 0.6em;
+    border-bottom: 1px solid hsla(42, 50%, 55%, 1);
+}
+
+article{
+    padding-left: 10%;
+    padding-bottom: 10%;
+}

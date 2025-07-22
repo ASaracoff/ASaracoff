@@ -1,0 +1,29 @@
+@charset "utf-8";
+body {
+	background-image: url(assets/images/background1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left top;
+	background-color: #FFF;
+}
+.wrapper {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	opacity: 0.9;
+	padding: 0 20px 15px;
+	width: 940px;
+	width:80%;
+	min-width: 700px;
+	-webkit-box-shadow: 5px 5px 5px #000033;
+	-moz-box-shadow: 5px 5px 5px #000033;
+
+box-shadow: 5px adding-left: 20px;
+	color: #CCC;
+}
+
+#footer {font-size:75%; font-style:italic ; font-family: Georgia, Times New Roman, serif;}
+
+.bodytext {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}

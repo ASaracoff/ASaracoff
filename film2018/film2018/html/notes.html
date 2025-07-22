@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Film Noir &#124; Notes</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../film.css">
+    </head>
+    <body>
+    <div class="wrapper">
+        <header>
+            <a href="../index.html"><h1>Film Noir</h1></a>
+        </header>
+        <nav>
+            <a href="aspects.html">Aspects</a> &nbsp;
+            <a href="articles.html">Articles</a> &nbsp;
+            <a href="films.html">Films</a> &nbsp;
+            <a href="notes.html">Notes</a> &nbsp;
+            <a href="about.html">About</a> &nbsp; <a href="contact.html">Contact</a> &nbsp;
+        </nav>
+        <div id="subnav">
+          <button class="accordion">First Four</button>
+          <div class="panel">
+              <a href="notes/fnn.html">Film Noir</a><br>
+              <a href="notes/mfn.html">The Maltese Falcon</a><br>
+              <a href="notes/din.html">Double Indemnity</a><br>
+              <a href="notes/ln.html">Laura</a><br>
+              <a href="notes/mmsn.html">Murder My Sweet</a><br>                     
+          </div>
+          
+          <button class="accordion">Classic Noir</button>
+          <div class="panel">
+              <a href="notes/cn.html">Crossfire</a><br>
+              <a href="notes/ajn.html">The Asphalt Jungle</a><br>
+              <a href="notes/dn.html">Detour</a><br>
+              <a href="notes/gcn.html">Gun Crazy</a><br>
+              <a href="notes/bhn.html">The Big Heat</a><br>
+              <a href="notes/kmdn.html">Kiss Me, Deadly</a><br>
+              <a href="notes/toen.html">Touch of Evil</a><br>
+          </div>
+          
+          <button class="accordion">Neo Noir</button>
+          <div class="panel">
+            <a href="notes/lgn.html">The Long Goodbye</a><br>
+            <a href="notes/chn.html">Chinatown</a><br>
+            <a href="notes/gsn.html">The Glass Shield</a><br>
+            <a href="notes/sdn.html">Strange Days</a><br>
+            <a href="notes/nan.html">Nocturnal Animals</a><br>
+          </div>
+          
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+        
+        <main>
+            <h2>Welcome to the Notes Section!</h2>
+            <p>Each page contains a subnavigation bar (left) that will link you to other film notes, a reference bar (right) which contains links to aspects, articles, films, and possibly other notes that are referenced in the current page. The main content has my notes on the professor's lecture and PowerPoint Presentation on each film that we have watched this semester.</p>
+            
+            <p>To navigate the subnavigation bar to your left notice that it is divided into three drop down menus: First Four, Classic Noir, and Neo Noir. The 'First Four' category contains the notes on film noir itself as well as containing Borde and Chaumeton's first four film noirs. The 'Classic Noir' category contains the rest of the classical film noirs, as the 'Neo Noir' category contains the newer noirs - those created after film noir was finally identified and the elements were defined enough to recreate the film elements. Some film noirs, such as <em>The Long Goodbye</em> are parodies while others (<em>Strange Days</em>) use and combine film noir elements with other genres to make a statement.</p>
+            
+            <p>Table of contents on the notes for this semester:</p>
+            
+            <h3>First Four:</h3>
+            <ul>
+                <li><a href="notes/fnn.html">Film Noir</a></li>
+                <li><a href="notes/mfn.html">The Maltese Falcon</a></li>
+                <li><a href="notes/din.html">Double Indemnity</a></li>
+                <li><a href="notes/ln.html">Laura</a></li>
+                <li><a href="notes/mmsn.html">Murder My Sweet</a></li>
+            </ul>
+            
+            <h3>Classic Noir:</h3>
+             <ul>
+                <li><a href="notes/cn.html">Crossfire</a></li>
+                <li><a href="notes/ajn.html">The Asphalt Jungle</a></li>
+                <li><a href="notes/dgcn.html">Detour & Gun Crazy</a></li>
+                <li><a href="notes/bhn.html">The Big Heat</a></li>
+                <li><a href="notes/kmdn.html">Kiss Me, Deadly</a></li>
+                <li><a href="notes/toen.html">Touch of Evil</a></li>
+            </ul>
+            
+            <h3>Neo Noirs:</h3>
+            <ul>
+                <li><a href="notes/lgn.html">The Long Goodbye</a></li>
+                <li><a href="notes/chn.html">Chinatown</a></li>
+                <li><a href="notes/gsn.html">The Glass Shield</a></li>
+                <li><a href="notes/sdn.html">Strange Days</a></li>
+                <li><a href="notes/nan.html">Nocturnal Animals</a></li>
+            </ul>
+        </main>
+        <footer>
+            Copyright &copy; Anna Saracoff 2018 <br><a href=mailto:asaracoff@hotmail.com>anna@saracoff.com</a>
+        </footer>
+    </div>
+    </body>
+</html>

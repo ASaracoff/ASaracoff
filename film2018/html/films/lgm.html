@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>Film Noir &#124; Films &#124; The Long Goodbye</title>
+         <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+         <meta charset="utf-8">
+         <link rel="stylesheet" href="../../film.css">
+     </head>
+     <body>
+     <div class="wrapper">
+        <header>
+            <a href="../../index.html"><h1>Film Noir</h1></a>
+        </header>
+        <nav>
+            <a href="../aspects.html">Aspects</a> &nbsp;
+            <a href="../articles.html">Articles</a> &nbsp;
+            <a href="../films.html">Films</a> &nbsp;
+            <a href="../notes.html">Notes</a> &nbsp;
+            <a href="../about.html">About</a> &nbsp; <a href="../contact.html">Contact</a> &nbsp;
+        </nav>
+        <div id="subnav">
+          <button class="accordion">First Four</button>
+          <div class="panel">
+              <a href="mfm.html">The Maltese Falcon</a><br>
+              <a href="dim.html">Double Indemnity</a><br>
+              <a href="lm.html">Laura</a><br>
+              <a href="mmsm.html">Murder My Sweet</a><br>                     
+          </div>
+          <button class="accordion">Classic Noir</button>
+          <div class="panel">
+              <a href="cm.html">Crossfire</a><br>
+              <a href="ajm.html">The Asphalt Jungle</a><br>
+              <a href="dm.html">Detour</a><br>
+              <a href="gcm.html">Gun Crazy</a><br>
+              <a href="bhm.html">The Big Heat</a><br>
+              <a href="kmdm.html">Kiss Me, Deadly</a><br>
+              <a href="toem.html">Touch of Evil</a><br>
+          </div>
+          <button class="accordion">Neo Noir</button>
+          <div class="panel">
+              <a href="lgm.html">The Long Goodbye</a><br>
+              <a href="chm.html">Chinatown</a><br>
+              <a href="gsm.html">The Glass Shield</a><br>
+              <a href="sdm.html">Strange Days</a><br>
+              <a href="drm.html">Drive</a><br>
+               <a href="nam.html">Nocturnal Animals</a><br>
+          </div>
+          
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+        <div id="rbar">
+          <h3>References:</h3>
+          <button class="accordion">Aspects</button>
+          <div class="panel">
+               <a href="../aspects.html#crime">Crime</a>
+               <a href="../aspects.html#pi">Detective</a>
+          </div>
+          <button class="accordion">Articles</button>
+          <div class="panel">
+               <a href="../articles/bnc.html">Borde and Chaumeton</a>
+               <a href="../articles/schrader.html">Schrader</a>
+               <a href="../articles/prod.html">The Production Code</a>
+          </div>
+          
+          <button class="accordion">Films</button>
+          <div class="panel">
+               <a href="m.html">Film</a>
+          </div>
+          <button class="accordion">Notes</button>
+          <div class="panel">
+              <a href="../notes/fnn.html">Film Noir</a>
+          </div>
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+        <main>
+          <div id="movie">
+               <div class="cover">
+                    <img src="../../assets/imgs/film/lgm.jpg" alt="movie cover" width="200px" height="280px">
+               </div>
+               <div class="stats">
+                 <h2>Title (year)</h2> 
+                 <h4>Directed by: </h4>
+                 <h4>Screen Play by: </h4>
+                 <h4>Based on novel by:  </h4>
+                 <h4 id="IMBd"><a href="http://www.imdb.com/title/">IMBd</a></h4>
+                 </div>
+           </div>
+          <div id="trailer">
+                    <p>link to trailer, or imbed player</p>
+                 </div>
+                 <div id="clips">
+                    <p>find and insert youtube link to pertinent clips shown by professor, or find stills and attach links to the clips</p>
+                 </div>
+               
+          <h4>Discussion Questions</h4>
+          <p>
+               1.<br>
+               2.<br>
+               3.<br>
+               
+          </p>
+        </main>
+        <footer>
+            Copyright &copy; Anna Saracoff 2018 <br><a href=mailto:asaracoff@hotmail.com>anna@saracoff.com</a>
+        </footer>
+     </div>
+     </body>
+</html> 
