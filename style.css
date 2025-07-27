@@ -10,7 +10,10 @@ source for pallette: https://coolors.co/image-picker
     background-color:hsla(178, 50%, 91%, .8);
     margin-right: auto;
     margin-left: auto;
+    margin-top: none;
 }
+
+
 
 /*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
 nav ul{
@@ -18,12 +21,11 @@ nav ul{
     margin: 0;
     margin-left: -20px;
     padding: 0;
-    max-width: 78.52%;
     overflow: hidden;
     background-color: hsla(160, 30%, 44%, 1);
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 74%;
     min-width: 820px;
     box-sizing: border-box;
 }
