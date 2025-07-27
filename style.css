@@ -16,6 +16,10 @@ source for pallette: https://coolors.co/image-picker
 
 
 /*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
+nav{
+    position: center;
+}
+
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -25,8 +29,8 @@ nav ul{
     background-color: hsla(160, 30%, 44%, 1);
     position: fixed;
     top: 0;
-    width: 74%;
-    min-width: 820px;
+    width: 100%;
+    min-width: 700px;
     box-sizing: border-box;
 }
 
@@ -50,17 +54,29 @@ nav li a:hover{
     text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
 }
 
-
-body{ /* found imgs https://wallpaperaccess.com/teal-marble */
-   background-image: url(img/2.jpg);
+/* found imgs https://wallpaperaccess.com/teal-marble 
+    AI free photo enhance https://www.upscale.media
+*/
+body{ 
+   background-image: url(img/2b.jpeg);
    background-repeat: no-repeat;
-   background-size:cover;
-   color:hsla(25, 50%, 27%, 1);;
+   background-size: cover ;
+
+   color:hsla(25, 50%, 27%, 1);
    text-decoration: none;
    font-family:Georgia, 'Times New Roman', Times, serif;
    padding-left: 5%;
+   margin-bottom: 5%;
    min-width: 820px;
    background-color: hsla(178, 50%, 61%, .8);
+}
+
+@font-face {
+  font-family: "handwriting";
+  src:
+    url("fonts/alex-brush/AlexBrush-Regular.ttf")  format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body h1{
@@ -69,12 +85,16 @@ body h1{
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px 6px gold ;
-    font-family:'Garamond', serif;
+    font-family:"handwriting", serif;
+    padding-top:1.6em;
 }
 
 body h2{
     color:hsla(160, 30%, 44%, 1);
     font-size: 36px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(42, 50%, 55%, 1);
+    padding-top: 70px; /* replaced the 2 brs before each h2 - anchor links */
 }
 
 a {
@@ -90,15 +110,25 @@ a:hover{
 }
 
 /* about specific */
+
+/* reference for box shadow https://www.w3schools.com/css/css3_shadows_box.asp */
 #imgabout{
     width: 300px;
-    float: left;
-    padding: 14px;
+    float: right;
+    border-radius: 50%;
+    border: hsla(160, 30%, 44%, 1) 1px solid;
+    box-shadow: 0 4px 8px 0 hsla(42, 50%, 50%, 1), 0 4px 20px 0 hsla(42, 50%, 50%, 1);
+    margin-bottom: 14px;
 }
 
 .about ul{
     font-weight: 700;
     list-style-type: none;    
+}
+
+/* frustrated with the denseness of bullet lists found solution at https://www.sitepoint.com/community/t/best-practices-for-list-spacing-both-ul-ol/6273 */
+ul li, ol li {
+     line-height:160%; /*or whatever height you like*/
 }
 
 /* table referenced https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Tables*/
@@ -110,6 +140,7 @@ table{
     border-collapse: collapse;
     text-align: center;
 }
+
 table caption{
     font-size: 20px;
     font-weight: bold;
@@ -132,6 +163,66 @@ article{
     width: 50%;
     height: 40%;
 }
+
+section {
+    margin: 50px 0;
+}
+
+
+
+
+input {
+    background-color: hsla(178, 50%, 91%, 1);    
+    color: hsla(25, 50%, 27%, 1);
+    border: hsla(160, 30%, 44%, 1) 2px solid;
+    border-radius: 4px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid hsla(160, 30%, 44%, 1);
+    border-radius: 4px;
+    background-color: hsla(178, 50%, 91%, 1);
+    color: hsla(25, 50%, 27%, 1);
+    resize: none;
+}
+
+select {
+    border: 2px solid hsla(160, 30%, 44%, 1);
+    border-radius: 4px;
+    background-color: hsla(178, 50%, 91%, 1);
+    color: hsla(25, 50%, 27%, 1);
+}
+
+input[type=radio]{
+    padding: 4px;
+}
+
+.respond{
+    padding-bottom: 20px;
+}
+
+button{
+    font-family: inherit;
+    font-size: 100%;
+    color: hsla(178, 50%, 91%, 1);
+    background-color: hsla(160, 30%, 30%, 1) ;
+    border: hsla(160, 30%, 44%, 1) 6px;
+    border-style:ridge ;
+    border-radius: 4px;
+    margin: 14px;
+}
+
+
+input:focus, select:focus, textarea:focus, button:focus{
+    outline: hsla(160, 30%, 44%, 1) 2px solid;
+    box-shadow: 0 2px 8px 0 hsla(42, 50%, 50%, 1), 0 2px 20px 0 hsla(42, 50%, 50%, 1);
+}
+
 footer{
     background-color: hsla(160, 30%, 44%, 1);
     color:hsla(178, 50%, 91%, 1);

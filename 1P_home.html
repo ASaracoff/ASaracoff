@@ -27,7 +27,7 @@
     <main>
         <section> <!--about-->
             <h1 id="about">
-                <br><br>My Story</h1>
+                My Story</h1>
             <img src="img/profile.jpg" id="imgabout" alt="Anna in front of Florence;s Duomo Cathedral">
             <h2>Anna Saracoff</h2>
             <div class="about">
@@ -56,7 +56,7 @@
         </section>
        <section> <!--  edu  -->
             <h2 id="edu">
-                <br><br>Education</h2>
+                Education</h2>
             <ul>
                 <li>Southwest Community College in Chula Vista, CA
                     <ul>
@@ -68,7 +68,7 @@
                             -->
                         </li>
                         <ul>
-                            <li><a href="movies2012/index.html" target="_blank" rel="noopener noreferrer">Movies</a>
+                            <li><a href="proj/movies2012/index.html" target="_blank" rel="noopener noreferrer">Movies</a>
                             </li>
                             <!-- <li><a href="">The MMM</a></li> -->
                         </ul>
@@ -87,7 +87,7 @@
             <li>IUPUI in Indianapolis, IN
                 <ul>
                     <li>Only 1 Semester, a fresher beginning web design online course</li>
-                    <li><a href="film2018/index.html" target="_blank" rel="noopener noreferrer">Film Noir</a>- My notes on a different class I took in the same semester which doubled as my web final.</li>
+                    <li><a href="proj/film2018/index.html" target="_blank" rel="noopener noreferrer">Film Noir</a>- My notes on a different class I took in the same semester which doubled as my web final.</li>
             </li>
             <li>Transfered due to lack of funds and a misplacement of my vaccination records</li>
             </ul>
@@ -109,7 +109,7 @@
             </ul>
         </section>
         <section ><!--  work  -->
-            <h2 id="hist"><br><br>Work History</h2>
+            <h2 id="hist">Work History</h2>
             <table class="years">
                 <caption>Approximate Time Spent at Each Workplace</caption>
                 <thead>
@@ -198,24 +198,24 @@
             </ol>
         </section>
         <section> <!--  proj  -->
-            <h2 id="proj"><br><br>Projects</h2>
+            <h2 id="proj">Projects</h2>
             <ul>
                 <li>Springboard Projects will be listed below as assignend and completed.</li>
             </ul>
             <table>
                 <caption>Old Projects</caption>
                 <tr>
-                    <td><a href="film2018/index.html" target="_blank" rel="noopener noreferrer"><img src="img/tn-filmnoir.png" alt="film noir home page" class="tn"></a></l1>
-                    <td><a href="movies2012/index.html" target="_blank" rel="noopener noreferrer"><img src="img/tn-movies.png" alt="movies home page" class="tn"></a></l1>
+                    <td><a href="proj/film2018/index.html" target="_blank" rel="noopener noreferrer"><img src="img/tn-filmnoir.png" alt="film noir home page" class="tn"></a></l1>
+                    <td><a href="proj/movies2012/index.html" target="_blank" rel="noopener noreferrer"><img src="img/tn-movies.png" alt="movies home page" class="tn"></a></l1>
                 </tr>
                 <tr>
-                    <td><a href="film2018/index.html" target="_blank" rel="noopener noreferrer">2018 - Film Noir</a></td>
-                    <td><a href="movies2012/index.html" target="_blank" rel="noopener noreferrer">2012 - Movies</a></td>
+                    <td><a href="proj/film2018/index.html" target="_blank" rel="noopener noreferrer">2018 - Film Noir</a></td>
+                    <td><a href="proj/movies2012/index.html" target="_blank" rel="noopener noreferrer">2012 - Movies</a></td>
                 </tr>
             </table>
         </section>
         <article><!--  contact  -->
-            <h1 id="contact"><br><br>Contact Me</h1>
+            <h1 id="contact">Contact Me</h1>
             <form action="#"> <!--not sure what to put in form <> -->
                 <label for="name">
                     Name:
@@ -247,17 +247,18 @@
                     <textarea name="message" id="message" cols="70" rows="10"
                         placeholder="What would you like for me to know about you?"></textarea>
                 </label><br><br>
-                Preffered Style of Communication: <br> <!--can I put in a psuedo class to be able to shrink?-->
-                <label for="call">
-                    <input type="radio" name="respond" id="call" value="call">Call</label><br>
-                <label for="txt">
-                    <input type="radio" name="respond" id="txt" value="txt">Text</label><br>
-                <label for="email2">
-                    <input type="radio" name="respond" id="email2" value="email2">Email
-                </label><br> <!--added email2 because i can't remember if it interacts with the email field-->
-                <br><br>
-                <button value="reset">Clear</button>
-                <button value="submit">Submit</button>
+                <div class="respond"><p>Preferred Style of Communication:</p>
+                     <!--can I put in a psuedo class to be able to shrink?-->
+                    <label for="call">
+                        <input type="radio" name="respond" id="call"    value="call">Call</label><br>
+                    <label for="txt">
+                    <input type="radio" name="respond" id="txt"     value="txt">Text</label><br>
+                    <label for="email2">
+                        <input type="radio" name="respond" id="email2" value="email2">Email
+                    </label><br> <!--added email2 because i can't remember if it interacts with the email field-->
+                </div>
+                <button type="reset" value="reset">Clear</button>
+                <button type="submit" value="submit">Submit</button>
             </form>
         </article>
     </main>
