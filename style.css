@@ -136,6 +136,40 @@ ul li, ol li {
      line-height:160%; /*or whatever height you like*/
 }
 
+/* divides edu into boxes
+    -added flex display
+    -wrap
+    -min-width on boxes
+*/
+.edu{
+    display: flex;
+    min-width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+/* edu divs */
+.SW, .IUPUI, .Ivy, .Spring{
+    border: 3px hsla(160, 30%, 30%, 1) groove;
+    box-shadow:3px 3px 3px hsla(178, 50%, 61%, .8);
+    width: 400px;
+    margin: 5px 0;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: hsla(25, 50%, 27%, 1);
+}
+
+h3{
+    margin-top: 2px;
+}
+
+h4{
+    color: hsla(25, 32%, 39%, 1);
+    padding-left: 10px;
+    margin-top: -10px;
+    border-bottom: 1px hsla(160, 30%, 44%, 1) solid;
+}
+
 /* table referenced https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Tables*/
 table{
     table-layout: fixed;
