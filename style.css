@@ -69,6 +69,7 @@ body{
    margin-bottom: 5%;
    min-width: 820px;
    background-color: hsla(178, 50%, 61%, .8);
+   font-size: 1.2em;
 }
 
 @font-face {
