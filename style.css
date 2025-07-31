@@ -19,7 +19,7 @@ source for pallette: https://coolors.co/image-picker
 nav{
     position: center;
 }
-
+/* added x-index 10 so nav will always be on top */
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -32,6 +32,7 @@ nav ul{
     width: 100%;
     min-width: 700px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 nav li{
@@ -61,7 +62,6 @@ body{
    background-image: url(img/2b.jpeg);
    background-repeat: no-repeat;
    background-size: cover ;
-
    color:hsla(25, 50%, 27%, 1);
    text-decoration: none;
    font-family:Georgia, 'Times New Roman', Times, serif;
@@ -87,6 +87,11 @@ body h1{
     text-shadow: 2px 2px 6px gold ;
     font-family:"handwriting", serif;
     padding-top:1.6em;
+}
+
+#about{
+    position:relative;
+    top: 40px;
 }
 
 body h2{
