@@ -147,14 +147,17 @@ ul li, ol li {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+    list-style: url(img/scrollSmall.png);
 }
-
+/* icon from Illustration by <a href="https://unsplash.com/@roundicons?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Round Icons</a> on <a href="https://unsplash.com/illustrations/a-black-and-white-image-of-a-person-running-4rqUcSqpSus?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+       */
 .work{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
     margin-top: 30px;
+    list-style: url(img/walkSmall.png);
 }
 /* edu and work divs */
 .box{
