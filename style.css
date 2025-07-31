@@ -148,7 +148,15 @@ ul li, ol li {
     justify-content: space-around;
     align-content: space-around;
 }
-/* edu divs */
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 30px;
+}
+/* edu and work divs */
 .box{
     border: 3px hsla(160, 30%, 30%, 1) groove;
     box-shadow:3px 3px 3px hsla(178, 50%, 61%, .8);
@@ -189,7 +197,7 @@ table caption{
 
 th, td{
     padding: 0.6em;
-    border-bottom: 1px solid hsla(42, 50%, 55%, 1);
+    border-bottom: 1px solid hsla(42, 50%, 46%, 1);
 }
 
 article{
