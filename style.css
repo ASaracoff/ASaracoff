@@ -89,9 +89,12 @@ body h1{
     padding-top:1.6em;
 }
 
+/* modified for Exercise 2.3 */
 #about{
     position:relative;
     top: 40px;
+    text-align: center;
+    padding-left: 100px;
 }
 
 body h2{
@@ -115,20 +118,28 @@ a:hover{
 }
 
 /* about specific */
-
+/* modified for Exercise 2.3 */
 /* reference for box shadow https://www.w3schools.com/css/css3_shadows_box.asp */
 #imgabout{
     width: 300px;
-    float: right;
+    float: left;
     border-radius: 50%;
     border: hsla(160, 30%, 44%, 1) 1px solid;
     box-shadow: 0 4px 8px 0 hsla(42, 50%, 50%, 1), 0 4px 20px 0 hsla(42, 50%, 50%, 1);
     margin-bottom: 14px;
+    margin-right: 14px;
 }
-
+/* modified for Exercise 2.3 */
 .about ul{
     font-weight: 700;
-    list-style-type: none;    
+    list-style-type: none;   
+    text-align:right; 
+
+}
+/* modified for Exercise 2.3 */
+.abouth2{
+    padding-left: 350px;
+    /* text-align: center; */
 }
 
 /* frustrated with the denseness of bullet lists found solution at https://www.sitepoint.com/community/t/best-practices-for-list-spacing-both-ul-ol/6273 */
