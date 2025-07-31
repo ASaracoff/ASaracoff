@@ -232,6 +232,7 @@ input {
     color: hsla(25, 50%, 27%, 1);
     border: hsla(160, 30%, 44%, 1) 2px solid;
     border-radius: 4px;
+    font-size: 1em;
 }
 
 
@@ -245,6 +246,7 @@ textarea {
     background-color: hsla(178, 50%, 91%, 1);
     color: hsla(25, 50%, 27%, 1);
     resize: none;
+    font-size: 1em;
 }
 
 select {
