@@ -1,10 +1,10 @@
-
+@media (width >=820px) {
+    
 /* 
 source for wrapper: https://css-tricks.com/best-way-implement-wrapper-css/ 
 source for pallette: https://coolors.co/image-picker
 */
 .wrapper{
-    max-width: 80%;
     padding-right: 20px;
     padding-left: 20px;
     background-color:hsla(178, 50%, 91%, .8);
@@ -71,6 +71,26 @@ body{
    background-color: hsla(178, 50%, 61%, .8);
    font-size: 1.2em;
 }
+
+}
+@media (min-width:480) {
+    /* after media width < 750 */
+body{ 
+   background-image: url(img/2c.jpg);
+   background-repeat: no-repeat;
+   background-size: cover ;
+   color:hsla(25, 50%, 27%, 1);
+   text-decoration: none;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   padding-left: 5%;
+   margin-bottom: 5%;
+   /* min-width: 820px;   removed to give better flow*/
+   background-color: hsla(178, 50%, 61%, .8);
+   font-size: 1.2em;
+}
+}
+
+
 
 @font-face {
   font-family: "handwriting";
