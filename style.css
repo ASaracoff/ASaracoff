@@ -1,27 +1,28 @@
-
+@media (width >=820px) {
+    
 /* 
 source for wrapper: https://css-tricks.com/best-way-implement-wrapper-css/ 
 source for pallette: https://coolors.co/image-picker
 */
 .wrapper{
-    max-width: 80%;
     padding-right: 20px;
     padding-left: 20px;
     background-color:hsla(178, 50%, 91%, .8);
-    margin:0 auto;
-    margin-top: 0;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    /* margin-top: none; */
 }
 
 
 
 /*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
 nav{
-    /* position: fixed; */
+    position: center;
 }
 /* added x-index 10 so nav will always be on top */
 nav ul{
     list-style-type: none;
-    /* border-bottom: 25%; */
     margin: 0;
     margin-left: -20px;
     padding: 0;
@@ -29,7 +30,7 @@ nav ul{
     background-color: hsla(160, 30%, 44%, 1);
     position: fixed;
     top: 0;
-    /* width: 100%; */
+    width: 100%;
     min-width: 700px;
     box-sizing: border-box;
     z-index: 10;
@@ -53,6 +54,7 @@ nav li a{
 nav li a:hover{
     background-color: #111;
     text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 /* found imgs https://wallpaperaccess.com/teal-marble 
@@ -66,11 +68,77 @@ body{
    text-decoration: none;
    font-family:Georgia, 'Times New Roman', Times, serif;
    padding-left: 5%;
-   margin-bottom: 5%;
-   min-width: 820px;
+   /* min-width: 820px; */
    background-color: hsla(178, 50%, 61%, .8);
    font-size: 1.2em;
 }
+
+}
+@media (width  <= 820px) {
+
+body{ 
+   background-image: url(img/2c.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover ;
+   color:hsla(25, 50%, 27%, 1);
+   text-decoration: none;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   /* padding-left: 5%; */
+   /* margin-bottom: 5%; */
+   /* min-width: 820px;   removed to give better flow*/
+   background-color: hsla(178, 50%, 61%, .8);
+   font-size: 1.2em;
+}
+
+/* source:https://www.youtube.com/watch?v=nTtUg8EuJ_8 */
+nav{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        border-radius: 0 0 10px 10px;
+    }
+/* added transition */
+    a{
+        display: block;
+        padding: 10px;
+        color: hsla(178, 50%, 91%, 1);
+        text-shadow: 1px 1px 3px hsla(42, 50%, 46%, 1);
+        background-color: hsla(160, 30%, 44%, 1);
+        &:hover{
+            background-color: #111;
+            text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
+            transition: background-color 0.3s ease-in, color 0.3s ease-in;
+        }
+    }
+}
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{ 
+   background-image: url(img/2c.jpg);
+   background-repeat: no-repeat;
+   background-size: cover ;
+   color:hsla(25, 50%, 27%, 1);
+   text-decoration: none;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   /* padding-left: 5%; */
+   /* margin-bottom: 5%; */
+   /* min-width: 820px;   removed to give better flow*/
+   background-color: hsla(178, 50%, 61%, .8);
+   font-size: 1.2em;
+}
+
 
 @font-face {
   font-family: "handwriting";
@@ -102,18 +170,20 @@ body h2{
     border-bottom: 1px solid hsla(42, 50%, 55%, 1);
     padding-top: 70px; /* replaced the 2 brs before each h2 - anchor links */
 }
-
+/* combined a and a:hover w/ & */
 a {
     text-decoration: none;
     font-weight: 600;
     color:#111;
     text-shadow: 2px 2px 5px hsla(42, 50%, 50%, 1);
-}
-
-a:hover{
+    
+    &:hover{
     color:hsla(42, 50%, 55%, 1);
     text-shadow: 2px 2px 7px hsla(25, 32%, 39%, 1);
+    }
 }
+
+
 
 /* about specific */
 
@@ -125,13 +195,15 @@ a:hover{
     border: hsla(160, 30%, 44%, 1) 1px solid;
     box-shadow: 0 4px 8px 0 hsla(42, 50%, 50%, 1), 0 4px 20px 0 hsla(42, 50%, 50%, 1);
     margin: 14px;
-    margin-left: 4px;
 }
 
 .about ul{
     font-weight: 700;
     list-style-type: none;    
-    text-align: right;
+    /* float: right; */
+    position: inherit;
+
+
 }
 
 /* frustrated with the denseness of bullet lists found solution at https://www.sitepoint.com/community/t/best-practices-for-list-spacing-both-ul-ol/6273 */
@@ -264,6 +336,7 @@ input[type=radio]{
 
 .respond{
     padding-bottom: 20px;
+    line-height: 20px;
 }
 
 button{
@@ -281,6 +354,12 @@ button{
 input:focus, select:focus, textarea:focus, button:focus{
     outline: hsla(160, 30%, 44%, 1) 2px solid;
     box-shadow: 0 2px 8px 0 hsla(42, 50%, 50%, 1), 0 2px 20px 0 hsla(42, 50%, 50%, 1);
+}
+
+/* source:https://stackoverflow.com/questions/63652860/how-do-i-add-space-between-my-radio-buttons-html */
+.respond input[type="radio"] {
+    margin: 15px;
+
 }
 
 footer{
