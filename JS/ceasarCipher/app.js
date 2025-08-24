@@ -75,3 +75,53 @@ console.log("randomInt + shiftValue",randomInt + shiftValue)
 // Q4 - How does adding 3 to randomIn ensure final shiftValue is between 3-33?
 // range was 0-30, added 1 to remove getting the #0 
 // then add shiftValue (3) shifts all # by 3 to get 3-33 
+
+
+// Excercise 4 - The Secret Emblem
+
+const emblemClue1 = 'Eagle';
+const emblemClue2 = 'Laurel';
+const emblemClue3 = 7;
+
+// Step 1 
+// Use if/else if/else to decipher first clue
+
+if (emblemClue1 === 'Eagle'){
+   locationStart = 'Forum';
+}else if (emblemClue1 === 'Lion'){
+    locationStart = 'Coloseum';
+}else{
+    locationStart = 'Villa';
+}
+console.log(locationStart);
+
+// Step 2 - Boolean Logic
+//  if A && B then C
+//  if A || B then C
+
+if (emblemClue2 === 'Laurel' && locationStart === 'Forum'){
+    locationStart += (" of Augustus");
+}else if (emblemClue2 === 'Grapes' || locationStart === 'Villa'){
+    locationStart += (" of Pompey")
+}
+console.log(locationStart);
+
+// Step 3 -  Switch Statement
+// debending on value of emblemClue3 append a direction to Location
+
+switch (emblemClue3){
+    case 7: locationStart += (" North")
+    break;
+    case 3: locationStart += (" South")
+    break;
+    case 9: locationStart += (" East")
+    break;
+    case 4: locationStart += (" West")
+    break;
+}
+
+console.log(locationStart);
+
+// Question: Why is it important to be careful when using '==' instead of '===' in our conditionals?
+// '==' only compares data type, so 1 == '1' is true even though one is a number while the other is a string
+// '===' compares data type AND Value so 1 === '1' is false, they are not EXACTLY the same
