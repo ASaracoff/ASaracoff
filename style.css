@@ -77,7 +77,7 @@ body{
 @media (width  <= 820px) {
 
 body{ 
-   background-image: url(img/2c.jpeg);
+   image: url(img/2c.jpeg);
    background-repeat: no-repeat;
    background-size: cover ;
    color:hsla(25, 50%, 27%, 1);

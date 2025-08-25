@@ -1,0 +1,89 @@
+body{
+    /* remove default margin/padding */
+    margin: 0;
+    padding: 0;
+    /* initialize flexbox */
+    display: flex;
+    /* center horizontal and vertical */
+    justify-content: center;
+    align-items: center;
+    /* centered, but ontop of each other use column */
+    flex-direction: column;
+    /* add height so can align-items can center */
+    height: 100vh;
+}
+
+#gameBoard {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    /* squishes squares horizontally */
+    display: flex;
+    /* relieves the squish, wraps the squares where they should be */
+    flex-wrap: wrap;
+    border: solid 1 black;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    /* gives width and makes grid 2 x 4 instead of 3x3 */
+    border: solid 2px black;
+    /* removes extra width */
+    box-sizing: border-box;
+    /* initialize flexbox */
+    display: flex;
+    /* centers numbers */
+    justify-content: center;
+    align-items: center;
+}
+
+/* make a circle */
+.circle{
+    /* make square */
+    height: 90px;
+    width: 90px;
+    /* round the radius to make circle */
+    border-radius: 50%;
+    /* the only visible part */
+    border: 10px solid blue;
+    /* to remove extra width */
+    box-sizing: border-box;
+}
+
+.cross {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    /* rotate to make an X */
+    transform: rotate(45deg);
+}
+
+.cross:before, .cross:after{
+    /* you need to add content for before/after */
+    content: "";
+    position: absolute;
+    background-color: red;
+
+}
+
+.cross:before {
+    /* 50% of the parent, the cross element */
+    /* verticle line */
+    left: 50%;
+    width: 15%;
+    height: 100%;
+    /* at this time, cross is huge */
+    margin-left: -15%;
+}
+
+.cross:after {
+    /* 50% of the parent */
+    /* horizontal line */
+    top: 50%;
+    height: 15%;
+    width: 100%;
+    /* at this time, cross is huge */
+    margin-top: -15%;
+}
