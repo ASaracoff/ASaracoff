@@ -1,3 +1,6 @@
+// Exercise 2
+console.log("Exercise 2")
+
 const friend = "BRUTUS"
 const shiftValue = 3;
 
@@ -37,6 +40,7 @@ console.log(teaserMess);
 
 
 // Excercise 3 Creating a Secret Shift Value
+console.log("Exercise 3")
 
 // step 1
 let randomDec = Math.random();
@@ -77,7 +81,10 @@ console.log("randomInt + shiftValue",randomInt + shiftValue)
 // then add shiftValue (3) shifts all # by 3 to get 3-33 
 
 
+
 // Excercise 4 - The Secret Emblem
+console.log("Exercise 4")
+
 
 const emblemClue1 = 'Eagle';
 const emblemClue2 = 'Laurel';
@@ -125,3 +132,60 @@ console.log(locationStart);
 // Question: Why is it important to be careful when using '==' instead of '===' in our conditionals?
 // '==' only compares data type, so 1 == '1' is true even though one is a number while the other is a string
 // '===' compares data type AND Value so 1 === '1' is false, they are not EXACTLY the same
+
+// Exercise 5
+console.log("Exercise 5")
+
+// given code:
+const guests = ["ANTONY", "CICERO", "CASSIUS", "CLEOPATRA"];
+
+// Step 1
+// Add BRUTUS to beginning 
+
+guests.unshift('BRUTUS');
+console.log (guests)
+
+// Question 1
+// verify by using console.log 
+// OR indexOf('BRUTUS') = 0 = first in line!
+
+guests.indexOf('BRUTUS');
+console.log('index of BRUTUS', guests.indexOf('BRUTUS'))
+
+// Step 2
+// Add AUGUSTUS and LUCIA to end of array
+
+guests.push('AUGUSTUS', 'LUCIA');
+console.log (guests)
+
+// Step 3
+// Search for SPARTACUS, what position?
+spartacusIndex = guests.indexOf('SPARTACUS')
+console.log(spartacusIndex)
+
+// Question 2
+// If Sparticus isnt invited what value would spartacusIndex be?
+// -1 Not found
+
+// Step 4
+// Remove CASSIUS
+guests.splice(3,1)
+console.log (guests)
+
+// Step 5
+// make a copy array but only with first 3 lists
+specialInvite = guests.slice(0,3);
+console.log(specialInvite)
+
+
+// Step 6
+// keep Brutus, alphabatize everyone else
+specialGuests = guests.slice(0,1)
+console.log(specialGuests)
+otherGuests = guests.slice(1)
+console.log(otherGuests)
+otherGuests.sort()
+console.log(otherGuests)
+
+sortedList = specialGuests.concat(otherGuests)
+console.log(sortedList)
