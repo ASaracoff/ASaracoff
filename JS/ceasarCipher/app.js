@@ -189,3 +189,72 @@ console.log(otherGuests)
 
 sortedList = specialGuests.concat(otherGuests)
 console.log(sortedList)
+
+// Exercise 6
+console.log("Exercise 6")
+
+// given code:
+const vipGuests = {
+    ANTONY: {
+        title: "General",
+        region:"Rome",
+        dietaryPreferences: "Vegetarian",
+        pastGifts:["Golden Laurel", "Chariot"]
+    },
+    CICERO: {
+        title: "Operator",
+        region:"Arpinum",
+        dietaryPreferences: "Omnivore",
+        pastGifts:["Scroll of Proverbs","Quill"]
+    }
+};
+
+console.log('original list',vipGuests);
+
+// Step 1
+// Add Brutus
+
+vipGuests.BRUTUS ={
+    BRUTUS: {
+        title: "Senator",
+        region: "Rome",
+        dietaryPreferences: "Vegan",
+        pastGifts: ["Silver Daggar", "Marbel Bust"]
+    }
+};
+
+console.log('add BRUTUS',vipGuests)
+
+// Step 2
+// CICERO's past gift: add golden lyre
+
+vipGuests.CICERO.pastGifts += ", Golden Lyre";
+console.log("update gifts from cicero",vipGuests.CICERO)
+
+
+// Step 3
+// retrieve region of 'ANTONY'
+
+console.log("ANTONY's region:", vipGuests.ANTONY.region)
+
+// Step 4
+// remove CICERO from guest list
+
+delete vipGuests.CICERO;
+console.log("delete cicero: ",vipGuests);
+
+// Step 5
+// assign ANTONY's profile to a new variable: generalProfile
+// then change region to Egypt
+
+generalProfile = vipGuests.ANTONY
+console.log("ANTONY's new profile: ",generalProfile )
+
+generalProfile.region = "Egypt"
+console.log("change region to egypt:", generalProfile)
+
+// Question 1
+//  After executing Step 5, what is ANTONY's region in vipGuests object?
+// Egypt, because the reference # are the same
+
+console.log("ANTONY's info in vipGuests: ",vipGuests.ANTONY)
