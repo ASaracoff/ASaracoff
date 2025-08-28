@@ -229,7 +229,7 @@ console.log('add BRUTUS',vipGuests)
 // CICERO's past gift: add golden lyre
 
 vipGuests.CICERO.pastGifts += ", Golden Lyre";
-console.log("update gifts from cicero",vipGuests.CICERO)
+console.log("update gifts from cicero",vipGuests.CICERO.pastGifts)
 
 
 // Step 3
