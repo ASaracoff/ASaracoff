@@ -40,6 +40,7 @@ console.log(teaserMess);
 
 
 // Excercise 3 Creating a Secret Shift Value
+console.log("")
 console.log("Exercise 3")
 
 // step 1
@@ -83,6 +84,7 @@ console.log("randomInt + shiftValue",randomInt + shiftValue)
 
 
 // Excercise 4 - The Secret Emblem
+console.log("")
 console.log("Exercise 4")
 
 
@@ -134,6 +136,7 @@ console.log(locationStart);
 // '===' compares data type AND Value so 1 === '1' is false, they are not EXACTLY the same
 
 // Exercise 5
+console.log("")
 console.log("Exercise 5")
 
 // given code:
@@ -191,6 +194,7 @@ sortedList = specialGuests.concat(otherGuests)
 console.log(sortedList)
 
 // Exercise 6
+console.log("")
 console.log("Exercise 6")
 
 // given code:
@@ -258,3 +262,40 @@ console.log("change region to egypt:", generalProfile)
 // Egypt, because the reference # are the same
 
 console.log("ANTONY's info in vipGuests: ",vipGuests.ANTONY)
+
+// Exercise 7
+console.log("")
+console.log("Exercise 7")
+
+// given code
+console.log(friend);
+console.log(shiftValue);
+
+// step 1
+// recall alphabet var
+console.log(latinAlpha);
+
+
+// step 2
+//  use loop to iterate each letter of 'BRUTUS'
+//  employ cipher to shift each letter by shiftValue
+let encryptedName = ''
+for(i=0;i<=friend.length-1;i++){ //start at 0, go until end of friend, add 1 to each iteration
+    const currentLetter = friend[i]
+    const currentIndex = latinAlpha.indexOf(currentLetter.toLowerCase()); // find the index of current letter
+    const newIndex2 = (currentIndex + shiftValue) % latinAlpha.length; //current letter index + 3
+    encryptedName += latinAlpha[newIndex2].toUpperCase(); //make uppercase
+}
+console.log(encryptedName)
+
+// Question 1
+// What advantage does using a loop provide over manually encrypting each letter?
+
+// its faster, more efficient and repeatable! to encrypt anything just change the value of 'friend'.
+
+
+// Question 2
+// explain role of '% alphabet.length' in our loop
+// how does it aid in excryption process?
+
+// if the letter goes past 'z' in the alphabet go to 'a' and keep going
