@@ -102,7 +102,8 @@
 .article{
     color: hsla(178, 50%, 91%, 1);
     text-shadow: 2px 2px 6px hsla(42, 50%, 55%, 1) ;
-    font-size: 26px;
+    font-size: 20px;
+    text-align: center;
     background-color: hsla(160, 30%, 44%, 1);
     box-shadow: 2px 2px 6px hsla(42, 50%, 55%, 1) ;
     padding: 20px;
