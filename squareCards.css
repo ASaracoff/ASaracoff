@@ -110,3 +110,18 @@
     padding-bottom: 1px;
     
 }
+
+.tags{
+   color: hsla(178, 50%, 91%, 1);
+    padding: 8px 10px;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: px 0 8px;
+    background: hsla(160, 30%, 44%, 1);
+    /* instead of coloring whole line, just fits content */
+    width: fit-content;
+    /* round corners */
+    border-radius: 50px;
+}
