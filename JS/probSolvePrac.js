@@ -28,12 +28,12 @@ console.log("FizzBuzz Practice")
 console.log(!Number.isInteger("h"))
 
 function fizzBuzz(num){
-    // i forgot how to check for number, but everything else i worked through
+    // I forgot how to check for number, but everything else I worked through
     if(!Number.isInteger(num) || num<1 || num>=100){
         console.log("Error");
         return;
     }
-    // i had to check why nume/3 didn;t work T.T
+    // I had to check why num/3 didn't work T.T
     const three = num % 3
     const five = num % 5
     if(three === 0 && five === 0){
@@ -62,6 +62,8 @@ console.log('15')
 console.log(fizzBuzz(15))
 
 
+
+
 console.log("")
 console.log("Letter Count")
 
@@ -78,72 +80,57 @@ console.log("Letter Count")
 // if not a string console out error
 // make 'word' lower-case
 // make a loop 
-// grab index of first letter and search the rest of the 'word' for any repeats
-// make an array for that letter?
+// insert alphabet
+// grab index of first letter and search the alphabet for 
+// make a count for how many times  that  letter is found
 // console log the letter and how many times its in 'word'
 // then loop for the second letter and so on til the end
 // once you get to the end of the 'word' break out of the code
 
 
 
-// function letterOccurrance(word){
-//     if (typeof word !== "string"){
-//         console.log('Error')
-//         return;
-//     }
-//     // const smallWord = word.toLowerCase
-//     // if(smallWord[idx] = char){
-//         char 
-//     }
-//     return 'string';
-// }
+function letterOccurrance(word){
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-// console.log('42');
-// console.log(letterOccurrance(42));
-// console.log('werd');
-// console.log(letterOccurrance("werd"));
-// console.log('false');
-// console.log(letterOccurrance(false));
-
-function letterCount (word)
-{
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-  if (typeof word !== "string")
-  {
-    console.error("Error");
-    return;
-  }
-
-  for (const letter of word)
-  {
-    if (!alphabet.includes(letter.toLowerCase()))
-    {
-      console.error("Error");
-      return;
+    if (typeof word !== "string"){
+        console.log('Error');
+        return;
     }
-  }
-
-  let letterCounts = {};
-
-  for (let letter of word)
-  {
-    let lowerCaseLetter = letter.toLowerCase();
-
-    // If the letter is already in the dictionary, increment its count
-    if (letterCounts[lowerCaseLetter] !== undefined)
-    {
-      letterCounts[lowerCaseLetter]++;
+    
+    for (const letter of word){
+        if (!alphabet.includes(letter.toLowerCase())){
+            console.log('Error');
+        }
     }
-    else
-    {
-      letterCounts[lowerCaseLetter] = 1;
-    }
-  }
 
-  return letterCounts;
+    let letterCounts = {};
+    
+    for (let letter of word){
+        let lowerCaseLetter = letter.toLowerCase();
+
+        if(letterCounts[lowerCaseLetter] !== undefined){
+            letterCounts[lowerCaseLetter]++;
+        }else{
+            letterCounts[lowerCaseLetter] = 1;
+        }
+    }
+
+    return letterCounts
 }
 
-letterCount("Caesar42");
-console.log(letterCount("Caesar"));
-console.log(letterCount("AAbaBa"));
+
+
+console.log('42');
+console.log(letterOccurrance(42));
+
+console.log('false');
+console.log(letterOccurrance(false));
+
+console.log('werd');
+console.log(letterOccurrance("werd"));
+
+console.log('aaaaaaaaaaaaaaasssssssssssssssssssssssssddddddddddddd');
+console.log(letterOccurrance("aaaaaaaaaaaaaaasssssssssssssssssssssssssddddddddddddd"));
+
+console.log('supercalifragilisticmakesmealidotious');
+console.log(letterOccurrance("supercalifragilisticmakesmealidotious"));
