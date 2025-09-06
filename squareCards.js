@@ -24,4 +24,8 @@ document.getElementsByClassName("article")[4].addEventListener("click",function(
     window.open("JS/sandbox/sideProjects/squareCards/squareCards.html") //where do you want to send them to?
 }
 )
+document.getElementsByClassName("article")[5].addEventListener("click",function(){
+    window.open("JS/sandbox/sideProjects/5minis/combo.html") //where do you want to send them to?
+}
+)
 

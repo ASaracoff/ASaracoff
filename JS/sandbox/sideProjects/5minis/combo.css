@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsla(178, 50%, 61%, .8);
+}
+
+
+h1{
+    padding: 10px;
+}
+
+.mini{
+    display: flex;
+    /* nice space around each card */
+    justify-content: space-around;
+    /* wrap to next row */
+    flex-wrap: wrap; 
+    /* align at the very beginning */
+    align-items: flex-start;
+
+    /* set background image */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.project{
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 8px #ffffff8d;
+    position: relative;
+    width: 380px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color: hsla(178, 50%, 91%, 1);
+}
+
+
+button {
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#flipper{
+    text-align: center;
+}
+
+#flipper button {
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+
+#green{
+    background-color: rgb(28, 74, 28);
+}
+
+#red{
+    background-color: rgb(87, 22, 22);
+}
+
+#blue{
+    background-color: rgb(20, 20, 77);
+}
+
+#random{
+    background-color: rgb(165, 128, 80);
+}
+
+
+
+#stopwatch{
+    text-align: center;
+    padding-top: -5px;
+    padding-bottom: 10px;
+}
+
+#quote{
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+#palindrome{
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+#todo{
+    width: auto;
+    min-width: 500px;
+}

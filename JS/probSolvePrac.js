@@ -86,20 +86,64 @@ console.log("Letter Count")
 
 
 
-function letterOccurrance(word){
-    if (typeof word !== "string"){
-        console.log('Error')
-        return;
+// function letterOccurrance(word){
+//     if (typeof word !== "string"){
+//         console.log('Error')
+//         return;
+//     }
+//     // const smallWord = word.toLowerCase
+//     // if(smallWord[idx] = char){
+//         char 
+//     }
+//     return 'string';
+// }
+
+// console.log('42');
+// console.log(letterOccurrance(42));
+// console.log('werd');
+// console.log(letterOccurrance("werd"));
+// console.log('false');
+// console.log(letterOccurrance(false));
+
+function letterCount (word)
+{
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  if (typeof word !== "string")
+  {
+    console.error("Error");
+    return;
+  }
+
+  for (const letter of word)
+  {
+    if (!alphabet.includes(letter.toLowerCase()))
+    {
+      console.error("Error");
+      return;
     }
-    // const smallWord = word.toLowerCase
-    // let (char of smallword)
-    // if(smallWord[char] )
-    return 'string';
+  }
+
+  let letterCounts = {};
+
+  for (let letter of word)
+  {
+    let lowerCaseLetter = letter.toLowerCase();
+
+    // If the letter is already in the dictionary, increment its count
+    if (letterCounts[lowerCaseLetter] !== undefined)
+    {
+      letterCounts[lowerCaseLetter]++;
+    }
+    else
+    {
+      letterCounts[lowerCaseLetter] = 1;
+    }
+  }
+
+  return letterCounts;
 }
 
-console.log('42');
-console.log(letterOccurrance(42));
-console.log('werd');
-console.log(letterOccurrance("werd"));
-console.log('false');
-console.log(letterOccurrance(false));
+letterCount("Caesar42");
+console.log(letterCount("Caesar"));
+console.log(letterCount("AAbaBa"));
