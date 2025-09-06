@@ -1,3 +1,55 @@
+// source: https://youtu.be/2ml4x0rO1PQ?si=qYodVYcErZDerqSE&t=2744
+
+// create an array of strings
+const quotes = [
+"But man is not made for defeat. A man can be destroyed but not defeated.    -Ernest Hemingway",
+"When you reach the end of your rope, tie a knot in it and hang on.     - Franklin D. Roosevelt",
+"There is nothing permanent except change.  - Heraclitus",
+"You cannot shake hands with a clenched fist.   - Indira Gandhi",
+"Let us sacrifice our today so that our children can have a better tomorrow.    - A. P. J. Abdul Kalam",
+"The only way to do great work is to love what you do."    
+]
+
+// set = unique collection of elements {} only can have unique values
+//  can tell you if you have or DONT have something
+// better for performance bassed 
+// 'new' keyword
+// used to make sure we don't reuse a quote
+const usedIndexes = new Set()
+const quoteElement = document.getElementById("quote")
+
+
+
+function generateQuote() {
+    if(usedIndexes.size >= quotes.length){
+        // clears out usedIndexes - resets generator
+        usedIndexes.clear()
+    }
+
+    while(true){
+    // innerHTML - puts quote inbetween the <p></p> tags
+    // quoteElement.innerHTML = "hello"
+    
+    // Math.random = random number
+    // Math.floor = round down -  9.999999 -> 9
+    const randomIndx = Math.floor(Math.random() * quotes.length)
+
+        if (usedIndexes.has(randomIndx)) continue
+
+    const quote = quotes[randomIndx]
+    quoteElement.textContent = quote;
+    // don't use this
+    usedIndexes.add(randomIndx)
+    break
+    }
+}
+
+// check out APIs
+
+
+
+
+
 // Color Flipper
 // source: https://youtu.be/2ml4x0rO1PQ?si=ndUGO3dlGieVXvib&t=403
 
@@ -111,53 +163,6 @@ function resetClock(){
 }
 
 
-// source: https://youtu.be/2ml4x0rO1PQ?si=qYodVYcErZDerqSE&t=2744
-
-// create an array of strings
-const quotes = [
-"But man is not made for defeat. A man can be destroyed but not defeated.    -Ernest Hemingway",
-"When you reach the end of your rope, tie a knot in it and hang on.     - Franklin D. Roosevelt",
-"There is nothing permanent except change.  - Heraclitus",
-"You cannot shake hands with a clenched fist.   - Indira Gandhi",
-"Let us sacrifice our today so that our children can have a better tomorrow.    - A. P. J. Abdul Kalam",
-"The only way to do great work is to love what you do."    
-]
-
-// set = unique collection of elements {} only can have unique values
-//  can tell you if you have or DONT have something
-// better for performance bassed 
-// 'new' keyword
-// used to make sure we don't reuse a quote
-const usedIndexes = new Set()
-const quoteElement = document.getElementById("quote")
-
-
-
-function generateQuote() {
-    if(usedIndexes.size >= quotes.length){
-        // clears out usedIndexes - resets generator
-        usedIndexes.clear()
-    }
-
-    while(true){
-    // innerHTML - puts quote inbetween the <p></p> tags
-    // quoteElement.innerHTML = "hello"
-    
-    // Math.random = random number
-    // Math.floor = round down -  9.999999 -> 9
-    const randomIndx = Math.floor(Math.random() * quotes.length)
-
-        if (usedIndexes.has(randomIndx)) continue
-
-    const quote = quotes[randomIndx]
-    quoteElement.textContent = quote;
-    // don't use this
-    usedIndexes.add(randomIndx)
-    break
-    }
-}
-
-// check out APIs
 
 
 
@@ -198,124 +203,48 @@ function check() {
     input.value = ""
 }
 
-// To Do List
-// src: https://www.youtube.com/watch?v=2ml4x0rO1PQ&t=4760s
-//  9:48   Start time
-// 10:37   Finish time
-// ~51 minutes 
 
+// Todo2
+// source: https://www.youtube.com/watch?v=cOUNOi297Mw&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz
 
-// array to hold to do items
-let items = [];
+document.querySelector('#push').onclick = function(){
+    // adding validation for empty input field
+    // if nothing writen return alert = write something!
+    if(document.querySelector('#newTask input').value.length === 0){
+        alert("Please Enter a Task")
+    }else{  // Adding a new task
+        document.querySelector('#tasks').innerHTML +=  
+        `
+           <div class="task">
+                <span id="taskName">
+                    ${document.querySelector('#newTask input').value}
+                </span>
+                <button class ="delete">
+                    <i class="fa-solid fa-trash"></i>
+                </button
+           </div>
+        `
+        ;
+       
 
-// get items
-// where do i want my items? - itemsDiv
-const itemsDiv = document.getElementById("items")
+        // deleting a task
+        const current_tasks = document.querySelectorAll(".delete");
+        for(i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function() {
+                this.parentNode.remove();
+            }
+        }
 
-// input item
-const input = document.getElementById("itemInput")
+        // crossing off a completed task
+        var tasks = document.querySelectorAll(".task");
+        for(var i=0; i<tasks.length; i++){
+            tasks[i].onclick = function() {
+                this.classList.toggle('completed')
+            }
+        }
 
-// storage key - access storage being used
-const storageKey = "items";
-
-
-// display array
-function renderItems(){
-    // clear space - fresh slate
-    itemsDiv.innerHTML = null;
-
-    // loop over item
-    // for loop - i know how many times you want to iterate
-    // [idx (index), item] gives us pairings (1, item 1) etc
-    // dynamically render items!
-    for(const [idx, item] of Object.entries(items)){
-        const container = document.createElement("div")
-        // in code styling
-        container.style.marginBottom = "10px"
-
-        // added a class instead of inline styling
-        // cellElement.classList.add("itemStyle")
-        
-        
-        // created a 'p' element
-        const text = document.createElement("p")
-        // make button move from below to the right side
-        text.style.display = 'inline'
-        text.style.marginRight = '10px'
-        text.textContent = item;
-
-        // add remove button!
-        // button onclick calls removeItems()
-        const button = document.createElement("button")
-        button.textContent = "Delete"
-
-        // code will automatically be run 
-        // need to add = () =>
-        button.onclick = () => removeItems(idx)
-
-        container.appendChild(text)
-        container.appendChild(button)
-
-
-        // creates element and adds to the div element
-        // itemsDiv.append(cellElement)
-        itemsDiv.appendChild(container)
-    }
+        // clearing the input field after each entry
+        document.querySelector("#newTask input").value = ""
+    } 
+   
 }
-
-
-// load the array
-function loadItems(){
-    // get old list from local storage, its in a string
-    const oldItems = localStorage.getItem(storageKey)
-    
-    // convert string into array
-    // converts into a JS object
-    if(oldItems) items = JSON.parse(oldItems)
-    renderItems()
-}
-
-
-// save to array
-    // local storage: in your browser (cient side user side)
-    // can only store list/string
-function saveItems(){
-    const stringItems = JSON.stringify(items);
-    // only storing the most up to date version
-    localStorage.setItem(storageKey, stringItems)
-}
-
-
-// add to array
-function addItem(){
-    // get value
-    const value = input.value;
-    if (!value) {
-        alert("you cannot add an empty item")
-        return //naked return - get out of the function
-    }
-    items.push(value)
-    renderItems()
-    input.value = ""
-
-    // save items after adding
-    saveItems()
-}
-
-
-// remove from array
-function removeItem(idx){
-    // get idx of item to delete
-    // splice = remove at a certian spot
-    // (idx,1) at this spot and delete 1
-    items.splice(idx,1)
-
-    // refresh list
-    renderItems()
-
-    // save items after removing 
-    saveItems()
-}
-
-// load all html then load items automatically
-document.addEventListener("DOMContentLoaded", loadItems)

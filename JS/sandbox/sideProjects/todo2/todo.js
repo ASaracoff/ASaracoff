@@ -37,7 +37,7 @@ document.querySelector('#push').onclick = function(){
         }
 
         // clearing the input field after each entry
-        document.querySelector("#newTask input").value = "";
+        document.querySelector("#newTask input").value = ""
     } 
    
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5 Mini JS Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="combo.css">
 </head>
 <body>
@@ -33,35 +34,42 @@
     </div>
 
 
+    <!-- to do list -->
+    <div class="project" id="todo">
+        <div class="container">
+        <!-- add new task -->
+        <div id="newTask">
+            <input type="text" placeholder="Task to be done...">
+            <button id="push">Add</button>
+        </div>
+
+        <!-- list of tasks -->
+        <div id="tasks">
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- quote generator -->
+    <div class="project" id="quote">
+        <h1>Random Quote <br>Generator</h1>
+
+        <p id="quote"></p>
+        <button id="quote2" onclick="generateQuote()">Generate Quote</button>
+
+    </div>
+
+
+
     <!-- palindrome checker -->
     <div class="project" id="palindrome">
         <h1>Palindrome Checker</h1>
         <div class="content">
-            <input id = "input" type="text" placeholder="Type       Something">
+            <input id = "input" type="text" placeholder="Type Something...">
             <button onclick="check()">Check</button> 
             <!-- onclick="check()" calls the check function from JS-->
         </div>
-    </div>
-
-    <!-- quote generator -->
-    <div class="project" id="quote">
-        <h1>Quote Generator</h1>
-
-        <p id="quote"></p>
-        <button onclick="generateQuote()">Generate Quote</button>
-
-    </div>
-
-
-    <!-- to do list -->
-    <div class="project" id="todo">
-        <h1>TO DO List</h1>
-        <h2>Items</h2>
-        <div id="items"></div>
-        <input id="itemInput" type="text" placeholder="Add an item" />
-        <button onclick="addItem()">Add Item</button>
-
-        <script src="toDoList.js"></script>
     </div>
 
 

@@ -1,10 +1,14 @@
-*{
-    margin: 0;
+*, 
+*::after, 
+*::before{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: hsla(178, 50%, 61%, .8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -20,6 +24,7 @@ h1{
     flex-wrap: wrap; 
     /* align at the very beginning */
     align-items: flex-start;
+    flex-direction:row;
 
     /* set background image */
     background-attachment: fixed;
@@ -30,20 +35,29 @@ h1{
 
 .project{
     border-radius: 1px;
+    border: 2px solid white;
     box-shadow: 0px 0px 0px 8px #ffffff8d;
     position: relative;
     width: 380px;
+    min-height: 180px;
     height: auto;
     margin: 20px;
     padding: 20px;
-    background-color: hsla(178, 50%, 91%, 1);
+    background-color: hsla(0, 10%, 90%, .6);
 }
 
 
 button {
-    margin: 2px;
-    padding: 5px;
+    background-color: rgba(59, 55, 55, 0.116);
+    color: black;
+    border: .1px solid #ffffff;
+    height: 45px;
+    width: auto;
+    padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
 }
 
 #flipper{
@@ -54,6 +68,7 @@ button {
     width: 100px;
     height: 40px;
     color: white;
+    border: .1px solid #ffffff;
 }
 
 
@@ -82,11 +97,12 @@ button {
 }
 
 #quote{
-    height: 150px;
+    /* height: 150px; */
     font-size: 20px;
     text-align: center;
-    padding: 20px;
-}
+    padding: 20px; */
+ }
+
 
 #palindrome{
     height: 150px;
@@ -95,7 +111,114 @@ button {
     padding: 20px;
 }
 
+#palindrome input{
+    width: 70%;
+    height: 45px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
 #todo{
-    width: auto;
+    /* width: auto; */
     min-width: 500px;
+    
+    width: 40%;
+    min-width: 450px;
+    /* transform: translate(-50%,-50%); */
+    /* top: 50%; */
+    /* left: 50%; */
+    padding: 30px 40px;
+}
+
+
+.container{
+    
+}
+
+#newTask{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+#newTask input{
+    width: 70%;
+    height: 45px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newTask input:focus{
+    outline: none;
+    border-color: #8052ec;
+}
+
+#newTask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 16px;
+    background-color: #8052ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#tasks{
+    background-color: #ffffff;
+    padding: 30px 40px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+}
+
+.task{
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task button{
+    background-color: #8052ec;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed{
+    text-decoration: line-through;
 }
