@@ -16,21 +16,58 @@ h1{
     padding: 10px;
 }
 
-.mini{
-    display: flex;
-    /* nice space around each card */
-    justify-content: space-around;
-    /* wrap to next row */
-    flex-wrap: wrap; 
-    /* align at the very beginning */
-    align-items: flex-start;
-    flex-direction:row;
+@media (width  <= 890px) {
 
-    /* set background image */
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center center;
+    .mini{
+        display: flex;
+        /* nice space around each card */
+        justify-content: space-around;
+        /* wrap to next row */
+        flex-wrap: wrap; 
+        /* align at the very beginning */
+        align-items: flex-start;
+        flex-direction:row;
+
+        /* set background image */
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+@media (width>890px) {
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #stopwatch{
+        position: absolute;
+        top: 0px;
+        right: 5%;
+    }
+    #quote{
+        position: absolute;
+        top: 250px;
+        right: 5%;
+    }
+
+    #palindrome{
+        position: absolute;
+        top: 500px;
+        right: 5%;
+    }
+    
+    #todo{
+        position: absolute;
+        top: 250px;
+    }
+
+    #flipper{
+        position: absolute;
+        left: 9%;
+    }
 }
 
 .project{
@@ -101,12 +138,11 @@ button {
     /* height: 150px; */
     font-size: 20px;
     text-align: center;
-    padding: 20px; */
- }
-
+    padding: 20px; 
+}
 
 #palindrome{
-    height: 150px;
+    height: 200px;
     font-size: 20px;
     text-align: center;
     padding: 20px;
@@ -138,9 +174,7 @@ button {
 }
 
 
-.container{
-    
-}
+
 
 #newTask{
     background-color: #ffffff;

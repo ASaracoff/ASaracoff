@@ -27,13 +27,14 @@ function encryptMessage(word, shift){
 }
 
 console.log(encryptMessage('BRUTUS',3))
+console.log(encryptMessage('BRUTUSisatthegarden',27))
 
 
 // Step 3 
 // decrypt letter
 function decryptLetter(letter, shift) {
     const index = alphabet.indexOf(letter.toLowerCase());
-    const newIndex = (index - shift) % alphabet.length; //current letter index + shift number
+    const newIndex = (index - shift + alphabet.length) % alphabet.length; //current letter index + shift number
         return alphabet[newIndex]    
 }
 
@@ -52,6 +53,8 @@ function decryptMessage(word, shift){
 }
 
 console.log(decryptMessage('euxwxv',3))
+console.log(decryptMessage('JDUGHQ',3))
+console.log(decryptMessage('csvuvtjtbuuifhbsefo',27))
 
 
 // Question:

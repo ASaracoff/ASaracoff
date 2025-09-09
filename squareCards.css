@@ -64,7 +64,7 @@
 
 #my-cards .middle{
     position: absolute;
-    top: 30%;
+    top: 26%;
     left: 50%;
     opacity: 0;
     transition: .5s ease;
