@@ -194,7 +194,7 @@ a {
     /* border-radius: 50%; */
     border: hsla(160, 30%, 44%, 1) 1px solid;
     box-shadow: 0 4px 8px 0 hsla(42, 50%, 50%, 1), 0 4px 20px 0 hsla(42, 50%, 50%, 1);
-    margin: 14px;
+    margin: 20px;
 }
 
 .about ul{
@@ -202,8 +202,6 @@ a {
     list-style-type: none;    
     /* float: right; */
     position: inherit;
-
-
 }
 
 /* frustrated with the denseness of bullet lists found solution at https://www.sitepoint.com/community/t/best-practices-for-list-spacing-both-ul-ol/6273 */
@@ -233,6 +231,12 @@ ul li, ol li {
     align-content: space-around;
     margin-top: 30px;
     list-style: url(img/walkSmall.png);
+}
+
+/* link icon for employer's */
+#webLink{
+    width: 25px;
+    height: 25px;
 }
 
 .work h3{

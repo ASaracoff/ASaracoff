@@ -1,96 +1,91 @@
-// goals
-    // utilize localStorage to save info in browser
-    // compare/contrast localStorage and sessionStorage
-    // add/remove primitives to/from localStorage
-    // add/remove objects to/from localStorage
+// Intro to DOM 
+// Goals
+    // Understand what is DOM
+    // select HTML elements using document methods
+    // compare/contrast elements and nodes
 
-// localStorage
-    // a mechanism for storing info in browser for a specific somain
-    // API is quite easy to use and very minimal
+// DOM
+    // What is?
+        // Document Object Model
+        // a programming interfface for HTML
+        // a representation of our HTML that can be accessed using JS
 
-// localStorage vs sessionStorage
-    //               localStorage        sessionStorag
-    // data stored  no expiration   cleared when browsing tab closed
+    // How to create?
+        //  when web page is loaded -> browser creates DOM for that specific page
+        // allows for the creation of dynamic web pages where users can interact with the page
 
-// modifiying localStorage
-    // most important: all your keys MUST be strings
-    // localStorage = everything string 
-        // so get into the habit of setting keys as string to avoid confusion
+    // DOM Under the Hood
+        // uses a 'tree' where the topmost node is the document object
+        // ex: 
+        // document.html.body.form.button
+        // html ->head->title/link
+        // body -> h1/
+            // ul->li #1/li #2/li #3
+            // form -> input #1/ input #2/ button
 
-    // setting an item in localStorage
-        // setItem method
+    // Things we can do with document Object
+        // find elements
+        // making new elements
+        // updating elements
+        // changing properties on elements
+        // listening for events like clicks
 
-localStorage.setItem("firstName","Colt");
-localStorage.setItem("favNum",22);
-localStorage.setItem("hasChicken",true);
+// Selecting Elements in DOM
+    // How to select elements
+        // access DOM - document object
+        // has properties and functions to access our HTML elements which we can manipulate with JS
+    
+    // Different Methods
+        // getElementById
+            // accepts a string which is the name of an 'id' in the DOM 
+            // finds the FIRST matching 'id'
+            document.getElementById("main");
 
-    // retrieving an item in localStorage
-        // getItem method (only passing in the key)
+            // get back a special object: HTMLElement
+            // excat kind of object depends on what we select (HTMLDivElement vs HTMLParagraphElement)
+        
+        // getElementByTagName
+            // accepts string which is the name of an element in DOM
+            // returns a list of ALL of the elements that match the string passed into the function
+            document.getElementsByTagName("li");
 
-localStorage.getItem("firstName"); // "Colt"
-    // or
-localStorage.firstName //"Colt"
+            // so all the 'li's in the document via HTMLCollection
+            // looks like an array and can access it at a specific index or use a loop
+            // CANNOT use common methods ex. push/pop/indexOf/includes
 
-    // should have access even after a refresh
+        // getElementByClassName
+            // accepts string name of an element in DOM
+            // returns list of ALL elements that have a class attribute which match the string passed in
+            document.getElementsByClassName("heading");
 
-// Clearing localStorage
-    // delete a key = removeItem function
+            // like tagName we get a special type of array = HTMLCollection
+            
+        // querySelector
+            // a string which is valid CSS selector
+            // returns FIRST element that matches 
+            document.querySelector("#main");
+            document.querySelector("h2.section-heading");
 
-localStorage.removeItem("firstName");
+            // special HTMLElement object is returned
+            // just like ElementById
 
-    // clear everything = clear function
- localStorage.clear();
+        // querySelectorAll
+            // a sting which is valid CSS selector
+            // returns ALL elements that match
+            document.querySelectorAll("li");
+            document.querySelectorAll("ul .nav-links");
 
-//  Adding objects to localStorage
-const friends = ["Lana", "Hayden", "Jessie"];
+            // get back a NodeList
+            // looks like an array
+            // same as ElementByTagName
+            // almost identical to HTMLCollection but has special kinds of nodes
 
-localStorage.setItem("friends", friends);
-localStorage.getItem("friends");
-
-// changes array to a string
-// EVERYTHING put into local storage is converted to string
-
-// to get arrays back use JSON
-// JavaScript Object Notion = lightweight data-interchange format
-// easy for humans to read/write
-// easy for machines to parse and generate
-
-// Working with JSON in browser
-    // built in JSON object + 2 methods
-        // JSON.stringify - convert JS to JSON
-        // JSON.parse     - parses a string as JAON
-
-const friends2 = ["Lana", "Hayden", "Jessie"];
-
-// converts friends array into JSON string
-localStorage.setItem("friends2", JSON.stringify(friends2));
-
-// back into JS - a valid array in this case
-JSON.parse(localStorage.getItem("friends2"));
-
-
-const preferences = {
-    fontSize: '18px',
-    favColor: 'teal'
-}
-// saves as string 
-// returns as preferences: "[object Object]"
-localStorage.setItem('preferences',preferences)
-localStorage.setItem('preferences', JSON.stringify(preferences))
-JSON.parse(localStorage.getItem('preferences'))
-JSON.parse(localStorage.preferences)
-
-// could make a stored item into a const variable:
-const { favColor } = JSON.parse(localStorage.preferences);
-document.body.style.backgroundColor = favColor;
-
-// JSON transcribing javaScript to string and back
-// JSON.stringify{a:1, b:true}
-// JSON version
-// JSON.stringify{"a":"1","b":"true"}
+    // DOM Manipulation
+        // Modifying properties with innerText
+        let h1=document.querySelector("h1");
+        h1.innerText = "Something New!"
 
 // Recap
-    // localStorage = useful for storing info in browse
-    // to store objects - JSON.stringify when setting
-                    //  - JSON.parse when retrieving
-    // if you just want to store info for the time a tab is open - sessionStorage
+    // DOM allows us to use JS to modify HTML
+    // can use methods like querySelector can access elements on the page
+    // using  DOM we can modify elements and attributes
