@@ -1,0 +1,56 @@
+/* hides og checkbox - but still works as 'checked' vs 'unchecked' */
+input[type=checkbox] {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+/* stlyed the label - all you see is the label*/
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 100px;
+	height: 60px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: rgb(41, 129, 184);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+    background: #535252;
+}
+
+label:active:after {
+	width: 60px;
+}
+
+body {
+	height: 100vh;
+}
+
+.dark {
+	background-color: rgb(29, 24, 62);
+	color: rgb(137, 120, 89);
+}
+.dark a {
+	color: rgb(41, 129, 184);
+}
