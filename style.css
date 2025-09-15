@@ -197,6 +197,13 @@ a {
     margin: 20px;
 }
 
+#underConstruction{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
 .about ul{
     font-weight: 700;
     list-style-type: none;    
