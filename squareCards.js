@@ -20,12 +20,20 @@ document.getElementsByClassName("article")[3].addEventListener("click",function(
     window.open("JS/sandbox/sideProjects/tictactoe/tictactoe.html") //where do you want to send them to?
 }
 )
+
 document.getElementsByClassName("article")[4].addEventListener("click",function(){
     window.open("JS/sandbox/sideProjects/squareCards/squareCards.html") //where do you want to send them to?
 }
 )
+
 document.getElementsByClassName("article")[5].addEventListener("click",function(){
     window.open("JS/sandbox/sideProjects/5minis/combo.html") //where do you want to send them to?
 }
 )
+
+document.getElementsByClassName("article")[6].addEventListener("click",function(){
+    window.open("JS/sandbox/sideProjects/pong/pong.html") //where do you want to send them to?
+}
+)
+
 

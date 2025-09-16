@@ -134,7 +134,7 @@
         mainHeading.classList.contains("top-heading") // true
 
     // changing multiple elements
-        const listItems = document.querySelectorAll("li");
+        // const listItems = document.querySelectorAll("li");
 
         // change all to green
         listItems.style.color = "green" //error: cannot set property of 'color of undefined
@@ -152,11 +152,65 @@
         // create new button
         const newButton = document.createElement("button");
         
-        // create new unoredered list
-        const newUnorderedList = document.createElement("ul");
-        
         // create new div element
         const newDiv = document.createElement("div");
         
         newDiv.innerText = "a brand new div!"
         newDiv.style.color = "green"
+
+        // try to make it work? my try
+        body.append(newDiv);
+        div.append(ul);
+
+// Appending Elements
+    // after creation you need to place it in the DOM to SEE it
+    // create new unoredered list
+    // append() method - the parent element ccalls and you pass in the child element that you want inside the parent
+        const ul = document.createElement("ul");
+        const newLi = document.createElement("li");
+        
+        newLi.innerText = "Hello!";
+        ul.append(newLi);
+
+    // append makes it the 'last' child in the parent
+    // 1st child? use prepend() method
+
+// Removing Elements
+    // remove() method - find then remove
+
+    const ul = document.querySelector("ul");
+    ul.remove();
+
+    // function can only be called on 1 element at a time
+
+// Finding Elements near another Element
+    // need to know more abour an element - parents/children
+        // find element and remove some/all of its children
+        // find element and add an element to a child
+    // accessing a parent element
+        // parentElement() method
+        const foundDiv = document.querySelector("div")
+
+        foundDiv.parentElement //<section></section
+    
+    // accessing child of an element
+        // child()
+        foundDiv.children //HTMLCollection(2) [p,ul]
+        foundDiv.firstElementChild //<p></p>
+        foundDiv.lastElementChild // <ul></ul>
+
+    // accessing siblings of element
+        // previousElementSibling or nextElementSibling method
+        foundDiv.previousElementSibling //<h1></h1>
+        foundDiv.nextElementSibling //<div></div>
+
+// Text Nodes 
+    // Node vs Elements
+    // everything in DOM is a NODE    
+    // don't need to worry about nodes for most of the common traversal methods
+    // just know the exist
+
+// Recap
+    // DOM allows us to use JS to find/mod element and their attributes
+    // can mod text, styles and much more using DOM
+    // easily mod multiple elements - can iterate over a list of elements and change each one using loops
