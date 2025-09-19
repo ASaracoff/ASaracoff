@@ -15,7 +15,30 @@
         // getElementByTagName
 
 // Mod Elements in DOM
-    // Accessing Text 
+// innerText - select <> text between <>
+    // in console
+    const h1 = document.querySelector('h1');
+    h1 // <h1>Giant Sequoia</h1>
+    h1.innerText // "Giant Sequoia"
+    h1.innerText = "Go Away!" //"Go Away!"
+
+// textContent v innerText
+    // text - only html visible text
+    // content - visible html text, but also script tags, css - no comments 
+
+    // text - limited - rendered text only
+    // content - more vast -  doesn't care about what is hidding/showing
+
+    // innerText is newwer and more commonly used
+    // textContent is more OG
+
+    // innerHTML
+    // ex. call <ol> you will get <li>'s aswell as anyhting inside those <li>'s
+
+    // use innerText when receiving content from users that will be added to the page = will be presented as TEXT only
+    // if innerHTML is used the user could insert rogue <script> tags harming or changing the code
+
+// Accessing Text 
     const mainGreeting = document.getElementById("main-greeting")
 
     console.log(mainGreeting.innerText) //"Hello World!"
@@ -60,6 +83,7 @@
 // Mod Styling
     // very common to change inline style for an element
     // access ANY inline style for an element - style
+    // doesn't show external CSS - attached css file
 
     // get hi
     const mainHeading = document.querySelector("h1")
@@ -74,6 +98,15 @@
     // mainHeading.style.background-color //Error!!
     // camelCase!
     mainHeading.style.backgroundColor = "green"
+
+
+    // change styles of multiple elements: for loop!
+
+    const listItems2 = document.querySelectorAll('li');
+    for ( let listItem1 of listItems2){
+        listItem1.style.color = 'red';
+    }
+
 
 // Mod Attributes
     // access = getAttribute  

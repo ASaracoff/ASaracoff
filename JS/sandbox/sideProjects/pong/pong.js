@@ -40,7 +40,7 @@ function update(time) {
     // Update Code
     // delta fluctuated
     // (time, [player paddle, computer paddle])
-    ball.update(delta, [playerPaddle.rect(), computerPaddle.rect()])
+    // ball.update(delta, [playerPaddle.rect(), computerPaddle.rect()])
 
     // update computer paddle
     // ball.y - paddle needs to know where the ball is

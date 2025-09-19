@@ -2,12 +2,12 @@
 
 // only thing changed is the [] index #
 document.getElementsByClassName("article")[0].addEventListener("click",function(){
-    window.open("proj/film2018/index.html") //where do you want to send them to?
+    window.open("sites/film2018/index.html") //where do you want to send them to?
 }
 )
 
 document.getElementsByClassName("article")[1].addEventListener("click",function(){
-    window.open("proj/movies2012/index.html") //where do you want to send them to?
+    window.open("sites/movies2012/index.html") //where do you want to send them to?
 }
 )
 
@@ -32,6 +32,11 @@ document.getElementsByClassName("article")[5].addEventListener("click",function(
 )
 
 document.getElementsByClassName("article")[6].addEventListener("click",function(){
+    window.open("JS/sandbox/sideProjects/snake/snake.html") //where do you want to send them to?
+}
+)
+
+document.getElementsByClassName("article")[7].addEventListener("click",function(){
     window.open("JS/sandbox/sideProjects/pong/pong.html") //where do you want to send them to?
 }
 )

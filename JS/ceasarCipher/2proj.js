@@ -14,18 +14,6 @@ const friend = 'BRUTUS';
 const shiftValue = 3;
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-// generate random alphabetical letter
-function randomAlpha(){
-return alphabet[Math.floor(Math.random() * alphabet.length)];
-}
-
-// is letter found in the alphabet? if not return letter
-function notAlpa(letter){
-    if (alphabet.includes(letter)){
-        return 'yes'
-    }
-    return letter
-}
 
 // encrypt a letter
 function encryptLetter(letter, shift) {
@@ -37,15 +25,66 @@ function encryptLetter(letter, shift) {
 console.log(encryptLetter('a',3))
 
 
+// encypt a whole message
+function encryptMessage(word, shift){
+    let encryptedMessage = ''
+    for( i=0 ; i < word.length; i++){
+        encryptedMessage += encryptLetter(word[i], shift);
+    }
+    
+    return addRandomChara(encryptedMessage);    
+}
+
+console.log(encryptMessage('BRUTUS',3))
+console.log(encryptMessage('GARDEN',3))
+console.log(encryptMessage('BRUTUSisatthegarden',3))
+
+
+
+
 // decrypt letter
 function decryptLetter(letter, shift) {
     const index = alphabet.indexOf(letter.toLowerCase());
-    const newIndex = (index - shift) % alphabet.length; //current letter index + shift number
+    const newIndex = (index - shift  + alphabet.length) % alphabet.length; //current letter index + shift number
     return alphabet[newIndex]    
 }
 
 console.log(decryptLetter('d',3))
 
+
+
+// decrypt message base
+
+function decryptMessage(word, shift){
+    let decryptedMessage = ''
+    for( i=0 ; i < word.length; i++){
+        decryptedMessage += decryptLetter(word[i], shift);
+    }
+    return removeRandomChara(decryptedMessage.toUpperCase());
+}
+console.log("")
+console.log(decryptMessage('eusxwpxv',3))
+console.log(decryptMessage('jdkugxhq',3))
+console.log(decryptMessage('eusxwxxvhlvxdwpwknhjzduyghyq',3))
+
+
+console.log("")
+
+// generate random alphabetical letter
+function randomAlpha(){
+return alphabet[Math.floor(Math.random() * alphabet.length)];
+}
+
+
+// is letter found in the alphabet? if not return letter
+function notAlpa(letter){
+    if (alphabet.includes(letter)){
+        return letter
+    }
+    return letter
+}
+
+console.log(notAlpa(" ,!"))
 
 // add random letter every 2 
 // had to research how to loop every 2 - Bing AI helped
@@ -78,34 +117,3 @@ function removeRandomChara(input) {
 }
 
 console.log(removeRandomChara("12i34r56i78w90s1"))
-
-// encypt a whole message
-function encryptMessage(word, shift){
-    let encryptedMessage = ''
-    for( i=0 ; i < word.length; i++){
-        encryptedMessage += encryptLetter(word[i], shift);
-    }
-    
-    return addRandomChara(encryptedMessage);    
-}
-
-console.log(encryptMessage('BRUTUS',3))
-console.log(encryptMessage('BRUTUSisatthegarden',3))
-
-
-
-
-// decrypt message base
-
-function decryptMessage(word, shift){
-    let decryptedMessage = ''
-    for( i=0 ; i < word.length; i++){
-        decryptedMessage += decryptLetter(word[i], shift);
-    }
-    return removeRandomChara(decryptedMessage.toUpperCase());
-}
-
-console.log(decryptMessage('euxwxv',3))
-console.log(decryptMessage('JDUGHQ',3))
-console.log(decryptMessage('euxwxvlvdwwkhjdughq',3))
-
