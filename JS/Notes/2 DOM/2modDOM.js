@@ -141,9 +141,17 @@
         // changes attribute
         firstInput.value = "Just added some value!"
 
+        const range = document.querySelector('input [type="range"]')
+        range.value = 5;
+
+        // can be used in all form elements
+        // value is the most common
+
 // Manipulating Classes
+    // why class? instead of modifying/changing code line by line - change class name!
+        // css you can have all the code easily pre-written meaning less code in JS
     // setAttribute("class") - override the class
-    // className - give you a strin representation of the class
+    // className - give you a string representation of the class
     // classList - gives an array-like object to add/remove/toggle classes
 
     // setAttribute("class")
@@ -162,7 +170,11 @@
         mainHeading.classList // []
         // when adding a class make sure to add a " " or else it will meld with the existing class!
         mainHeading.classList.add(" top-heading") // ["top-heading"]
+        
         mainHeading.classList.remove("section-headingtop-heading") // []
+
+
+        // toggle is AWESOME - can turn on/off class
         mainHeading.classList.toggle("top-heading") // true
         mainHeading.classList.contains("top-heading") // true
 
@@ -181,6 +193,7 @@
         // Creating Elements
             // createElement() function
             // creates an empty element
+                // will need to fill it
 
         // create new button
         const newButton = document.createElement("button");
@@ -188,6 +201,7 @@
         // create new div element
         const newDiv = document.createElement("div");
         
+        // fill it in
         newDiv.innerText = "a brand new div!"
         newDiv.style.color = "green"
 
@@ -198,15 +212,19 @@
 // Appending Elements
     // after creation you need to place it in the DOM to SEE it
     // create new unoredered list
-    // append() method - the parent element ccalls and you pass in the child element that you want inside the parent
-        const ul = document.createElement("ul");
+    // append() method - the parent element calls and you pass in the child element that you want inside the parent
+        const ul2 = document.createElement("ul");
         const newLi = document.createElement("li");
         
         newLi.innerText = "Hello!";
-        ul.append(newLi);
+        ul2.append(newLi);
 
     // append makes it the 'last' child in the parent
     // 1st child? use prepend() method
+    // append is newer, OG is appendChild()
+    // append is better - can add more at one time
+
+    // prepend - add to the begining of that element rather than the end
 
 // Removing Elements
     // remove() method - find then remove
@@ -228,20 +246,26 @@
     
     // accessing child of an element
         // child()
-        foundDiv.children //HTMLCollection(2) [p,ul]
-        foundDiv.firstElementChild //<p></p>
-        foundDiv.lastElementChild // <ul></ul>
+        foundDiv.children // HTMLCollection(2) [p,ul]
+        foundDiv.firstElementChild // <p></p>
+        foundDiv.lastElementChild  // <ul></ul>
 
     // accessing siblings of element
         // previousElementSibling or nextElementSibling method
         foundDiv.previousElementSibling //<h1></h1>
         foundDiv.nextElementSibling //<div></div>
 
+        // if no sibling = null
+
 // Text Nodes 
     // Node vs Elements
     // everything in DOM is a NODE    
+    // not all nodes are elements
+        // text, comments, empty lines/returns
+        listItems.childNodes //displays all nodes
+
     // don't need to worry about nodes for most of the common traversal methods
-    // just know the exist
+    // just know they exist
 
 // Recap
     // DOM allows us to use JS to find/mod element and their attributes
