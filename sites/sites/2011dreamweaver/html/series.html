@@ -1,0 +1,206 @@
+
+<!DOCTYPE html >
+<html lang=" en" >
+<head>
+<title>The MMM::Series</title>
+<meta charset="utf- 8">
+<link rel="shortcut icon" type="image/xcon" href="file:///E|/dreamweaver/mmm/html/favicon.ico" />
+<script src="file:///E|/dreamweaver/mmm/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<link href="file:///E|/dreamweaver/mmm/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+#series {
+	position: relative;
+	width: 550px;
+	height: 200px;
+	left: 100px;
+}
+</style>
+<link href="../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+<link href="../mmm.css" rel="stylesheet" type="text/css">
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="../SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#apDiv2 {
+	position: absolute;
+	width: 394px;
+	height: 115px;
+	z-index: 1;
+	left: 455px;
+	top: 115px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 432px;
+	top: 109px;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('../assets/images/other/read_manga_now.png')">
+<div id="wrapper">
+<h1>The MMM</h1>
+<div id="menu_bg">
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a href="../index.html">Home</a>    </li>
+  <li><a href="genres.html">Genres</a></li>
+  <li><a href="series.html">Series</a>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="links.html">Links</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="hints.html">Hints</a></li>
+</ul>
+</div>
+<h2><a name="top"></a>Series</h2>
+<div id="apDiv3"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('invisiblerollover','','../assets/images/other/read_manga_now.png',1)"><img src="../assets/images/other/blank.JPG" alt="read more manga now!" width="359" height="95" id="invisiblerollover" onClick="MM_effectAppearFade(this, 3000, 0, 100, false)"></a></div>
+<p>There are four different types of series:</p>
+<div id="TabbedPanels1" class="TabbedPanels">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab" tabindex="0">Complete</li>
+    <li class="TabbedPanelsTab" tabindex="0">Current</li>
+    <li class="TabbedPanelsTab" tabindex="0">Hiatus</li>
+    <li class="TabbedPanelsTab" tabindex="0">One Shots</li>
+  </ul>
+  <div class="TabbedPanelsContentGroup">
+    <div class="TabbedPanelsContent"><span class="AccordionPanelContent"><a href="#com">Complete</a> - a series that has already been totally, completely released and translated/ A series inwhich you can finish in one sitting if you have the time.</span></div>
+    <div class="TabbedPanelsContent"><span class="AccordionPanelContent"><a href="#cur">Current</a> - the story has not ended yet so you have to wait anywhere between 1 week to 1~2 months for the next chapter. Or the series is complete in the land of origin but is not fully translated yet.</span></div>
+    <div class="TabbedPanelsContent"><span class="AccordionPanelContent"><a href="#hia">Hiatus</a> - on a break because of the artists health or other issues. These can be anywhere between 1 year and 6+ years....can also come to a point where the artist cannot finish the series which makes it into an unfinished series.</span></div>
+    <div class="TabbedPanelsContent"><span class="AccordionPanelContent"><a href="#os">One Shots</a> - series that are only one chapter long, usually a debute of a new artist or a trial to see how the audience would react to specific subject matter. Also can be just a filler for one of the magazines or a side story of a mainstream series.</span></div>
+  </div>
+</div>
+<p>&nbsp;</p>
+<table width="716" height="239" border="0" align="center">
+  <tr align="center">
+    <td width="355" align="left"><h3><a name="com"></a>Complete</h3></td>
+    <td width="351" align="left"><h3><a name="cur"></a>Current</h3></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><ul>
+      <li><a href="series/anima.html">+Anima</a></li>
+      <li><a href="series/aaa.html">AAA</a></li>
+      <li><a href="series/aihime.html">Ai Hime - Ai to Himegoto</a></li>
+      <li><a href="series/anuki.html">Anuki</a></li>
+      <li><a href="series/baby_pop.html">Baby Pop</a></li>
+      <li><a href="series/backstage_prince.html">Backstage Prince</a></li>
+      <li><a href="series/basara.html">Basara</a></li>
+      <li><a href="series/beast_master.html">Beast Master</a></li>
+      <li><a href="series/boyfriend.html">Boyfriend</a></li>
+      <li><a href="series/bring_it_on.html">Bring It On!</a></li>
+      <li><a href="series/crazy_girl.html">Crazy Girl Shin Bia</a></li>
+      <li><a href="series/darling.html">Darling</a></li>
+      <li><a href="series/dear_diary.html">Dear Diary</a></li>
+      <li><a href="series/desert_lord_baby.html">Desert Lord's Baby, The</a></li>
+      <li><a href="series/donotfight.html">Do Not Fight</a></li>
+      <li><a href="series/dragon_half.html">Dragon Half</a></li>
+      <li><a href="series/doubt.html">Doubt</a></li>
+      <li><a href="series/enigma.html">Enigma</a></li>
+      <li><a href="series/eyeshield21.html">Eyeshield 21</a></li>
+      <li><a href="series/from_far_away.html">From Far Away</a></li>
+      <li><a href="series/fruits_basket.html">Fruits Basket</a></li>
+      <li><a href="series/fma.html">Fullmetal Alchemist</a></li>
+      <li><a href="series/goodluck.html">Good Luck</a></li>
+      <li><a href="series/happy_murphy.html">Happy &amp; Murphy</a></li>
+      <li><a href="series/imadoki.html">Imadoki</a></li>
+      <li><a href="series/ingenuo.html">Ingenuo</a></li>
+      <li><a href="series/kare_first_love.html">Kare First Love</a></li>
+      <li><a href="series/koi_ga_moumoku_nara.html">Koi Ga Moumoku Nara</a> <a href="series/koi_ga_moumoku_nara.html"> <br>
+        (If Love Be Blind)</a></li>
+      <li><a href="series/kurohime.html">Kurohime</a></li>
+      <li><a href="series/meru_puri.html">Meru Puri</a></li>
+      <li><a href="series/model.html">Model</a></li>
+      <li><a href="series/omamori_no_kami.html">Omamori no Kamisama</a></li>
+      <li><a href="series/pretty_face.html">Pretty Face</a></li>
+      <li><a href="series/pot.html">Prince of Tennis</a></li>
+      <li><a href="series/red_lion.html">Red Lion</a></li>
+      <li><a href="series/red_river.html">Red River</a></li>
+      <li><a href="series/rosario_vampire.html">Rosario Vampire</a></li>
+      <li><a href="series/rurouni_kenshin.html">Rurouni Kenshin</a></li>
+      <li><a href="series/shinigami_lovers.html"> Shinigami Lovers</a></li>
+      <li><a href="series/shinshi_doumei_cross.html">Shinshi Doumei Cross </a></li>
+      <li><a href="series/theone.html">The One</a></li>
+      <li><a href="series/tomodachi.html">Tomodachi</a></li>
+      <li><a href="series/yume_chu.html">Yume Chu</a></li>
+    </ul></td>
+    <td><ul>
+      <li><a href="series/12_prince.html">1/2 Prince</a></li>
+      <li><a href="series/akuma_love_song.html">Akuma to Love Song</a></li>
+      <li><a href="series/berserk.html">Berserk</a></li>
+      <li><a href="series/glass_mask.html">Glass Mask</a></li>
+      <li><a href="series/habituated_to_kiss.html">Habituated to a Kiss</a></li>
+      <li><a href="series/himekei_doll.html">Himekei Doll</a></li>
+      <li><a href="series/love_so_life.html">Love So Life</a></li>
+      <li><a href="series/naruto.html">Naruto</a></li>
+      <li><a href="series/one_piece.html">One Piece</a></li>
+      <li><a href="series/skip_beat.html">Skip Beat!</a></li>
+      <li><a href="series/wchange.html">W Change</a></li>
+    </ul>
+      <h3>&nbsp;</h3>
+      <h3><a name="hia"></a>On Hiatus </h3>
+      <ul>
+        <li><a href="series/hxh.html">Hunter X Hunter</a></li>
+        <li><a href="series/vanilla_ice.html">Vanilla Ice</a></li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3><a name="os"></a>One Shots </h3>
+      <ul>
+        <li><a href="series/100_too_cheap.html">$100 is Too Cheap</a></li>
+        <li><a href="series/half_half.html">Half & Half</a></li>
+        <li><a href="series/nandemo_arisa.html">Nandemo Arisa</a></li>
+        <li><a href="series/sleeping_prince.html">Sleeping Prince</a></li>
+      </ul>
+      <p></p>
+      <p>&nbsp;</p></td>
+  </tr>
+</table>
+<p align="right"><a href="#top">Back to the Top</a>
+  <footer>
+</p>
+<div id="footer">
+  <p>&nbsp;</p>
+  <p><small><em>Copyright &copy; 2011 TheMMM.</em><br>
+      <a href="mailto:themmmweb@live.com">themmmweb@live.com</a><br>
+      <!-- #BeginDate format:Am1a -->November 19, 2012 1:21 PM<!-- #EndDate -->
+  </small></p></div></div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>

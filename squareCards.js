@@ -2,7 +2,7 @@
 
 // only thing changed is the [] index #
 document.getElementsByClassName("article")[0].addEventListener("click",function(){
-    window.open("sites/film2018/index.html") //where do you want to send them to?
+    window.open("sites/websites.html") //where do you want to send them to?
 }
 )
 

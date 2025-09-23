@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html lang=" en" >
+<head>
+<title>The MMM::Magical X Miracle</title>
+<meta charset="utf- 8">
+<link rel="stylesheet" href="mmm.css">
+</head>
+<body>
+<div id="wrapper">
+<h1>The MMM</h1><div id="nav">
+<a href="index.html">Home</a>  
+<a href="genres.html">Genres</a>  
+<a href="html/series.html">Series</a>  <a href="html/links.html"> Links</a></div>  <a href="about.html">About Us</a>  <a href="contact.html">Contact Us</a></div></div>
+<h2>Title</h2>
+<div id="content"><img src=".jpg" align="left" alt="cover of ">
+<ul>
+<li>Alternative Name(s): </li><br>
+<li>Author(s):  </li><br>
+<li>Genres: </li><br>
+<li>Release:  </li><br>
+<li>Satus:  </li><br>
+<li>Type:   </li><br>
+<li>Length: </li><br>
+<li>Read Online at <a href="http://www.mangatank.com/manga/">MangaTank</a> , <a href="http://mangafox.me/manga//">MangaFox</a>  , <a href="http://www.mangapark.com/manga/">MangaPark</a>or at <a href="http://www.mangahere.com/manga//">MangaHere</a> </li>
+<li><a href="http://www.mangaupdates.com/>More Info</a></li><br>
+</ul>
+
+<p>
+Notes
+
+</p>
+<footer>
+<div id="footer"><small><em>Copyright © 2011 TheMMM.</em><br>
+<a href="mailto:anna@saracoff.com">anna@saracoff.com</a></small></div>
+<footer></div>
+</body>
+</html>

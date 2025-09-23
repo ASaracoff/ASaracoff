@@ -1,0 +1,403 @@
+<NotepadPlus>
+    <Project name="Web">
+        <Folder name="assign1">
+            <Folder name="mypractice">
+                <Folder name="2.14">
+                    <File name="21200\assign1\mypractice\2.14\contact.html" />
+                    <File name="21200\assign1\mypractice\2.14\index.html" />
+                    <File name="21200\assign1\mypractice\2.14\services.html" />
+                </Folder>
+                <File name="21200\assign1\mypractice\2.14.zip" />
+                <File name="21200\assign1\mypractice\anchor.html" />
+                <File name="21200\assign1\mypractice\blockquote.html" />
+                <File name="21200\assign1\mypractice\br.html" />
+                <File name="21200\assign1\mypractice\casita.html" />
+                <File name="21200\assign1\mypractice\description.html" />
+                <File name="21200\assign1\mypractice\design.html" />
+                <File name="21200\assign1\mypractice\heading.html" />
+                <File name="21200\assign1\mypractice\hr.html" />
+                <File name="21200\assign1\mypractice\linebreak.html" />
+                <File name="21200\assign1\mypractice\mypractice.komodoproject" />
+                <File name="21200\assign1\mypractice\ol.html" />
+                <File name="21200\assign1\mypractice\ola.html" />
+                <File name="21200\assign1\mypractice\paragraph.html" />
+                <File name="21200\assign1\mypractice\structure.html" />
+                <File name="21200\assign1\mypractice\ul.html" />
+            </Folder>
+            <Folder name="pacific">
+                <File name="21200\assign1\pacific\activities.html" />
+                <File name="21200\assign1\pacific\index.html" />
+                <File name="21200\assign1\pacific\reservations.html" />
+                <File name="21200\assign1\pacific\yurts.html" />
+            </Folder>
+            <Folder name="yoga">
+                <File name="21200\assign1\yoga\classes.html" />
+                <File name="21200\assign1\yoga\contact.html" />
+                <File name="21200\assign1\yoga\index.html" />
+                <File name="21200\assign1\yoga\schedule.html" />
+            </Folder>
+            <File name="21200\assign1\index.html" />
+        </Folder>
+        <Folder name="assign2">
+            <File name="21200\assign2\assign2.docx" />
+            <File name="21200\assign2\assign2.pdf" />
+            <File name="21200\assign2\part1.docx" />
+            <File name="21200\assign2\part2.docx" />
+            <File name="21200\assign2\part3.docx" />
+            <File name="21200\assign2\snlogo.png" />
+        </Folder>
+        <Folder name="assign3">
+            <Folder name="ch4pacific">
+                <File name="21200\assign3\ch4pacific\activities.html" />
+                <File name="21200\assign3\ch4pacific\index.html" />
+                <File name="21200\assign3\ch4pacific\pacific.css" />
+                <File name="21200\assign3\ch4pacific\reservations.html" />
+                <File name="21200\assign3\ch4pacific\yurts.html" />
+            </Folder>
+            <Folder name="ch5pacific">
+                <File name="21200\assign3\ch5pacific\activities.html" />
+                <File name="21200\assign3\ch5pacific\coast.jpg" />
+                <File name="21200\assign3\ch5pacific\favicon.ico" />
+                <File name="21200\assign3\ch5pacific\index.html" />
+                <File name="21200\assign3\ch5pacific\marker.gif" />
+                <File name="21200\assign3\ch5pacific\pacific.css" />
+                <File name="21200\assign3\ch5pacific\reservations.html" />
+                <File name="21200\assign3\ch5pacific\sunset.jpg" />
+                <File name="21200\assign3\ch5pacific\trail.jpg" />
+                <File name="21200\assign3\ch5pacific\yurt.jpg" />
+                <File name="21200\assign3\ch5pacific\yurts.html" />
+            </Folder>
+            <Folder name="mypractice">
+                <File name="21200\assign3\mypractice\inline.html" />
+                <File name="21200\assign3\mypractice\inline2.html" />
+            </Folder>
+            <Folder name="seniornet">
+                <Folder name="assets">
+                    <File name="21200\assign3\seniornet\assets\logo.jpg" />
+                    <File name="21200\assign3\seniornet\assets\logo.png" />
+                    <File name="21200\assign3\seniornet\assets\logo2.png" />
+                    <File name="21200\assign3\seniornet\assets\SeniorNet logo-1.png" />
+                </Folder>
+                <File name="21200\assign3\seniornet\about.html" />
+                <File name="21200\assign3\seniornet\classes.html" />
+                <File name="21200\assign3\seniornet\contact.html" />
+                <File name="21200\assign3\seniornet\index.html" />
+                <File name="21200\assign3\seniornet\resources.html" />
+                <File name="21200\assign3\seniornet\schedule.html" />
+                <File name="21200\assign3\seniornet\seniornet.css" />
+            </Folder>
+        </Folder>
+        <Folder name="assign4">
+            <Folder name="ch6pacific">
+                <File name="21200\assign4\ch6pacific\activities.html" />
+                <File name="21200\assign4\ch6pacific\coast.jpg" />
+                <File name="21200\assign4\ch6pacific\favicon.ico" />
+                <File name="21200\assign4\ch6pacific\index.html" />
+                <File name="21200\assign4\ch6pacific\marker.gif" />
+                <File name="21200\assign4\ch6pacific\pacific.css" />
+                <File name="21200\assign4\ch6pacific\reservations.html" />
+                <File name="21200\assign4\ch6pacific\sunset.jpg" />
+                <File name="21200\assign4\ch6pacific\trail.jpg" />
+                <File name="21200\assign4\ch6pacific\yurt.jpg" />
+                <File name="21200\assign4\ch6pacific\yurts.html" />
+            </Folder>
+            <Folder name="ch7pacific">
+                <File name="21200\assign4\ch7pacific\activities.html" />
+                <File name="21200\assign4\ch7pacific\coast.jpg" />
+                <File name="21200\assign4\ch7pacific\coast2.jpg" />
+                <File name="21200\assign4\ch7pacific\favicon.ico" />
+                <File name="21200\assign4\ch7pacific\index.html" />
+                <File name="21200\assign4\ch7pacific\marker.gif" />
+                <File name="21200\assign4\ch7pacific\pacific.css" />
+                <File name="21200\assign4\ch7pacific\reservations.html" />
+                <File name="21200\assign4\ch7pacific\sunset.jpg" />
+                <File name="21200\assign4\ch7pacific\trail.jpg" />
+                <File name="21200\assign4\ch7pacific\yurt.jpg" />
+                <File name="21200\assign4\ch7pacific\yurts.html" />
+            </Folder>
+            <Folder name="ch8pacific">
+                <File name="21200\assign4\ch8pacific\activities.html" />
+                <File name="21200\assign4\ch8pacific\coast.jpg" />
+                <File name="21200\assign4\ch8pacific\coast2.jpg" />
+                <File name="21200\assign4\ch8pacific\favicon.ico" />
+                <File name="21200\assign4\ch8pacific\index.html" />
+                <File name="21200\assign4\ch8pacific\marker.gif" />
+                <File name="21200\assign4\ch8pacific\pacific.css" />
+                <File name="21200\assign4\ch8pacific\reservations.html" />
+                <File name="21200\assign4\ch8pacific\sunset.jpg" />
+                <File name="21200\assign4\ch8pacific\trail.jpg" />
+                <File name="21200\assign4\ch8pacific\yurt.jpg" />
+                <File name="21200\assign4\ch8pacific\yurts.html" />
+            </Folder>
+            <Folder name="handson6">
+                <File name="21200\assign4\handson6\box2.html" />
+                <File name="21200\assign4\handson6\ex.css" />
+                <File name="21200\assign4\handson6\index.html" />
+            </Folder>
+            <Folder name="indynet">
+                <Folder name="assets">
+                    <File name="21200\assign4\indynet\assets\bb.png" />
+                    <File name="21200\assign4\indynet\assets\comp.png" />
+                    <File name="21200\assign4\indynet\assets\globe.jpg" />
+                    <File name="21200\assign4\indynet\assets\logo.jpg" />
+                    <File name="21200\assign4\indynet\assets\logo.png" />
+                    <File name="21200\assign4\indynet\assets\logo2.png" />
+                    <File name="21200\assign4\indynet\assets\pro.png" />
+                    <File name="21200\assign4\indynet\assets\SeniorNet logo-1.png" />
+                    <File name="21200\assign4\indynet\assets\star.png" />
+                </Folder>
+                <File name="21200\assign4\indynet\about.html" />
+                <File name="21200\assign4\indynet\favicon.ico" />
+                <File name="21200\assign4\indynet\index.html" />
+                <File name="21200\assign4\indynet\seniornet.css" />
+            </Folder>
+        </Folder>
+        <Folder name="assign5" />
+        <Folder name="cprojects">
+            <Folder name="film">
+                <Folder name="assets">
+                    <Folder name="clips">
+                        <File name="21200\cprojects\film\assets\clips\lmop.mp4" />
+                    </Folder>
+                    <Folder name="files">
+                        <File name="21200\cprojects\film\assets\files\bnc.pdf" />
+                        <File name="21200\cprojects\film\assets\files\bogdanovich.pdf" />
+                        <File name="21200\cprojects\film\assets\files\cawelti.pdf" />
+                        <File name="21200\cprojects\film\assets\files\chandler.pdf" />
+                        <File name="21200\cprojects\film\assets\files\gallafent.pdf" />
+                        <File name="21200\cprojects\film\assets\files\harvey.pdf" />
+                        <File name="21200\cprojects\film\assets\files\maltby.pdf" />
+                        <File name="21200\cprojects\film\assets\files\place.pdf" />
+                        <File name="21200\cprojects\film\assets\files\schrader.pdf" />
+                        <File name="21200\cprojects\film\assets\files\syllabus.pdf" />
+                    </Folder>
+                    <Folder name="imgs">
+                        <Folder name="film">
+                            <File name="21200\cprojects\film\assets\imgs\film\ajm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\bhm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\chm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\cm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\dim.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\dm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\gcm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\kmdm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\lm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\mfm.jpg" />
+                            <File name="21200\cprojects\film\assets\imgs\film\mmsm.jpg" />
+                        </Folder>
+                        <File name="21200\cprojects\film\assets\imgs\1.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\2.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\3.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\4.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\5.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\6.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\6a.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\6b.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\bkrnd.jpg" />
+                        <File name="21200\cprojects\film\assets\imgs\blood.png" />
+                        <File name="21200\cprojects\film\assets\imgs\bullet.png" />
+                        <File name="21200\cprojects\film\assets\imgs\bullet2.png" />
+                        <File name="21200\cprojects\film\assets\imgs\dagger.png" />
+                        <File name="21200\cprojects\film\assets\imgs\dagger2.png" />
+                        <File name="21200\cprojects\film\assets\imgs\Drop-of-Blood.png" />
+                        <File name="21200\cprojects\film\assets\imgs\Drop-of-Blood2.png" />
+                        <File name="21200\cprojects\film\assets\imgs\favicon.ico" />
+                        <File name="21200\cprojects\film\assets\imgs\weapon-dagger-128.png" />
+                    </Folder>
+                </Folder>
+                <Folder name="html">
+                    <Folder name="articles">
+                        <File name="21200\cprojects\film\html\articles\berrettini.html" />
+                        <File name="21200\cprojects\film\html\articles\bnc.html" />
+                        <File name="21200\cprojects\film\html\articles\bogdanovich.html" />
+                        <File name="21200\cprojects\film\html\articles\britton.html" />
+                        <File name="21200\cprojects\film\html\articles\cawelti.html" />
+                        <File name="21200\cprojects\film\html\articles\chandler.html" />
+                        <File name="21200\cprojects\film\html\articles\gallanfent.html" />
+                        <File name="21200\cprojects\film\html\articles\harvey.html" />
+                        <File name="21200\cprojects\film\html\articles\maltby.html" />
+                        <File name="21200\cprojects\film\html\articles\naremore.html" />
+                        <File name="21200\cprojects\film\html\articles\place.html" />
+                        <File name="21200\cprojects\film\html\articles\prod.html" />
+                        <File name="21200\cprojects\film\html\articles\schrader.html" />
+                        <File name="21200\cprojects\film\html\articles\server.html" />
+                        <File name="21200\cprojects\film\html\articles\template.html" />
+                    </Folder>
+                    <Folder name="films">
+                        <File name="21200\cprojects\film\html\films\ajm.html" />
+                        <File name="21200\cprojects\film\html\films\bhm.html" />
+                        <File name="21200\cprojects\film\html\films\chm.html" />
+                        <File name="21200\cprojects\film\html\films\cm.html" />
+                        <File name="21200\cprojects\film\html\films\dim.html" />
+                        <File name="21200\cprojects\film\html\films\dm.html" />
+                        <File name="21200\cprojects\film\html\films\drm.html" />
+                        <File name="21200\cprojects\film\html\films\gcm.html" />
+                        <File name="21200\cprojects\film\html\films\gsm.html" />
+                        <File name="21200\cprojects\film\html\films\kmdm.html" />
+                        <File name="21200\cprojects\film\html\films\lgm.html" />
+                        <File name="21200\cprojects\film\html\films\lm.html" />
+                        <File name="21200\cprojects\film\html\films\mfm.html" />
+                        <File name="21200\cprojects\film\html\films\mmsm.html" />
+                        <File name="21200\cprojects\film\html\films\sdm.html" />
+                        <File name="21200\cprojects\film\html\films\temp.html" />
+                        <File name="21200\cprojects\film\html\films\toem.html" />
+                    </Folder>
+                    <Folder name="notes">
+                        <File name="21200\cprojects\film\html\notes\cn.html" />
+                        <File name="21200\cprojects\film\html\notes\din.html" />
+                        <File name="21200\cprojects\film\html\notes\ln.html" />
+                        <File name="21200\cprojects\film\html\notes\mfn.html" />
+                        <File name="21200\cprojects\film\html\notes\mmsn.html" />
+                        <File name="21200\cprojects\film\html\notes\temp.html" />
+                    </Folder>
+                    <File name="21200\cprojects\film\html\about.html" />
+                    <File name="21200\cprojects\film\html\articles.html" />
+                    <File name="21200\cprojects\film\html\aspects.html" />
+                    <File name="21200\cprojects\film\html\films.html" />
+                    <File name="21200\cprojects\film\html\notes.html" />
+                </Folder>
+                <File name="21200\cprojects\film\favicon.ico" />
+                <File name="21200\cprojects\film\film.css" />
+                <File name="21200\cprojects\film\filmnoir.komodoproject" />
+                <File name="21200\cprojects\film\index.html" />
+            </Folder>
+            <Folder name="speech">
+                <Folder name="assets">
+                    <Folder name="files">
+                        <File name="21200\cprojects\speech\assets\files\syllabus.pdf" />
+                    </Folder>
+                    <Folder name="imgs" />
+                </Folder>
+                <Folder name="ims">
+                    <File name="21200\cprojects\speech\ims\s.png" />
+                </Folder>
+                <File name="21200\cprojects\speech\explain.html" />
+                <File name="21200\cprojects\speech\favicon2.ico" />
+                <File name="21200\cprojects\speech\index.html" />
+                <File name="21200\cprojects\speech\info.html" />
+                <File name="21200\cprojects\speech\intro.html" />
+                <File name="21200\cprojects\speech\persuasive.html" />
+                <File name="21200\cprojects\speech\speech.komodoproject" />
+            </Folder>
+        </Folder>
+        <Folder name="final" />
+        <File name="21200\assign212.html" />
+        <File name="21200\cover.jpg" />
+        <File name="21200\favicon.ico" />
+        <File name="21200\foot.png" />
+        <File name="21200\h1.jpg" />
+        <File name="21200\headr.jpg" />
+        <File name="21200\headr.png" />
+        <File name="21200\p.png" />
+        <File name="21200\web.css" />
+        <File name="21200\web.komodoproject" />
+    </Project>
+    <Project name="Film Noir">
+        <Folder name="assets">
+            <Folder name="clips">
+                <File name="21200\cprojects\film\assets\clips\lmop.mp4" />
+            </Folder>
+            <Folder name="files">
+                <File name="21200\cprojects\film\assets\files\bnc.pdf" />
+                <File name="21200\cprojects\film\assets\files\bogdanovich.pdf" />
+                <File name="21200\cprojects\film\assets\files\cawelti.pdf" />
+                <File name="21200\cprojects\film\assets\files\chandler.pdf" />
+                <File name="21200\cprojects\film\assets\files\gallafent.pdf" />
+                <File name="21200\cprojects\film\assets\files\harvey.pdf" />
+                <File name="21200\cprojects\film\assets\files\maltby.pdf" />
+                <File name="21200\cprojects\film\assets\files\place.pdf" />
+                <File name="21200\cprojects\film\assets\files\schrader.pdf" />
+                <File name="21200\cprojects\film\assets\files\syllabus.pdf" />
+            </Folder>
+            <Folder name="imgs">
+                <Folder name="film">
+                    <File name="21200\cprojects\film\assets\imgs\film\ajm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\bhm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\chm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\cm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\dim.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\dm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\gcm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\kmdm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\lm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\mfm.jpg" />
+                    <File name="21200\cprojects\film\assets\imgs\film\mmsm.jpg" />
+                </Folder>
+                <File name="21200\cprojects\film\assets\imgs\1.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\2.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\3.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\4.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\5.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\6.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\6a.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\6b.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\bkrnd.jpg" />
+                <File name="21200\cprojects\film\assets\imgs\blood.png" />
+                <File name="21200\cprojects\film\assets\imgs\bullet.png" />
+                <File name="21200\cprojects\film\assets\imgs\bullet2.png" />
+                <File name="21200\cprojects\film\assets\imgs\dagger.png" />
+                <File name="21200\cprojects\film\assets\imgs\dagger2.png" />
+                <File name="21200\cprojects\film\assets\imgs\Drop-of-Blood.png" />
+                <File name="21200\cprojects\film\assets\imgs\Drop-of-Blood2.png" />
+                <File name="21200\cprojects\film\assets\imgs\favicon.ico" />
+                <File name="21200\cprojects\film\assets\imgs\weapon-dagger-128.png" />
+            </Folder>
+        </Folder>
+        <Folder name="html">
+            <Folder name="articles">
+                <File name="21200\cprojects\film\html\articles\berrettini.html" />
+                <File name="21200\cprojects\film\html\articles\bnc.html" />
+                <File name="21200\cprojects\film\html\articles\bogdanovich.html" />
+                <File name="21200\cprojects\film\html\articles\britton.html" />
+                <File name="21200\cprojects\film\html\articles\cawelti.html" />
+                <File name="21200\cprojects\film\html\articles\chandler.html" />
+                <File name="21200\cprojects\film\html\articles\gallanfent.html" />
+                <File name="21200\cprojects\film\html\articles\harvey.html" />
+                <File name="21200\cprojects\film\html\articles\maltby.html" />
+                <File name="21200\cprojects\film\html\articles\naremore.html" />
+                <File name="21200\cprojects\film\html\articles\place.html" />
+                <File name="21200\cprojects\film\html\articles\prod.html" />
+                <File name="21200\cprojects\film\html\articles\schrader.html" />
+                <File name="21200\cprojects\film\html\articles\server.html" />
+                <File name="21200\cprojects\film\html\articles\template.html" />
+            </Folder>
+            <Folder name="films">
+                <File name="21200\cprojects\film\html\films\ajm.html" />
+                <File name="21200\cprojects\film\html\films\bhm.html" />
+                <File name="21200\cprojects\film\html\films\chm.html" />
+                <File name="21200\cprojects\film\html\films\cm.html" />
+                <File name="21200\cprojects\film\html\films\dim.html" />
+                <File name="21200\cprojects\film\html\films\dm.html" />
+                <File name="21200\cprojects\film\html\films\drm.html" />
+                <File name="21200\cprojects\film\html\films\gcm.html" />
+                <File name="21200\cprojects\film\html\films\gsm.html" />
+                <File name="21200\cprojects\film\html\films\kmdm.html" />
+                <File name="21200\cprojects\film\html\films\lgm.html" />
+                <File name="21200\cprojects\film\html\films\lm.html" />
+                <File name="21200\cprojects\film\html\films\mfm.html" />
+                <File name="21200\cprojects\film\html\films\mmsm.html" />
+                <File name="21200\cprojects\film\html\films\sdm.html" />
+                <File name="21200\cprojects\film\html\films\temp.html" />
+                <File name="21200\cprojects\film\html\films\toem.html" />
+            </Folder>
+            <Folder name="notes">
+                <File name="21200\cprojects\film\html\notes\cn.html" />
+                <File name="21200\cprojects\film\html\notes\din.html" />
+                <File name="21200\cprojects\film\html\notes\kmdn.html" />
+                <File name="21200\cprojects\film\html\notes\ln.html" />
+                <File name="21200\cprojects\film\html\notes\mfn.html" />
+                <File name="21200\cprojects\film\html\notes\mmsn.html" />
+                <File name="21200\cprojects\film\html\notes\temp.html" />
+            </Folder>
+            <File name="21200\cprojects\film\html\about.html" />
+            <File name="21200\cprojects\film\html\articles.html" />
+            <File name="21200\cprojects\film\html\aspects.html" />
+            <File name="21200\cprojects\film\html\films.html" />
+            <File name="21200\cprojects\film\html\notes.html" />
+        </Folder>
+        <File name="21200\cprojects\film\favicon.ico" />
+        <File name="21200\cprojects\film\film.css" />
+        <File name="21200\cprojects\film\filmnoir.komodoproject" />
+        <File name="21200\cprojects\film\index.html" />
+    </Project>
+</NotepadPlus>
