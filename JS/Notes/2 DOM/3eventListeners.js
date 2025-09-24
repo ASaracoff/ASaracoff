@@ -168,7 +168,7 @@
 // Logo Maker Demo
 
 // Key Events
-    // when a user hits a kwy on keyboard
+    // when a user hits a key on keyboard
     document.addEventListener("keypress", function(e) {
         if (e.key === 'a'){
             // alert("you pressed the 'a' key!");
@@ -322,4 +322,9 @@
     // data-set <= get all data attributes
     // behaves like an object
 
-// Color Paletter Example
+// Color Palette Example
+    const colors = document.querySelector('#colors')
+
+    colors.addEventListener('click', function(e) {
+        document.body.style.backgroundColor = e.target.dataset.hex
+    })
