@@ -1,6 +1,7 @@
 // source: https://www.youtube.com/watch?v=io5FcMAdLyQ
 // 8:02 start
 // 8:14 JS start
+// 9:00 Finish
 
 const imageFileInput = document.querySelector('#imageFileInput');
 const topTextInput = document.querySelector('#topTextInput');

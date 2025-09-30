@@ -2,7 +2,7 @@
 const memeForm = document.querySelector('#meme-form')
 const imgInput = document.querySelector('#img-input')
 const topTextInput = document.querySelector('#topText-input')
-const bottomTextInput = document.querySelector('#textBottom-input')
+const bottomTextInput = document.querySelector('#bottomText-input')
 // button
 const submit = document.querySelector('#submit')
 //where to put the memes
@@ -23,18 +23,16 @@ memeForm.addEventListener('submit', function(e) {
     //toptext
     const topText = topTextInput.value;
     const h2 = document.createElement('h2');
-    h2.setAttribute('class','topText')
-    h2.setAttribute('class',' text-outline')
+    h2.classList.add('topText')
     h2.innerHTML = topText
     meme.appendChild(h2)
 
-    // //bottomtext
-    // let bottomText = bottomTextInput.value;
-    // let h3 = document.createElement('h3');
-    // h3.setAttribute('class','bottomText')
-    // h3.setAttribute('class',' text-outline')
-    // h3.innerHTML = topText
-    // meme.appendChild(h3)
+    //bottomtext
+    let bottomText = bottomTextInput.value;
+    let h3 = document.createElement('h3');
+    h3.classList.add('bottomText')
+    h3.innerHTML = bottomText
+    meme.appendChild(h3)
     
     memeHolder.appendChild(meme)
     
