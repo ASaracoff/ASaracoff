@@ -54,9 +54,9 @@ body{
 
 .meme{
     background-image: url(https://i.ibb.co/0tTMCTt/Website-Img.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 400px;
     height: 300px;
     overflow: hidden;
     color: aliceblue;

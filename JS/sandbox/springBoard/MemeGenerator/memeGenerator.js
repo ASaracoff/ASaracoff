@@ -12,6 +12,9 @@ const memeHolder = document.querySelector('#memeHolder')
 // add button
 memeForm.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (imgInput.value.trim() === "" || topTextInput.value.trim() === "" || bottomTextInput.value.trim() === "") {
+        alert("Must have text in ALL text fields");
+    }else{
     const meme = document.createElement('div');
     
     // add background img
@@ -36,9 +39,10 @@ memeForm.addEventListener('submit', function(e) {
     
     memeHolder.appendChild(meme)
     
-    // imgInput.value = ''
-    // topTextInput.value = ''
-    // bottomTextInput.value = ''
+    imgInput.value = ''
+    topTextInput.value = ''
+    bottomTextInput.value = ''
+    }
 })
 
 
