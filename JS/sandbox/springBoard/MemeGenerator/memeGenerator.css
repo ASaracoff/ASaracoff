@@ -73,7 +73,9 @@ body{
     1px 1px 0 black;   /* Bottom-right */
 }
 
-used AI to find out how to outline text with black
+
+
+/* used AI to find out how to outline text with black */
 .text-outline {
   color: white; /* Text color */
   text-shadow: 
