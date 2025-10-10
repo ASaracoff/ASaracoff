@@ -7,7 +7,7 @@ document.getElementsByClassName("article")[0].addEventListener("click",function(
 )
 
 document.getElementsByClassName("article")[1].addEventListener("click",function(){
-    window.open("sites/movies2012/index.html") //where do you want to send them to?
+    window.open("JS/sandbox/sideProjects/7games/7games.html") //where do you want to send them to?
 }
 )
 
