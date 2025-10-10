@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3eventListeners.css">
+    <script src="3eventListeners.js" defer></script>
+    <title>Event Listeners</title>
+</head>
+<body>
+    <h1>Event Listeners</h1>
+
+    <h2>Inline Events</h2>
+    <button onclick="alert('hi')">Click Me</button>
+    <button ondblclick="alert('double click')">Double Click Me</button>
+    <br><br>
+    <button id="misty" idonclick="makeBodyMisty()">Make Me Misty</button>
+    <button id="teal">Teal Me More</button>
+
+    <h2>JS Events - EventListener</h2>
+    <button id="indigo">Indigo-go-go!</button><br><br>
+    <button id="green">Kale yeah, Green is the new black!</button><br><br>
+
+    <!-- Data Attributes: data- -->
+    <ul id="cars">
+        <li data-id="1" data-model="model 3" data-year="2014" data-color="red">Tesla</li>
+        <li data-id="2" data-model="crv" data-year="2017">Honda</li>
+        <li data-id="3" data-model="focus" data-year="2011" data-condition="poor">Ford</li>
+        <li data-id="4" data-model="prius" data-year="2015" >Toyota</li>
+    </ul>
+
+    <h2>Multiple Event Listeners</h2>
+    <form action="" id="addFriend">
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName">
+        <button>Add Friend</button>
+    </form>
+
+    <ul id="friend-list">
+        <li>Michelle  <button>Remove</button></li>
+        <li> Juanito  <button>Remove</button></li>
+        <li>Oklahoma  <button>Remove</button></li>
+    </ul>
+
+    <h2>Form Submission</h2>
+    <form id="form">
+        <input type="text" placeholder="Words">
+        <input type="submit">
+    </form>
+    
+    
+    <h2>Event Object</h2>
+    <p>Click Me! <b>Bolded Text</b></p>
+
+    <section id="colors">
+        <button data-hex="#00b894">Mint Leaf</button>
+        <button data-hex="#00cec9">Robin's Egg Blue</button>
+        <button data-hex="#ff7675">Pink Glamour</button>
+        <button data-hex="#6c5ce7">Exodus Fruit</button>
+    </section>
+
+</body>
+</html>

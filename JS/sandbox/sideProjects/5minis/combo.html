@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Mini JS Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="combo.css">
+</head>
+<body>
+<section class="mini">
+    <!-- color flipper -->
+    <div class="project" id="flipper">
+        <h1>Color Flipper</h1>
+        <!-- onclick - connects to JS setColor function -->
+        <button id = "green" onclick="setColor('rgb(28, 74, 28)')">Green</button>
+        <button id = "red" onclick="setColor('rgb(87, 22, 22)')">Red</button>
+        <br>
+        <button id = "blue" onclick="setColor('rgb(20, 20, 77)')">Blue</button>
+        <button id = "random" onclick="randomColor()">Random</button>
+    </div>
+
+    <!-- stop watch -->
+    <div class="project" id="stopwatch">
+        <h1>Stop Watch</h1>
+
+        <h1 id="time">00:00</h1>
+
+        <button onclick="startClock()">Start</button>
+        <button onclick="stopClock()">Stop</button>
+        <button onclick="resetClock()">Reset</button>
+    
+
+    </div>
+
+
+    <!-- to do list -->
+    <div class="project" id="todo">
+        <!-- <h1>To Do List</h1> -->
+
+        <div class="container">
+        <!-- add new task -->
+        <div id="newTask">
+            <input type="text" placeholder="Task to be done...">
+            <button id="push">Add</button>
+        </div>
+
+        <!-- list of tasks -->
+        <div id="tasks">
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- quote generator -->
+    <div class="project" id="quote">
+        <h1>Random Quote <br>Generator</h1>
+
+        <p id="quote"></p>
+        <button id="quote2" onclick="generateQuote()">Generate Quote</button>
+
+    </div>
+
+
+
+    <!-- palindrome checker -->
+    <div class="project" id="palindrome">
+        <h1>Palindrome Checker</h1>
+        <div class="content">
+            <input id = "input" type="text" placeholder="Type Something...">
+            <button onclick="check()">Check</button> 
+            <!-- onclick="check()" calls the check function from JS-->
+        </div>
+    </div>
+
+
+    <script src="combo.js"></script>
+</section>
+</body>
+</html>

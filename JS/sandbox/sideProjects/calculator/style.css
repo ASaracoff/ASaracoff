@@ -1,0 +1,88 @@
+/*  "*" symbol means 'all elements'   */
+/* An Aside: The following is a common technique called a CSS reset, setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers.
+* {
+margin: 0;
+padding: 0;
+} */
+*, *::before, *::after{
+     box-sizing: border-box;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: normal;
+}
+
+body{
+     /* padding/margin: 0 so body fills entire screen */
+    padding: 0;
+    margin: 0;
+     /* first color is on the left then right color */
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.calculator-grid{
+    display: grid;
+    /* make everything centered */
+    justify-content: center;
+    /* align-items get changed to align-content so buttons don;t look too strange. went from rectangle with lots of space to square grid look */
+    align-content: center;
+    /* takes up 100% of the verticle height */
+    min-height: 100vh;
+    /* gridtemplate columns and rows */
+    grid-template-columns: repeat(4,100px);
+    /* minmax: auto - can grow as large as it needs to be
+    auto is for the first box - current operand */
+    /* 5 rows, 100px high so they make square buttons */
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+/* > selects all buttons */
+.calculator-grid > button{
+    cursor: pointer;
+    /* so everyhting is easier to see */
+    font-size: 2rem;
+    border: 1px solid white;
+    /* browsers put in outlines by default */
+    outline: none;
+    background-color: rgba(255,255, 255, .75);
+}
+
+.calculator-grid > button:hover{ 
+    background-color: rgba(255,255, 255, .9);
+}
+
+.span-two{
+    /* spans 2 100px buttons */
+    grid-column: span 2;
+}
+
+.output{
+    /* 1 = first -1 = last column */
+    /* once this is inserted the span-two fits right into place */
+    grid-column: 1 /-1;
+    background-color: rgba(0, 0, 0, .75);
+    /* align elements (#s and operands) inside the container  */
+    display: flex;
+    /* placed on the right side of the screen */
+    align-items: flex-end;
+    /* spaced out as far apart from each other as possible
+    space-between got changed to around so theres space up and down as well as bringing the elements slightly closer together */
+    justify-content: space-around;
+    /* at this point elements are side by side, to change direction: flex-direction goes up and down */
+    flex-direction: column;
+    /* so elements are right up agains the edge */
+    padding: 10px;
+    /* add wraping */
+    word-wrap: break-word;
+    /* break all words */
+    word-break: break-all;
+}
+
+/* styling output elements */
+.output .previous-operand {
+     color: rgba(255,255, 255, .75);
+     font-size: 1.5rem;
+}
+
+.output .current-operand {
+     color: rgb(255,255, 255);
+     font-size: 2.5rem;
+}

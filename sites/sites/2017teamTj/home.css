@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body {
+	background-color: #081b29;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../t2/images/basic/bkgrnd.jpg);
+	background-repeat: no-repeat;
+}
+body * {
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+p {
+	margin-bottom: 1.1em;
+	margin-top: 0;
+}
+#main p.lastNode {
+	margin-bottom: 0;
+}
+a:link img, a:visited img {
+	border: none;
+}
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+li.clearFloat {
+	clear: both;
+}
+ul.symbolList {
+	display: inline;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.AbsWrap {
+	position: relative;
+	width: 100%;
+}
+.rowWrap {
+	width: 100%;
+}
+#main {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1044px;
+	height: 1086px;
+	z-index: 6;
+	margin: auto;
+	background-image: url(images/basic/bkgrnd.jpg);
+	background-repeat: no-repeat;
+}
+#Div {
+	margin-left: 137px;
+	margin-top: 43px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 172px;
+	padding-top: 0px;
+	height: 137px;
+}
+html > body #Div {
+	height: auto;
+	min-height: 138px;
+}
+#Div2 {
+	margin-left: 52px;
+	margin-top: 37px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 457px;
+	padding-top: 0px;
+	height: 143px;
+}
+html > body #Div2 {
+	height: auto;
+	min-height: 144px;
+}
+#Div3 {
+	margin-left: 119px;
+	margin-top: 27px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #ccc;
+	width: 699px;
+	padding-top: 0px;
+	height: 223px;
+}
+html > body #Div3 {
+	height: auto;
+	min-height: 224px;
+}
+#Div4 {
+	margin-left: 119px;
+	margin-top: 16px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #ccc;
+	width: 206px;
+	padding-top: 0px;
+	height: 154px;
+}
+html > body #Div4 {
+	height: auto;
+	min-height: 155px;
+}
+#Div5 {
+	margin-left: 36px;
+	margin-top: 17px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #ccc;
+	width: 206px;
+	padding-top: 0px;
+	height: 154px;
+}
+html > body #Div5 {
+	height: auto;
+	min-height: 155px;
+}
+#Div6 {
+	margin-left: 45px;
+	margin-top: 17px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #ccc;
+	width: 206px;
+	padding-top: 0px;
+	height: 154px;
+}
+html > body #Div6 {
+	height: auto;
+	min-height: 155px;
+}

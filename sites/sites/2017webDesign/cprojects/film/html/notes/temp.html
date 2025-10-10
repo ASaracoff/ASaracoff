@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <title>Film Noir &#124; Notes &#124; Blank</title>
+         <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+         <meta charset="utf-8">
+         <link rel="stylesheet" href="../../film.css">
+     </head>
+     <body>
+     <div class="wrapper">
+        <header>
+            <a href="../../index.html"><h1>Film Noir</h1></a>
+        </header>
+        <nav>
+            <a href="../aspects.html">Aspects</a> &nbsp;
+            <a href="../articles.html">Articles</a> &nbsp;
+            <a href="../films.html">Films</a> &nbsp;
+            <a href="../notes.html">Notes</a> &nbsp;
+            <a href="../about.html">About</a> &nbsp; <a href="../contact.html">Contact</a> &nbsp;
+        </nav>
+        <div id="subnav">
+          <button class="accordion">First Four</button>
+          <div class="panel">
+              <a href="fnn.html">Film Noir</a><br>
+              <a href="mfn.html">The Maltese Falcon</a><br>
+              <a href="din.html">Double Indemnity</a><br>
+              <a href="ln.html">Laura</a><br>
+              <a href="mmsn.html">Murder My Sweet</a><br>                     
+          </div>
+          <button class="accordion">Classic Noir</button>
+          <div class="panel">
+              <a href="cn.html">Crossfire</a><br>
+              <a href="ajn.html">The Asphalt Jungle</a><br>
+              <a href="dgcn.html">Detour & Gun Crazy</a><br>
+              <a href="bhn.html">The Big Heat</a><br>
+              <a href="kmdn.html">Kiss Me, Deadly</a><br>
+              <a href="toen.html">Touch of Evil</a><br>
+          </div>
+          <button class="accordion">Neo Noir</button>
+          <div class="panel">
+              <a href="lgn.html">The Long Goodbye</a><br>
+              <a href="chn.html">Chinatown</a><br>
+              <a href="gsn.html">The Glass Shield</a><br>
+              <a href="sdn.html">Strange Days</a><br>
+              <a href="nan.html">Nocturnal Animals</a><br>
+          </div>
+          
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+
+        <div id="rbar">
+          <h3>References:</h3>
+          <button class="accordion">Aspects</button>
+          <div class="panel">
+               <a href="../aspects.html">Aspect</a>
+          
+          </div>
+          <button class="accordion">Articles</button>
+          <div class="panel">
+               <a href="../articles/bnc.html">Borde and Chaumeton</a>
+               <a href="../articles/schrader.html">Schrader</a>
+          </div>
+          
+          <button class="accordion">Films</button>
+          <div class="panel">
+              <a href="../films/m.html">Movie</a>
+          </div>
+          
+          <button class="accordion">Notes</button>
+          <div class="panel">
+              <a href="fnn.html">Film Noir</a>
+          </div>
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+        <main>
+            <h2>Discussion Notes</h2>
+            
+        </main>
+        <footer>
+            Copyright &copy; Anna Saracoff 2018 <br>
+            <a href=mailto:asaracoff@hotmail.com>anna@saracoff.com</a>
+        </footer>
+     </div>
+     </body>
+</html> 

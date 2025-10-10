@@ -1,0 +1,329 @@
+* {
+    box-sizing:border-box;
+}
+
+header, main, nav, footer, figure,figcaption, aside,section, article{
+    display:block;
+}
+
+#desktop{
+    display:none;
+}
+
+#mobile{
+    display:inline;
+}
+
+@media only screen and (max-width:1024px){
+    body{
+        background-color:#fff;
+        margin:0;
+        padding: 0;
+    }
+    #wrapper{
+        width:auto;
+    }
+    header{
+        padding-top:.5em;
+        padding-bottom:0;
+        padding-left:0;
+        height:auto;
+    }
+    h1{
+        margin: 0;
+    }
+    main{
+        width: auto;
+    }
+    nav{
+        float:none;
+        width:auto;
+        text-align:center;
+    }
+    nav li{
+        display:inline;
+        padding: .25em .75em;
+    }
+    #homehero{
+        margin:0;
+        height:200px;
+    }
+    #yurthero{
+        margin:0;
+        height:200px;
+    }
+    #trailhero{
+        margin:0;
+        height:200px;
+    }
+    footer{
+        margin-left:0;
+    }
+}
+
+@media only screen and (max-width:480px){
+    #wrapper{
+      width: auto;
+    }
+    main{
+        margin: 0 5%;
+        width: auto;
+    }
+    nav, nav ul, nav li{
+        padding: 0;
+    }
+    nav li{
+      display: block;
+    }
+    nav a{
+      display: block;
+      padding: .5em 0;
+      border-bottom: 2px solid #000;
+    }
+    #homehero{
+        display:none;
+        height:0;
+    }
+    #yurthero{
+        display:none;
+        height:0;
+    }
+    #trailhero{
+        display:none;
+        height:0;
+    }
+    #mobile{
+        display: inline;
+    }
+    #desktop{
+        display: none;
+    }
+    label{
+      float: none;
+      text-align: left;
+    }
+    input [type="submit"]{
+       margin-left: 130px;
+    } 
+}
+
+#wrapper{
+    width:80%;
+    min-width:800px;
+    max-width:2048px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#90c7e3;
+    box-shadow: 3px 3px 3px #333;
+    border:1px solid #000033;
+}
+body{
+    background-color:#B8DBED;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#head{
+  text-decoration: none;
+}
+header{
+    background-color:#000033;
+    color:#fff;
+    height:120px;
+    text-align:center;
+    padding-top:30px;
+    padding-left:3em;
+}
+h1{
+    color:#ffffff;
+    font-size:3em;
+    letter-spacing:.25em;
+    margin-bottom:0;
+    margin-top:0;
+    overflow:hidden;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #90C7E3;
+    background: linear-gradient(to bottom, #fff, #90C7E3);
+    float:left;
+    font-size:120%;
+    padding-right: .25em;
+    width:190px;
+    height: 300px;
+    margin: auto;
+    text-align: right;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding-left:0;
+    font-size:1.2em;
+}
+
+nav a {
+    font-weight:bold;
+    font-family:Georgia,"Times New Roman",serif;
+    text-decoration:none;
+    transition:color 3s ease-out;
+}
+
+nav a:link{
+     color:#5c7fa3;   
+}
+
+nav a:visited{
+    color:#344873;
+}
+
+nav a:hover{
+    color:#a52a2a;
+}
+
+#homehero{
+    height:300px;
+    background-image: url(coast2.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+#yurthero{
+    height:300px;
+    background-image: url(yurt.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+#trailhero{
+    height:300px;
+    background-image: url(trail.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+main{
+    background-color:#fff;
+    margin-left:190px;
+    padding:1px 50px 20px 30px;
+    display:block;
+}
+h2{
+    color:#3399cc;
+    text-shadow: 1px 1px 1px #ccc;
+    font-family:Georgia,"Times New Roman",serif;
+}
+
+h3{
+    color:#000033;
+    font-family:Georgia,"Times New Roman",serif;    
+}
+dt{
+    color:#000033;
+}
+
+main ul{
+   list-style-image: url(marker.gif);
+}
+
+table{
+  border: 2px solid #3399CC;
+  border-collapse: collapse;
+}
+td, th{
+  padding: .5em;
+  border: 2px solid #3399CC;
+}
+td{
+  text-align: center;
+}
+.text{
+  text-align: left;
+}
+tr:nth-of-type(even){
+  background-color: #F5FAFC;
+}
+main label{
+  float: left;
+  display: block;
+  text-align: right;
+  width:120px;
+  padding-right: 5px;
+}
+input{
+  display: block;
+  margin-bottom: 20px;
+}
+textarea{
+  display: block;
+  margin-bottom: 20px;
+}
+input [type="submit"]{
+  margin-left: 130px;
+}
+video, embed{
+  float:right;
+  padding-left: 20px;
+}
+#gallery{
+  position: relative;
+  height: 200px;
+}
+#gallery ul{
+  width: 300px;
+  list-style-type: none;
+}
+#gallery li{
+  display: inline;
+  float:left;
+  padding: 10px;
+}
+#gallery img{
+  border-style: none;
+}
+#gallery a{
+  text-decoration: none;
+  color:#000;
+  font-style: italic;
+}
+#gallery span{
+  position: absolute;
+  left: -1000px;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+#gallery a:hover span{
+  position: absolute;
+  top:16px;
+  left:290px;
+  text-align:center;
+  opacity:1;
+}
+figure{
+  position: absolute;
+  left: 250px;
+  text-align:center;
+  opacity: .25;
+}
+footer{
+    background-color:#fff;
+    font-size:75%;
+    font-style:italic;
+    text-align:center;
+    clear: both;
+    font-family:Georgia,"Times New Roman",serif;
+    padding:20px;
+    margin-left:190px;
+}
+
+.resort{
+    color:#5c7fa3;
+    font-weight:bold;
+}
+
+#contact{
+    line-height:90%;
+}
+

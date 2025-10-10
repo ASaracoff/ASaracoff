@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>Film Noir &#124; Films &#124; Laura</title>
+         <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+         <meta charset="utf-8">
+         <link rel="stylesheet" href="../../film.css">
+     </head>
+     <body>
+     <div class="wrapper">
+        <header>
+            <a href="../../index.html"><h1>Film Noir</h1></a>
+        </header>
+        <nav>
+            <a href="../aspects.html">Aspects</a> &nbsp;
+            <a href="../articles.html">Articles</a> &nbsp;
+            <a href="../films.html">Films</a> &nbsp;
+            <a href="../notes.html">Notes</a> &nbsp;
+            <a href="../about.html">About</a> &nbsp; <a href="../contact.html">Contact</a> &nbsp;
+        </nav>
+        <div id="subnav">
+          <button class="accordion">First Four</button>
+          <div class="panel">
+              <a href="mfm.html">The Maltese Falcon</a><br>
+              <a href="dim.html">Double Indemnity</a><br>
+              <a href="lm.html">Laura</a><br>
+              <a href="mmsm.html">Murder My Sweet</a><br>                     
+          </div>
+          <button class="accordion">Classic Noir</button>
+          <div class="panel">
+              <a href="cm.html">Crossfire</a><br>
+              <a href="ajm.html">The Asphalt Jungle</a><br>
+              <a href="dm.html">Detour</a><br>
+              <a href="gcm.html">Gun Crazy</a><br>
+              <a href="bhm.html">The Big Heat</a><br>
+              <a href="kmdm.html">Kiss Me, Deadly</a><br>
+              <a href="toem.html">Touch of Evil</a><br>
+          </div>
+          <button class="accordion">Neo Noir</button>
+          <div class="panel">
+              <a href="lgm.html">The Long Goodbye</a><br>
+              <a href="chm.html">Chinatown</a><br>
+              <a href="gsm.html">The Glass Shield</a><br>
+              <a href="sdm.html">Strange Days</a><br>
+              <a href="drm.html">Drive</a><br>
+               <a href="nam.html">Nocturnal Animals</a><br>
+          </div>
+          
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+        <div id="rbar">
+          <h3>References:</h3>
+          <button class="accordion">Aspects</button>
+          <div class="panel">
+               <a href="../aspects.html#crime">Crime</a>
+               <a href="../aspects.html#pi">Detective</a>
+          </div>
+          <button class="accordion">Articles</button>
+          <div class="panel">
+               <a href="../articles/bnc.html">Borde and Chaumeton</a>
+               <a href="../articles/schrader.html">Schrader</a>
+               <a href="../articles/prod.html">The Production Code</a>
+          </div>
+          
+          <button class="accordion">Films</button>
+          <div class="panel">
+               <a href="m.html">Film</a>
+          </div>
+          <button class="accordion">Notes</button>
+          <div class="panel">
+              <a href="../notes/fnn.html">Film Noir</a>
+          </div>
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+        </div>
+        <main>
+          <div id="movie">
+               <div class="cover">
+                    <img src="../../assets/imgs/film/lm.jpg" alt="Laura movie cover" width="200px" height="280px">
+               </div>
+               <div class="stats">
+                 <h2>Laura (year)</h2> 
+                 <h4>Directed by: </h4>
+                 <h4>Screen Play by: </h4>
+                 <h4>Based on novel by:  </h4>
+                 <h4 id="IMBd"><a href="http://www.imdb.com/title/">IMBd</a></h4>
+                 </div>
+           </div>
+          
+          <div id="clips">
+          	<div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Trailer')" id="defaultOpen">Trailer</button>
+                    <button class="tablinks" onclick="openCity(event, 'ClipA')">Opening</button>
+                    <button class="tablinks" onclick="openCity(event, 'ClipB')">Falling in Love</button>
+               </div>
+               
+               <div id="Trailer" class="tabcontent">
+                    <iframe src="https://archive.org/embed/TheatricalTrailerFor1944Filmlaura" width="500" height="315" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+               </div>
+               
+               <div id="ClipA" class="tabcontent">
+                    <video height="315" controls><source src="../../assets/clips/lmop.mp4" type="video/mp4">
+               </div>											
+               <div id="ClipB" class="tabcontent">
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/zPeSymZSS2c?rel=0" frameborder="0" allowfullscreen></iframe>
+               </div>
+               
+               <script>
+               function openCity(evt, cityName) {
+                         var i, tabcontent, tablinks;
+                         tabcontent = document.getElementsByClassName("tabcontent");
+                         for (i = 0; i < tabcontent.length; i++) {
+                                   tabcontent[i].style.display = "none";
+                         }
+                         tablinks = document.getElementsByClassName("tablinks");
+                         for (i = 0; i < tablinks.length; i++) {
+                                   tablinks[i].className = tablinks[i].className.replace(" active", "");
+                         }
+                         document.getElementById(cityName).style.display = "block";
+                         evt.currentTarget.className += " active";
+               }
+               
+               // Get the element with id="defaultOpen" and click on it
+               document.getElementById("defaultOpen").click();
+               </script>
+          </div>
+          <br>
+          
+          <h3>Opening Scene</h3>
+               <ul>
+                    <li>Recollection while seeing his collection</li>
+                    <li>Laura was his 'possession,' something to be obtained</li>
+                    <li>Clocks were made for each other</li>
+                    <li>Two males obsessed with Laura, but are opposites - doubles/doppelgangers</li>
+               </ul>
+               <p>Waldo (unreliable narrator) tells his story in flashback, no one can back his story. The character as well as the actor was gay</p>
+               <p>Narration switches from Waldo to the detective 34 minutes into the film</p>
+               <p>Unreliable Narration - unreliable characters</p>
+               <p>Plot driven - who killed Laura?</p>
+          <h3>Detective Falls in Love Scene</h3>
+               <ul>
+                    <li>music score - highs and lows  on cue depending on what the detective does</li>
+                    <li>Detective is 'taking possession' of Laura or Waldo's possessions</li>
+                    <li>Waldo comes to try to take back his possessions and Detective says no</li>
+                    <li>Transition of narration</li>
+                    <li>Detective gets reflected by many surfaces</li>
+                    <li>After this scene - when the camera zooms into the Detective then Laura enters - it could all be his dream (wish fulfillment</li>
+                    <li>Game - keeps him calm, keeps throwing it to the side later in film</li>
+                    <li>Baseball and lots of alcohol - traps him into being controlling of Laura (idea of a classmate)</li>
+                    <li>If it is a dream - the ultimate abstract realism. Detective is basic his dream girl (ideal) based on another's unreliable view of Laura.</li>
+                    <li>We only know Laura through other's eyes</li>
+                    <li>Very few details</li>
+                    <li>Each narration/narrator is jealous of Laura</li>
+               </ul>
+        </main>
+        <footer>
+            Copyright &copy;  2018 <br>
+                <a href=mailto:asaracoff@hotmail.com>anna@saracoff.com</a>
+        </footer>
+     </div>
+     </body>
+</html> 
