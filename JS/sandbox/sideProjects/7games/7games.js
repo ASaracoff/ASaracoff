@@ -23,15 +23,15 @@ document.getElementsByClassName("article")[3].addEventListener("click",function(
 }
 )
 document.getElementsByClassName("article")[4].addEventListener("click",function(){
-    window.open("games/4breakout/breakout.html") 
+    window.open("games/5frogger/frogger.html") 
 }
 )
 document.getElementsByClassName("article")[5].addEventListener("click",function(){
-    window.open("games/4breakout/breakout.html") 
+    window.open("games/6connect4/connect4.html") 
 }
 )
 
 document.getElementsByClassName("article")[6].addEventListener("click",function(){
-    window.open("games/4breakout/breakout.html") 
+    window.open("games/7spaceInvaders/spaceInvaders.html") 
 }
 )
