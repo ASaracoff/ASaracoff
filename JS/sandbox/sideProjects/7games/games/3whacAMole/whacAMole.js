@@ -55,7 +55,6 @@ function moveMole(){
 }
 
 
-
 // auto start
     // you can add to a button if you wish
 moveMole()
