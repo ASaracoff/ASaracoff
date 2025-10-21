@@ -1,0 +1,129 @@
+body{
+    background-image: url(/img/2c.jpg);
+    text-align: center;
+    color: rgb(41, 135, 151);
+    text-shadow: 1px 1px 0 white;  
+}
+
+h1 {
+    color: rosybrown;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 606px;
+    height: 606px;
+    margin: auto;
+    background-image: url('imgs/space.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blank {
+    color: black;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border: rgb(15, 70, 70) solid 1px;
+    /* background-image: url('imgs/blank.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+#fade {
+    width: 300px;
+    height: auto;
+    transition: opacity 2s ease; /* Smooth fade-out effect */    
+}
+
+.home {
+    background-image: url('imgs/home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+.homeR {
+    background-image: url('imgs/homeR.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.homeS {
+    background-image: url('imgs/homeS.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ufo1 {
+    background-image: url('imgs/ufo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ufo1m {
+    background-image: url('imgs/ufo1m.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ufo2 {
+    background-image: url('imgs/ufo2b.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ufo3 {
+    background-image: url('imgs/ufo3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ufo3m {
+    background-image: url('imgs/ufo3m.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.beam {
+    background-image: url('imgs/beam.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.laserBeam {
+    background-image: url('imgs/laserBeam.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shot {
+    background-image: url('imgs/shot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shot3 {
+    background-image: url('imgs/shot3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* rgb(56, 158, 124) */
