@@ -5,7 +5,6 @@
 
 const squares = document.querySelectorAll('.square')
 const PA = document.querySelector('#PA')
-const coutdown = document.querySelector('#timer')
 const fade = document.getElementById('fade');
 
 // squares for movements
@@ -138,17 +137,21 @@ function startMission() {
     )
 
     
-
+// timer & whac-a-mole
+// source: Bing Copilot AI
     function shieldDown(){
         let timeLeft = 10; // Start at 10 seconds
+        const countDown = document.querySelector('#timer')
+
         const timer = setInterval(() => {
         timeLeft--;
-        countdown.textContent = timeLeft;
+        countDown.innerHTML = timeLeft;
 
             if (timeLeft <= 0) {
                 clearInterval(timer); // Stop the timer
                 go('Shields Down! Move! Move! Move!',sq9,'home')
             }
+            // PA.remove = 
         }, 1000); // Update every second
     }
     

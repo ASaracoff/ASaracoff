@@ -1,0 +1,23 @@
+body{
+    background-image: url(/img/2c.jpg);
+    text-align: center;
+    color: rgb(41, 135, 151);
+    margin-top: 15%;
+    text-shadow: 1px 1px 0 white;  
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(74, 224, 174, 0.62);
+    color:rgb(9, 81, 57);
+    font-size: 20px;
+    margin: 5px;
+    box-shadow: 6px 4px rgba(41, 134, 151, 0.784);
+}
+
+h1 {
+    font-size: 40px;
+    color: rosybrown;
+}

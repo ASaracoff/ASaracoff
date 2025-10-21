@@ -7,38 +7,11 @@ document.getElementsByClassName("article")[0].addEventListener("click",function(
 )
 
 document.getElementsByClassName("article")[1].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/7games/7games.html") //where do you want to send them to?
+    window.open("JS/sandbox/springBoard/springBoard.html") //where do you want to send them to?
 }
 )
 
 document.getElementsByClassName("article")[2].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/calculator/index.html") //where do you want to send them to?
+    window.open("JS/sandbox/sideProjects/sideProjects.html") //where do you want to send them to?
 }
 )
-
-document.getElementsByClassName("article")[3].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/tictactoe/tictactoe.html") //where do you want to send them to?
-}
-)
-
-document.getElementsByClassName("article")[4].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/squareCards/squareCards.html") //where do you want to send them to?
-}
-)
-
-document.getElementsByClassName("article")[5].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/5minis/combo.html") //where do you want to send them to?
-}
-)
-
-document.getElementsByClassName("article")[6].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/snake/snake.html") //where do you want to send them to?
-}
-)
-
-document.getElementsByClassName("article")[7].addEventListener("click",function(){
-    window.open("JS/sandbox/sideProjects/pong/pong.html") //where do you want to send them to?
-}
-)
-
-
