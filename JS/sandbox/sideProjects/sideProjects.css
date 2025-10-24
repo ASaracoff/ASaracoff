@@ -2,6 +2,14 @@
 /* 1280 x 720 px dimensions for photos */
 /* https://www.pexels.com recommended for free photos */
 
+body{
+    /* set background image */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(img/bkgrnd.jpg);
+}
 
 /* layout for the cards */
 #my-cards{
@@ -17,13 +25,6 @@
     flex-wrap: wrap; 
     /* align at the very beginning */
     align-items: flex-start;
-
-    /* set background image */
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(img/bkgrnd.jpg);
 }
 
 #my-cards .card{

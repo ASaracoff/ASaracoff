@@ -3,8 +3,14 @@
 /* https://www.pexels.com recommended for free photos */
 
 body{
-    background-image: url(img/s.png);
-    background-color: hsla(178, 50%, 61%, 0.8)   
+    /* set background image */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(img/Sunbeam.jpeg);
+
+    /* background-color: hsla(178, 50%, 61%, 0.8)    */
     /* linear-gradient(to top left, rgb(213, 222, 17), rgb(26, 187, 156)) ; */
 }
 
@@ -21,9 +27,7 @@ body{
     /* wrap to next row */
     flex-wrap: wrap; 
     /* align at the very beginning */
-    align-items: flex-start;
-
-    
+    align-items: flex-start;    
 }
 
 #my-cards .card{
