@@ -10,5 +10,68 @@ body{
 
 h1{
     color: rosybrown;
+    margin-bottom: .2em;
 }
 
+.info div{
+   line-height: .2em; 
+   margin-top: .2em;
+}
+
+/* button{
+    position: relative;
+    top: -42px;
+    left: 100px;
+} */
+
+.frog{
+    background-color: rgb(12, 109, 12) !important; 
+    /* added !important - otherside all other viduals would be ontop of the frog */
+}
+
+.grid{
+    border: 1px black solid;
+    height: 540px;
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.grid div{
+    height:60px;
+    width:60px;
+}
+
+/* .grid div{
+    background-color: rgba(76, 224, 76, 0.284);
+} */
+
+.grid .ending-block{
+    background-color: rgba(137, 23, 46, 0.647);
+}
+
+.grid .starting-block{
+    background-color: rgba(35, 35, 140, 0.647);
+}
+
+.grid .l1, .l2, .l3 {
+    background-color: rgba(128, 40, 40, 0.757);
+}
+
+.grid .l4, .l5{
+    background-color: rgba(172, 209, 221, 0.966);
+}
+
+.grid .c1{
+    background-color: rgba(128, 40, 109, 0.757);
+}
+
+.grid .c2, .c3{
+    background-color: rgba(102, 100, 100, 0.801);
+}
+/* 
+.grid .car-left, 
+.grid .car-right {
+    background-color: ;
+} */
