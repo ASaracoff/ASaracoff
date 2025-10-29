@@ -18,7 +18,9 @@ source for pallette: https://coolors.co/image-picker
 
 /*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
 nav{
-    position: center;
+    width: 100%;
+    left: 0;
+    transform: none;
 }
 /* added x-index 10 so nav will always be on top */
 nav ul{
@@ -69,7 +71,7 @@ body{
    font-family:Georgia, 'Times New Roman', Times, serif;
    padding-left: 5%;
    /* min-width: 820px; */
-   background-color: hsla(178, 50%, 61%, .8);
+   /* background-color: hsla(178, 50%, 61%, .8); */
    font-size: 1.2em;
 }
 
@@ -77,12 +79,13 @@ body{
 @media (width  <= 820px) {
 
 body{ 
-   image: url(img/2c.jpg);
+   background-image: url('/img/2c.jpg');
    background-repeat: no-repeat;
    background-size: cover ;
    color:hsla(25, 50%, 27%, 1);
    text-decoration: none;
    font-family:Georgia, 'Times New Roman', Times, serif;
+
    /* padding-left: 5%; */
    /* margin-bottom: 5%; */
    /* min-width: 820px;   removed to give better flow*/
@@ -126,7 +129,7 @@ html{
     scroll-behavior: smooth;
 }
 body{ 
-   background-image: url(img/2c.jpg);
+   background-image: url('/img/2b.jpeg');
    background-repeat: no-repeat;
    background-size: cover ;
    color:hsla(25, 50%, 27%, 1);
