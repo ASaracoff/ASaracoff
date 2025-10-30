@@ -2,7 +2,7 @@
     // creates new array
     // loops through array
     // runs callback function on each value in the array
-    // if the callback funtion returns:
+    // if the callback function returns:
         // true? value pushed to new array
         // false? not included in new array
     // result of callback will ALWAYS be evaluated into boolean
