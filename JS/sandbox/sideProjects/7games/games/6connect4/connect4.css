@@ -2,7 +2,7 @@ body{
     background-image: url(/img/2c.jpg);
     text-align: center;
     color: rgb(41, 135, 151);
-    text-shadow: 1px 1px 0 white;  
+    text-shadow: 1px 1px 0 rgb(237, 234, 234);  
     display: grid;
     place-items: center;
     height: 100vh;
@@ -12,3 +12,35 @@ h1{
     color: rosybrown;
 }
 
+.grid {
+    border: 1px solid black;
+    height: 490px;
+    width: 490px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    border: .5px solid black;
+    height: 69px;
+    width: 69px;
+
+}
+
+.base{
+    background-color: rgb(6, 5, 5);
+    border: 7px solid;
+
+
+}
+
+.player-one {
+    background-color: rgb(179, 40, 40);
+    border-radius: 50%;
+    border: .5 solid black;
+}
+
+.player-two {
+    background-color: rgb(34, 34, 186);
+    border-radius: 50%;
+}
