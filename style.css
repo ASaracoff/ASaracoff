@@ -1,4 +1,4 @@
-@media (width >=820px) {
+@media (width >= 819px) {
     
 /* 
 source for wrapper: https://css-tricks.com/best-way-implement-wrapper-css/ 
@@ -63,7 +63,7 @@ nav li a:hover{
     AI free photo enhance https://www.upscale.media
 */
 body{ 
-   background-image: url(img/2b.jpeg);
+   background-image: url(img/backgroundS.png);
    background-repeat: no-repeat;
    background-size: cover ;
    color:hsla(25, 50%, 27%, 1);
@@ -79,7 +79,7 @@ body{
 @media (width  <= 820px) {
 
 body{ 
-   background-image: url('/img/2c.jpg');
+   background-image: url(/img/backgroundP.png);
    background-repeat: no-repeat;
    background-size: cover ;
    color:hsla(25, 50%, 27%, 1);
@@ -128,8 +128,9 @@ nav{
 html{
     scroll-behavior: smooth;
 }
+/*
 body{ 
-   background-image: url('/img/2b.jpeg');
+   background-image: url('/img/backgroundP.png');
    background-repeat: no-repeat;
    background-size: cover ;
    color:hsla(25, 50%, 27%, 1);
@@ -138,9 +139,9 @@ body{
    /* padding-left: 5%; */
    /* margin-bottom: 5%; */
    /* min-width: 820px;   removed to give better flow*/
-   background-color: hsla(178, 50%, 61%, .8);
+   /* background-color: hsla(178, 50%, 61%, .8);
    font-size: 1.2em;
-}
+} */
 
 
 @font-face {
