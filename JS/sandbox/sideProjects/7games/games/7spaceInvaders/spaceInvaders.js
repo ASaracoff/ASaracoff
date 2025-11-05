@@ -1,7 +1,9 @@
 // source: https://youtu.be/ec8vSKJuZTk?si=3AiSQDZMQvRm3y3L&t=14903
 // start: 10:25 am - 8 min phone call
-// stop:  12:04 pm done with code - now modify
-// final:  1 hr 21 mins following code
+// stop:  12:04 pm done with code 
+// final:  1 hr 21 mins following code + ~30min (with family obliggations) 
+// = 1 hour 51 min
+// NOTE: same images as 'Space Mission Invasion" 
 
 // get grid & results from doc
 const grid = document.querySelector('.grid')

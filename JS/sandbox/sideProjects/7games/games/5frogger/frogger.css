@@ -24,10 +24,7 @@ h1{
     left: 100px;
 } */
 
-.frog{
-    background-color: rgb(12, 109, 12) !important; 
-    /* added !important - otherside all other viduals would be ontop of the frog */
-}
+
 
 .grid{
     border: 1px black solid;
@@ -48,30 +45,85 @@ h1{
 } */
 
 .grid .ending-block{
-    background-color: rgba(137, 23, 46, 0.647);
+    background-image: url(img/lilypad1.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+
 }
 
 .grid .starting-block{
-    background-color: rgba(35, 35, 140, 0.647);
+    border:1px solid rgba(35, 35, 140, 0.647);
+    background-color: rgba(35, 35, 140, 0.322);
 }
 
-.grid .l1, .l2, .l3 {
-    background-color: rgba(128, 40, 40, 0.757);
+.grid .l1 {
+    background-image: url(img/log1.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.grid .l2 {
+    background-image: url(img/log2.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.grid .l3 {
+    background-image: url(img/log3.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
 }
 
 .grid .l4, .l5{
-    background-color: rgba(172, 209, 221, 0.966);
+    background-color: #acd1dd;
 }
 
-.grid .c1{
-    background-color: rgba(128, 40, 109, 0.757);
+.grid .lr1 {
+    background-image: url(img/log3b.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
 }
 
-.grid .c2, .c3{
-    background-color: rgba(102, 100, 100, 0.801);
+.grid .lr2 {
+    background-image: url(img/log2b.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.grid .lr3 {
+    background-image: url(img/log1b.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.grid .lr4, .lr5{
+    background-color: #acd1dd;
+}
+
+.grid .cr1{
+    background-image: url(img/redCar.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.grid .cl1{
+    background-image: url(img/whiteCar.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.grid .cr2, .cr3,  .cl2, .cl3 {
+    background-color: #666464;
 }
 /* 
 .grid .car-left, 
 .grid .car-right {
     background-color: ;
 } */
+
+.frog{
+    /* background-color: rgb(12, 109, 12)   */
+    background-image: url(img/frog4.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}

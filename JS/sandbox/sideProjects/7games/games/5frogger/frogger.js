@@ -178,30 +178,30 @@ function moveLogRight(logRight) {
     // look for true statements
     switch(true){
         // does the div also contain 'l1' class?
-        case logRight.classList.contains('l1'):
+        case logRight.classList.contains('lr1'):
         // yes? then:
-            logRight.classList.remove('l1')
-            logRight.classList.add('l5')
+            logRight.classList.remove('lr1')
+            logRight.classList.add('lr5')
             break
-        case logRight.classList.contains('l5'):
+        case logRight.classList.contains('lr5'):
         // yes? then:
-            logRight.classList.remove('l5')
-            logRight.classList.add('l4')
+            logRight.classList.remove('lr5')
+            logRight.classList.add('lr4')
             break
-        case logRight.classList.contains('l4'):
+        case logRight.classList.contains('lr4'):
         // yes? then:
-            logRight.classList.remove('l4')
-            logRight.classList.add('l3')
+            logRight.classList.remove('lr4')
+            logRight.classList.add('lr3')
             break
-        case logRight.classList.contains('l3'):
+        case logRight.classList.contains('lr3'):
         // yes? then:
-            logRight.classList.remove('l3')
-            logRight.classList.add('l2')
+            logRight.classList.remove('lr3')
+            logRight.classList.add('lr2')
             break
-        case logRight.classList.contains('l2'):
+        case logRight.classList.contains('lr2'):
         // yes? then:
-            logRight.classList.remove('l2')
-            logRight.classList.add('l1')
+            logRight.classList.remove('lr2')
+            logRight.classList.add('lr1')
             break
     }
 }
@@ -212,20 +212,20 @@ function moveCarLeft(carLeft) {
     // look for true statements
     switch(true){
         // does the div also contain 'l1' class?
-        case carLeft.classList.contains('c1'):
+        case carLeft.classList.contains('cl1'):
         // yes? then:
-            carLeft.classList.remove('c1')
-            carLeft.classList.add('c2')
+            carLeft.classList.remove('cl1')
+            carLeft.classList.add('cl2')
             break
-        case carLeft.classList.contains('c2'):
+        case carLeft.classList.contains('cl2'):
         // yes? then:
-            carLeft.classList.remove('c2')
-            carLeft.classList.add('c3')
+            carLeft.classList.remove('cl2')
+            carLeft.classList.add('cl3')
             break
-        case carLeft.classList.contains('c3'):
+        case carLeft.classList.contains('cl3'):
         // yes? then:
-            carLeft.classList.remove('c3')
-            carLeft.classList.add('c1')
+            carLeft.classList.remove('cl3')
+            carLeft.classList.add('cl1')
             break
     }
 }
@@ -235,20 +235,20 @@ function moveCarRight(carRight) {
     // look for true statements
     switch(true){
         // does the div also contain 'l1' class?
-        case carRight.classList.contains('c1'):
+        case carRight.classList.contains('cr1'):
         // yes? then:
-            carRight.classList.remove('c1')
-            carRight.classList.add('c3')
+            carRight.classList.remove('cr1')
+            carRight.classList.add('cr3')
             break
-        case carRight.classList.contains('c3'):
+        case carRight.classList.contains('cr3'):
         // yes? then:
-            carRight.classList.remove('c3')
-            carRight.classList.add('c2')
+            carRight.classList.remove('cr3')
+            carRight.classList.add('cr2')
             break
-        case carRight.classList.contains('c2'):
+        case carRight.classList.contains('cr2'):
         // yes? then:
-            carRight.classList.remove('c2')
-            carRight.classList.add('c1')
+            carRight.classList.remove('cr2')
+            carRight.classList.add('cr1')
             break
     }
 }
