@@ -2,7 +2,8 @@
 // start: 8:52 am
     //    9:19 am - html fin 
     //    9:34 am - css fin
-// stop: 
+// stop: got distracted by life chores
+//  no end time -> did finish in same day ~1 hour? plus some to add local storage feature
 
 // source is 5 yrs old
 // source uses vars and getElementByClassName - I modified
@@ -10,6 +11,7 @@ const container2 = document.querySelector(".container2")
 const container3 = document.querySelector(".container3")
 const checkIcon = document.querySelector("#check-icon")
 const xIcon = document.querySelector("#x-icon")
+const stickyNote = []
 let i = 0
 
 // load local storage?
@@ -94,3 +96,64 @@ function color(){
     }
     return randomColor[i++]
 }
+
+// ----------------------------------------------
+// toDoList.js -> mini5
+/*
+// load the array
+function loadItems(){
+    // get old list from local storage, its in a string
+    const oldItems = localStorage.getItem(stickyNote)
+    
+    // convert string into array
+    // converts into a JS object
+    if(oldItems) items = JSON.parse(oldItems)
+    renderItems()
+}
+
+
+// save to array
+    // local storage: in your browser (cient side user side)
+    // can only store list/string
+function saveItems(){
+    const stringItems = JSON.stringify(items);
+    // only storing the most up to date version
+    localStorage.setItem(stickyNote, stringItems)
+}
+
+
+// add to array
+function addItem(){
+    // get value
+    const value = input.value;
+    if (!value) {
+        alert("you cannot add an empty item")
+        return //naked return - get out of the function
+    }
+    items.push(value)
+    renderItems()
+    input.value = ""
+
+    // save items after adding
+    saveItems()
+}
+
+
+// remove from array
+function removeItem(idx){
+    // get idx of item to delete
+    // splice = remove at a certian spot
+    // (idx,1) at this spot and delete 1
+    items.splice(idx,1)
+
+    // refresh list
+    renderItems()
+
+    // save items after removing 
+    saveItems()
+}
+
+// load all html then load items automatically
+document.addEventListener("DOMContentLoaded", loadItems)
+
+*/
