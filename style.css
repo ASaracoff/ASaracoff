@@ -1,133 +1,138 @@
-@media (width >= 819px) {
-    
-/* 
+@media (width >=819px) {
+
+    /* 
 source for wrapper: https://css-tricks.com/best-way-implement-wrapper-css/ 
 source for pallette: https://coolors.co/image-picker
 */
-.wrapper{
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color:hsla(178, 50%, 91%, .8);
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
-    /* margin-top: none; */
-}
-
-
-
-/*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
-nav{
-    width: 100%;
-    left: 0;
-    transform: none;
-}
-/* added x-index 10 so nav will always be on top */
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    margin-left: -20px;
-    padding: 0;
-    overflow: hidden;
-    background-color: hsla(160, 30%, 44%, 1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-width: 700px;
-    box-sizing: border-box;
-    z-index: 10;
-}
-
-nav li{
-    float: left;
-    font-size: 20px;
-    /*border-right: 1px solid #bbb; */
-}
-
-nav li a{
-    display: block;
-    color: hsla(178, 50%, 91%, 1);
-    text-shadow: 1px 1px 3px hsla(42, 50%, 46%, 1);
-    text-align: center;
-    padding: 14px 16px;
-}
-
-/*change link on hover */
-nav li a:hover{
-    background-color: #111;
-    text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-
-/* found imgs https://wallpaperaccess.com/teal-marble 
-    AI free photo enhance https://www.upscale.media
-*/
-body{ 
-   background-image: url(img/backgroundS.png);
-   background-repeat: no-repeat;
-   background-size: cover ;
-   color:hsla(25, 50%, 27%, 1);
-   text-decoration: none;
-   font-family:Georgia, 'Times New Roman', Times, serif;
-   padding-left: 5%;
-   /* min-width: 820px; */
-   /* background-color: hsla(178, 50%, 61%, .8); */
-   font-size: 1.2em;
-}
-
-}
-@media (width  <= 820px) {
-
-body{ 
-   background-image: url(/img/backgroundP.png);
-   background-repeat: no-repeat;
-   background-size: cover ;
-   color:hsla(25, 50%, 27%, 1);
-   text-decoration: none;
-   font-family:Georgia, 'Times New Roman', Times, serif;
-
-   /* padding-left: 5%; */
-   /* margin-bottom: 5%; */
-   /* min-width: 820px;   removed to give better flow*/
-   background-color: hsla(178, 50%, 61%, .8);
-   font-size: 1.2em;
-}
-
-/* source:https://www.youtube.com/watch?v=nTtUg8EuJ_8 */
-nav{
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        border-radius: 0 0 10px 10px;
+    .wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: hsla(178, 50%, 91%, .8);
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        /* margin-top: none; */
     }
-/* added transition */
-    a{
+
+
+
+    /*navigation  refresher found: https://www.w3schools.com/Css/css_navbar_horizontal.asp*/
+    nav {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    /* added x-index 10 so nav will always be on top */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        margin-left: -20px;
+        padding: 0;
+        overflow: hidden;
+        background-color: hsla(160, 30%, 44%, 1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        min-width: 700px;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    nav li {
+        float: left;
+        font-size: 20px;
+        /*border-right: 1px solid #bbb; */
+    }
+
+    nav li a {
         display: block;
-        padding: 10px;
         color: hsla(178, 50%, 91%, 1);
         text-shadow: 1px 1px 3px hsla(42, 50%, 46%, 1);
-        background-color: hsla(160, 30%, 44%, 1);
-        &:hover{
-            background-color: #111;
-            text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
-            transition: background-color 0.3s ease-in, color 0.3s ease-in;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    /*change link on hover */
+    nav li a:hover {
+        background-color: #111;
+        text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+
+    /* found imgs https://wallpaperaccess.com/teal-marble 
+    AI free photo enhance https://www.upscale.media
+*/
+    body {
+        background-image: url(img/backgroundS.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: hsla(25, 50%, 27%, 1);
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 5%;
+        /* min-width: 820px; */
+        /* background-color: hsla(178, 50%, 61%, .8); */
+        font-size: 1.2em;
+    }
+
+}
+
+@media (width <=820px) {
+
+    body {
+        background-image: url(/img/backgroundP.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: hsla(25, 50%, 27%, 1);
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        /* padding-left: 5%; */
+        /* margin-bottom: 5%; */
+        /* min-width: 820px;   removed to give better flow*/
+        background-color: hsla(178, 50%, 61%, .8);
+        font-size: 1.2em;
+    }
+
+    /* source:https://www.youtube.com/watch?v=nTtUg8EuJ_8 */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* added transition */
+        a {
+            display: block;
+            padding: 10px;
+            color: hsla(178, 50%, 91%, 1);
+            text-shadow: 1px 1px 3px hsla(42, 50%, 46%, 1);
+            background-color: hsla(160, 30%, 44%, 1);
+
+            &:hover {
+                background-color: #111;
+                text-shadow: 1px 1px 3px hsla(25, 32%, 39%, 1);
+                transition: background-color 0.3s ease-in, color 0.3s ease-in;
+            }
         }
     }
-}
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 /*
 body{ 
    background-image: url('/img/backgroundP.png');
@@ -137,53 +142,55 @@ body{
    text-decoration: none;
    font-family:Georgia, 'Times New Roman', Times, serif;
    /* padding-left: 5%; */
-   /* margin-bottom: 5%; */
-   /* min-width: 820px;   removed to give better flow*/
-   /* background-color: hsla(178, 50%, 61%, .8);
+/* margin-bottom: 5%; */
+/* min-width: 820px;   removed to give better flow*/
+/* background-color: hsla(178, 50%, 61%, .8);
    font-size: 1.2em;
 } */
 
 
 @font-face {
-  font-family: "handwriting";
-  src:
-    url("fonts/alex-brush/AlexBrush-Regular.ttf")  format("ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "handwriting";
+    src:
+        url("fonts/alex-brush/AlexBrush-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
-body h1{
-    color:hsla(42, 50%, 55%, 1);
-    text-transform:uppercase;
+body h1 {
+    color: hsla(42, 50%, 55%, 1);
+    text-transform: uppercase;
     font-size: 40px;
     text-align: center;
-    text-shadow: 2px 2px 6px gold ;
-    font-family:"handwriting", serif;
-    padding-top:1.6em;
+    text-shadow: 2px 2px 6px gold;
+    font-family: "handwriting", serif;
+    padding-top: 1.6em;
 }
 
-#about{
-    position:relative;
+#about {
+    position: relative;
     top: 40px;
 }
 
-body h2{
-    color:hsla(160, 30%, 44%, 1);
+body h2 {
+    color: hsla(160, 30%, 44%, 1);
     font-size: 36px;
     padding-bottom: 10px;
     border-bottom: 1px solid hsla(42, 50%, 55%, 1);
-    padding-top: 70px; /* replaced the 2 brs before each h2 - anchor links */
+    padding-top: 70px;
+    /* replaced the 2 brs before each h2 - anchor links */
 }
+
 /* combined a and a:hover w/ & */
 a {
     text-decoration: none;
     font-weight: 600;
-    color:#111;
+    color: #111;
     text-shadow: 2px 2px 5px hsla(42, 50%, 50%, 1);
-    
-    &:hover{
-    color:hsla(42, 50%, 55%, 1);
-    text-shadow: 2px 2px 7px hsla(25, 32%, 39%, 1);
+
+    &:hover {
+        color: hsla(42, 50%, 55%, 1);
+        text-shadow: 2px 2px 7px hsla(25, 32%, 39%, 1);
     }
 }
 
@@ -192,7 +199,7 @@ a {
 /* about specific */
 
 /* reference for box shadow https://www.w3schools.com/css/css3_shadows_box.asp */
-#imgabout{
+#imgabout {
     width: 300px;
     float: left;
     /* border-radius: 50%; */
@@ -201,23 +208,25 @@ a {
     margin: 20px;
 }
 
-#underConstruction{
+#underConstruction {
     width: 100%;
     margin: 0;
     padding: 5px;
     text-align: center;
 }
 
-.about ul{
+.about ul {
     font-weight: 700;
-    list-style-type: none;    
+    list-style-type: none;
     /* float: right; */
     position: inherit;
 }
 
 /* frustrated with the denseness of bullet lists found solution at https://www.sitepoint.com/community/t/best-practices-for-list-spacing-both-ul-ol/6273 */
-ul li, ol li {
-     line-height:160%; /*or whatever height you like*/
+ul li,
+ol li {
+    line-height: 160%;
+    /*or whatever height you like*/
 }
 
 /* divides edu into boxes
@@ -225,7 +234,7 @@ ul li, ol li {
     -wrap
     -min-width on boxes
 */
-.edu{
+.edu {
     display: flex;
     min-width: 300px;
     flex-wrap: wrap;
@@ -233,9 +242,10 @@ ul li, ol li {
     align-content: space-around;
     list-style: url(img/scrollSmall.png);
 }
+
 /* icon from Illustration by <a href="https://unsplash.com/@roundicons?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Round Icons</a> on <a href="https://unsplash.com/illustrations/a-black-and-white-image-of-a-person-running-4rqUcSqpSus?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
        */
-.work{
+.work {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -245,19 +255,19 @@ ul li, ol li {
 }
 
 /* link icon for employer's */
-#webLink{
+#webLink {
     width: 25px;
     height: 25px;
 }
 
-.work h3{
+.work h3 {
     border-bottom: 1px hsla(160, 30%, 44%, 1) solid;
 }
 
 /* edu and work divs */
-.box{
+.box {
     border: 3px hsla(160, 30%, 30%, 1) groove;
-    box-shadow:3px 3px 3px hsla(178, 50%, 61%, .8);
+    box-shadow: 3px 3px 3px hsla(178, 50%, 61%, .8);
     width: 400px;
     margin: 5px 0;
     padding: 5px;
@@ -265,11 +275,11 @@ ul li, ol li {
     color: hsla(25, 50%, 27%, 1);
 }
 
-h3{
+h3 {
     margin-top: 2px;
 }
 
-h4{
+h4 {
     color: hsla(25, 32%, 39%, 1);
     padding-left: 10px;
     margin-top: -10px;
@@ -277,7 +287,7 @@ h4{
 }
 
 /* table referenced https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Tables*/
-table{
+table {
     table-layout: fixed;
     width: 80%;
     min-width: fit-content;
@@ -286,25 +296,26 @@ table{
     text-align: center;
 }
 
-table caption{
+table caption {
     font-size: 20px;
     font-weight: bold;
     text-shadow: 1px 1px 3px hsla(35, 100%, 92%, 1);
     color: hsla(42, 50%, 46%, 1);
 }
 
-th, td{
+th,
+td {
     padding: 0.6em;
     border-bottom: 1px solid hsla(42, 50%, 46%, 1);
 }
 
-article{
+article {
     padding-left: 10%;
     padding-bottom: 10%;
 }
 
 /* projects */
-.tn{
+.tn {
     width: 50%;
     height: 40%;
 }
@@ -317,7 +328,7 @@ section {
 
 
 input {
-    background-color: hsla(178, 50%, 91%, 1);    
+    background-color: hsla(178, 50%, 91%, 1);
     color: hsla(25, 50%, 27%, 1);
     border: hsla(160, 30%, 44%, 1) 2px solid;
     border-radius: 4px;
@@ -345,28 +356,31 @@ select {
     color: hsla(25, 50%, 27%, 1);
 }
 
-input[type=radio]{
+input[type=radio] {
     padding: 4px;
 }
 
-.respond{
+.respond {
     padding-bottom: 20px;
     line-height: 20px;
 }
 
-button{
+button {
     font-family: inherit;
     font-size: 100%;
     color: hsla(178, 50%, 91%, 1);
-    background-color: hsla(160, 30%, 30%, 1) ;
+    background-color: hsla(160, 30%, 30%, 1);
     border: hsla(160, 30%, 44%, 1) 6px;
-    border-style:ridge ;
+    border-style: ridge;
     border-radius: 4px;
     margin: 14px;
 }
 
 
-input:focus, select:focus, textarea:focus, button:focus{
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
     outline: hsla(160, 30%, 44%, 1) 2px solid;
     box-shadow: 0 2px 8px 0 hsla(42, 50%, 50%, 1), 0 2px 20px 0 hsla(42, 50%, 50%, 1);
 }
@@ -377,11 +391,10 @@ input:focus, select:focus, textarea:focus, button:focus{
 
 }
 
-footer{
+footer {
     background-color: hsla(160, 30%, 44%, 1);
-    color:hsla(178, 50%, 91%, 1);
+    color: hsla(178, 50%, 91%, 1);
     text-align: center;
     margin: -20px;
     padding: 5px 5px 10px 5px;
 }
-

@@ -15,6 +15,13 @@ const stickyNote = []
 let i = 0
 
 // load local storage?
+const itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
+
+document.querySelector("#check-icon").addEventListener("click", () => {
+    const item = document.querySelector("#item")
+    createItem(item)
+})
+
 
 xIcon.addEventListener("click", function() {
     typeNote();
@@ -22,8 +29,6 @@ xIcon.addEventListener("click", function() {
 
 checkIcon.addEventListener("click", function() {
     createNote();
-
-    // save to local storage?
 })
 
 function typeNote(){
@@ -62,6 +67,15 @@ function createNote(){
         node0.remove()
     })
     document.querySelector("#note-text").value = '';
+}
+
+// create item
+function createItem(item){
+    // store in item array
+    itemsArray.push(item.value)
+    // save in local storage
+    localStorage.setItem("items", JSON.stringify(itemsArray))
+    location.reload()
 }
 
 function margin(){

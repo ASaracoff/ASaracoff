@@ -35,3 +35,13 @@ document.getElementsByClassName("article")[6].addEventListener("click",function(
     window.open("7games/7games.html") 
 }
 )
+
+document.getElementsByClassName("article")[7].addEventListener("click",function(){
+    window.open("stickyNotes/stickyNotes.html") 
+}
+)
+
+document.getElementsByClassName("article")[8].addEventListener("click",function(){
+    window.open("todoLocalStorage/todoLS.html") 
+}
+)
