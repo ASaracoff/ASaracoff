@@ -4,7 +4,7 @@
 // pause: 11:30 am - go to work alarm. 30 min
 // start:  8:19 am - next day
 //  stop:  9:26 am - 53 min
-// total: 1hr 23 min
+// total: 1 hr 23 min
 
 // do we have local storage? 
     // if yes parse localstorage

@@ -14,6 +14,14 @@ const xIcon = document.querySelector("#x-icon")
 const stickyNote = []
 let i = 0
 
+// load local storage?
+const itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
+
+document.querySelector("#check-icon").addEventListener("click", () => {
+    const item = document.querySelector("#item")
+    createItem(item)
+})
+
 
 xIcon.addEventListener("click", function() {
     typeNote();
@@ -61,6 +69,15 @@ function createNote(){
     document.querySelector("#note-text").value = '';
 }
 
+// create item
+function createItem(item){
+    // store in item array
+    itemsArray.push(item.value)
+    // save in local storage
+    localStorage.setItem("items", JSON.stringify(itemsArray))
+    location.reload()
+}
+
 function margin(){
     const randomMargin = ["-5px", "1px", "5px", "10px", "15px", "20px"]
     // get random # based on array
@@ -92,3 +109,64 @@ function color(){
     }
     return randomColor[i++]
 }
+
+// ----------------------------------------------
+// toDoList.js -> mini5
+/*
+// load the array
+function loadItems(){
+    // get old list from local storage, its in a string
+    const oldItems = localStorage.getItem(stickyNote)
+    
+    // convert string into array
+    // converts into a JS object
+    if(oldItems) items = JSON.parse(oldItems)
+    renderItems()
+}
+
+
+// save to array
+    // local storage: in your browser (cient side user side)
+    // can only store list/string
+function saveItems(){
+    const stringItems = JSON.stringify(items);
+    // only storing the most up to date version
+    localStorage.setItem(stickyNote, stringItems)
+}
+
+
+// add to array
+function addItem(){
+    // get value
+    const value = input.value;
+    if (!value) {
+        alert("you cannot add an empty item")
+        return //naked return - get out of the function
+    }
+    items.push(value)
+    renderItems()
+    input.value = ""
+
+    // save items after adding
+    saveItems()
+}
+
+
+// remove from array
+function removeItem(idx){
+    // get idx of item to delete
+    // splice = remove at a certian spot
+    // (idx,1) at this spot and delete 1
+    items.splice(idx,1)
+
+    // refresh list
+    renderItems()
+
+    // save items after removing 
+    saveItems()
+}
+
+// load all html then load items automatically
+document.addEventListener("DOMContentLoaded", loadItems)
+
+*/

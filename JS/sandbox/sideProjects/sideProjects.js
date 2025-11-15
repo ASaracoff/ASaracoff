@@ -7,41 +7,41 @@ document.getElementsByClassName("fa-brands fa-youtube")[0].addEventListener("cli
 )
 
 document.getElementsByClassName("article")[0].addEventListener("click",function(){
-    window.open("calculator/index.html") 
+    window.open("calculator/index.html","_self") 
 }
 )
 document.getElementsByClassName("article")[1].addEventListener("click",function(){
-    window.open("tictactoe/tictactoe.html")
+    window.open("tictactoe/tictactoe.html","_self")
 }
 )
 document.getElementsByClassName("article")[2].addEventListener("click",function(){
-    window.open("squareCards/squareCards.html") 
+    window.open("squareCards/squareCards.html","_self") 
 }
 )
 document.getElementsByClassName("article")[3].addEventListener("click",function(){
-    window.open("5minis/combo.html") 
+    window.open("5minis/combo.html","_self") 
 }
 )
 document.getElementsByClassName("article")[4].addEventListener("click",function(){
-    window.open("snake/snake.html") 
+    window.open("snake/snake.html","_self") 
 }
 )
 document.getElementsByClassName("article")[5].addEventListener("click",function(){
-    window.open("pong/pong.html") 
+    window.open("pong/pong.html", "_self") 
 }
 )
 
 document.getElementsByClassName("article")[6].addEventListener("click",function(){
-    window.open("7games/7games.html") 
+    window.open("7games/7games.html","_self") 
 }
 )
 
 document.getElementsByClassName("article")[7].addEventListener("click",function(){
-    window.open("stickyNotes/stickyNotes.html") 
+    window.open("stickyNotes/stickyNotes.html","_self") 
 }
 )
 
 document.getElementsByClassName("article")[8].addEventListener("click",function(){
-    window.open("todoLocalStorage/todoLS.html") 
+    window.open("todoLocalStorage/todoLS.html","_self") 
 }
 )

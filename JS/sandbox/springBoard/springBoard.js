@@ -2,15 +2,15 @@
 
 // only thing changed is the [] index #
 document.getElementsByClassName("article")[0].addEventListener("click",function(){
-    window.open("MemeGenerator/memeGenerator.html") //where do you want to send them to?
+    window.open("MemeGenerator/memeGenerator.html","_self") //where do you want to send them to?
 }
 )
 
 document.getElementsByClassName("article")[1].addEventListener("click",function(){
-    window.open("DOM/DOM.html") 
+    window.open("DOM/DOM.html","_self") 
 }
 )
 document.getElementsByClassName("article")[2].addEventListener("click",function(){
-    window.open("spaceMissionInvasion/spaceMissionInvasion.html")
+    window.open("spaceMissionInvasion/spaceMissionInvasion.html","_self")
 }
 )
