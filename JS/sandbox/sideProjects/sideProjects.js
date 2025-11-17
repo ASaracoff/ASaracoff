@@ -45,3 +45,8 @@ document.getElementsByClassName("article")[8].addEventListener("click",function(
     window.open("todoLocalStorage/todoLS.html","_self") 
 }
 )
+
+document.getElementsByClassName("article")[9].addEventListener("click",function(){
+    window.open("dragDrop/dragDrop.html","_self") 
+}
+)

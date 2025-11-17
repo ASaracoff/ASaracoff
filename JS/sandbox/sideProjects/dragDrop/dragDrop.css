@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-image: url(/img/2c.jpg);
+    text-align: center;
+    color: rgb(41, 135, 151);
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 8%;
+    text-shadow: 1px 1px 0 white;
+}
+
+h1 {
+    font-size: 40px;
+    color: rosybrown;
+}
+
+.container {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin: 5%;
+}
+
+.draggable {
+    padding: 1rem;
+    background-color: hsla(178, 50%, 91%, 1);
+    border: 1px solid black;
+    ;
+    /* change cursor visual */
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}
