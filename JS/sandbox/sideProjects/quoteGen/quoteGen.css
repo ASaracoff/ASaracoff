@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary: #ebe266;
+    --secondary: #136a8a;
+    --light: #ffffff;
+    --dark: #222222;
+    --font-family-primary: "Caveat", cursive;
+    --font-family-secondary: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #267871, #136a8a);
+}
+
+.container {
+    width: 550px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: var(--dark);
+    background-color: var(--primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 00.35);
+    font-family: var(--font-family-secondary);
+}
+
+.container h1 {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: .5rem;
+}
+
+.container h1::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 270px;
+    bottom: 0;
+    /* left and transform = centers line */
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid var(--secondary);
+}
+
+.container .quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 15px;
+    min-height: 150px;
+    font-family: var(--font-family-primary);
+}
+
+.container .quote {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .quote::before,
+.quote-box .quote::after {
+    /* puts content in " " */
+    content: '"'
+}
+
+.container .quote::before {
+    margin-right: 5px;
+
+}
+
+.container .quote::after {
+    margin-left: 5px;
+
+}
+
+.quote-box .author {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.author span:first-of-type {
+    margin-right: 10px;
+}
+
+.container .quote-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--light);
+    font-weight: 600;
+    width: 200px;
+    padding: 14px 1.5rem;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    /* cursor looks like hand pointing */
+    cursor: pointer;
+    background-color: var(--secondary);
+}
+
+/* moves spinner away from text */
+.quote-box i {
+    margin-right: 8px;
+}

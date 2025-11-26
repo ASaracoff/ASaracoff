@@ -1,27 +1,67 @@
-/* remove preset padding */
 * {
     padding: 0;
     margin: 0;
 }
 
-
+/* #5b7065, black */
 body {
-    background-color: #ad8455;
-    font-family: "Architects Daughter";
-    font-size: 24px;
+    background-image: url(cork.jpg);
+    /* font */
+    font-family: 'quintessential', cursive;
+    min-height: 100vh;
+    margin: 10%;
+    color: white;
+    text-align: center;
 }
 
-.main-container {
-    width: 95%;
+
+button {
+    height: fit-content;
+    cursor: pointer;
+    color: #04202c;
+    background-color: #c9d1c8;
+}
+
+.app {
+    width: 600px;
     margin: auto;
+    padding-top: 50px;
+    color: white;
 }
 
-.container1 {
-    margin-left: 5%;
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 10px 0px;
 }
 
-/* where the sticky notes live */
-.container2 {
+.to-do-input input {
+    width: 250px;
+    font-family: inherit;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.to-do-input button {
+    color: #5b7065;
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.to-do-list {
+    /* display: flex;
+    flex-direction: column;
+    gap: 15px; */
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -29,51 +69,105 @@ body {
     margin-left: 5%;
 }
 
-.note {
-    width : 250px; 
+.to-do-list i {
+    color: #c9d1c8;
+    cursor: pointer;
+}
+
+.to-do-list .fa-pen-to-square {
+    color: #5b7065;
+}
+
+.to-do-list button {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+}
+
+.item {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* flex-direction: inherit; */
+    /* gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); */
+
+    /* from sticky notes */
+    width: 250px;
     height: 250px;
-    font-size: 26px; 
-    padding: 25px; 
-    margin-top: 10px; 
-    overflow: hidden; 
-    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    font-size: 26px;
+    padding: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
 }
 
-.note:hover{
-    transform: scale(1.1);
+/* icon size */
+.input-controller {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
 }
 
-/* add sticky note */
-.container3 {
-    display: none;
-    /* absolute -> ontop of notes */
-    position: absolute;
-    top: 26%;
-    left: 40%;
-}
 
-textarea {
-    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, .75);
+.input-controller textarea {
+    width: 100%;
+    height: 170px;
     outline: none;
     border: none;
-    width: 270px;
-    height: 270px;
-    padding: 40px 25px 25px 25px;   
+    resize: none;
+    line-height: 1.4;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
 }
 
-/* change color of icons */
-svg {
-    color: grey;
+
+.input-controller .cancelBtn {
+    height: 30px;
+    font-size: 20px;
+    /* padding-bottom: 20px; */
 }
 
-#check-icon{
-    position: absolute;
-    right: 13%;
-    top: 4%;
+textarea:focus {
+    box-shadow: 0 0 5px white;
 }
 
-#x-icon{
-    position: absolute;
-    right: 5%;
-    top: 4%;
+.edit-controller {
+    display: flex;
+    gap: 5px;
+}
+
+/* change save.cancel buttons */
+.update-controller {
+    display: none;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+@media(max-width: 768px) {
+    .app {
+        width: 95%;
+        text-align: center;
+    }
+
+    .input-header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .to-do-input {
+        display: flex;
+    }
+
+    .to-do-input input {
+        width: 300px;
+    }
+
 }

@@ -72,7 +72,7 @@ console.log("isLoggedOn", isLoggedOn, "isGameOver",isGameOver, "isWaterWet", isW
 
 
 // Strings
-// Characters inside "" or '' - but must remaind consistent
+// Characters inside "" or '' - but must remain consistent
 // NO: "'  or '"
 let string = "character";
 

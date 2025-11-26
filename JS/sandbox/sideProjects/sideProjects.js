@@ -50,3 +50,13 @@ document.getElementsByClassName("article")[9].addEventListener("click",function(
     window.open("dragDrop/dragDrop.html","_self") 
 }
 )
+
+document.getElementsByClassName("article")[10].addEventListener("click",function(){
+    window.open("stickyNotesLS/stickyNotesLS.html","_self") 
+}
+)
+
+document.getElementsByClassName("article")[11].addEventListener("click",function(){
+    window.open("quoteGen/quoteGen.html","_self") 
+}
+)

@@ -1,81 +1,139 @@
-// source: https://www.youtube.com/watch?v=_B-54mvPup4&list=PLtMugc7g4GaqAVDZwQ_t1H6500ZGJzOgW&index=14
-// start: 8:52 am
-    //    9:19 am - html fin 
-    //    9:34 am - css fin
-// stop: got distracted by life chores
-//  no end time -> did finish in same day ~1 hour? plus some to add local storage feature
+// start: 8:22
+//  stop: 9:43
 
-// source is 5 yrs old
-// source uses vars and getElementByClassName - I modified
-const container2 = document.querySelector(".container2")
-const container3 = document.querySelector(".container3")
-const checkIcon = document.querySelector("#check-icon")
-const xIcon = document.querySelector("#x-icon")
-const stickyNote = []
-let i = 0
+// trying to combing:
+    //  todo local storage
+    // sticky notes 
+        // - got all element, but ended up having color randomized
+        // maybe figure out how to let user assign colors?
+    // drag and drop - not ye
 
-// load local storage?
-const itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
+const itemsArray2 = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
+console.log(itemsArray2)
 
-document.querySelector("#check-icon").addEventListener("click", () => {
+document.querySelector("#enter").addEventListener("click", () => {
     const item = document.querySelector("#item")
     createItem(item)
 })
 
 
-xIcon.addEventListener("click", function() {
-    typeNote();
-})
-
-checkIcon.addEventListener("click", function() {
-    createNote();
-})
-
-function typeNote(){
-    // toggle write note on/off -> seen/unseen
-    if(container3.style.display === "none"){
-        container3.style.display = "block"
-    } else {
-        container3.style.display = "none"
+function displayItems() {
+    // loop each item and create html for each
+    let items = ""
+    for(let i = 0; i < itemsArray2.length; i++) {
+        items += `
+        <div class="item" style="margin: ${margin()};rotate: ${rotate()};background-color: ${color()};">
+            <div class="input-controller">
+                <textarea disabled> ${itemsArray2[i]} </textarea>
+                <div class="edit-controller">
+                    <!-- trash icon -->
+                    <i class="fa-solid fa-trash deleteBtn"></i>
+                    <!-- edit icon -->
+                    <i class="fa-solid fa-pen-to-square editBtn"></i>
+                </div>
+            </div>
+            <div class="update-controller">
+                <button class="saveBtn">Save</button>
+                <button class="cancelBtn">Cancel</button>
+            </div>
+        </div>`
     }
+    document.querySelector(".to-do-list").innerHTML = items
+    
+
+    // addEventlisteners RIGHT when we create
+    activateDeleteListeners()
+    activateEditListeners()
+    activateSaveListeners()
+    activateCancelListeners()
 }
 
-function createNote(){
-    const noteText = document.querySelector("#note-text").value 
-    const node0 = document.createElement("div")
-    const node1 = document.createElement("h1")
-
-    // add to page
-    node1.innerHTML = noteText;
-
-    // add features to node 1 (sticky note)
-    // I moded: moved attributes to a class name, then added class
-    node1.classList.add('note')
-    node1.style.margin = margin();
-    node1.style.transform = rotate();
-    node1.style.background = color();
-
-    node0.appendChild(node1)
-    // new - insertAdjacentElement
-    container2.insertAdjacentElement("beforeend", node0)
-
-    // doubleclick delete
-    node0.addEventListener("dblclick", function(){
-        // remove from local storage
-
-        // remove notes
-        node0.remove()
+// get all delete buttons:
+function activateDeleteListeners() {
+    let deleteBtn = document.querySelectorAll(".deleteBtn")
+    deleteBtn.forEach((db, i) => {
+        db.addEventListener("click", () => {deleteItem(i)})
     })
-    document.querySelector("#note-text").value = '';
+}
+
+// delete item
+function deleteItem(i) {
+    itemsArray2.splice(i,1)
+    localStorage.setItem("items", JSON.stringify(itemsArray2))
+    location.reload()
+}
+
+// get all edit buttons:
+function activateEditListeners() {
+    const editBtn = document.querySelectorAll(".editBtn")
+    const updateController = document.querySelectorAll(".update-controller")
+    const inputs = document.querySelectorAll(".input-controller textarea")
+    editBtn.forEach((eb, i) => {
+        eb.addEventListener("click", () => {
+            // in css it is hidden
+            updateController[i].style.display = "block"
+            // in html textarea is diabled
+            inputs[i].disabled = false
+        })
+    })
+}
+
+// save listeners
+function activateSaveListeners() {
+    // access to all save buttons and the textareas
+    const saveBtn = document.querySelectorAll(".saveBtn")
+    const inputs = document.querySelectorAll(".input-controller textarea")
+
+    saveBtn.forEach((sb,i) => {
+        sb.addEventListener("click", () => {
+            updateItem(inputs[i].value, i)
+        })
+    })
+}
+
+// cancel listeners - revert
+function activateCancelListeners() {
+    // access cancel buttons, textareas and inputs
+    const cancelBtn = document.querySelectorAll(".cancelBtn")
+    const updateController = document.querySelectorAll(".update-controller")
+    const inputs = document.querySelectorAll(".input-controller textarea")
+    console.log(updateController)
+    cancelBtn.forEach((cb, i) => {
+        cb.addEventListener("click", () =>{
+            // hide save and cancel buttons
+            updateController[i].style.display = "none"
+            inputs[i].disabled = true
+        })
+    })
+}
+
+// add update to local storage
+function updateItem(text, i) {
+    itemsArray2[i] = text
+    localStorage.setItem("items", JSON.stringify(itemsArray2))
+    location.reload()
 }
 
 // create item
 function createItem(item){
     // store in item array
-    itemsArray.push(item.value)
+    itemsArray2.push(item.value)
     // save in local storage
-    localStorage.setItem("items", JSON.stringify(itemsArray))
+    localStorage.setItem("items", JSON.stringify(itemsArray2))
     location.reload()
+}
+
+// display date
+function displayDate() {
+    let date = new Date() // shows mon nov 11:03:03 GMT-0700 (MST)
+    date = date.toString().split(" ") // turns into an array
+    // console.log(date) 
+    document.querySelector('#date').innerHTML = date[0] + ", " + date[1] + " " + date[2] + " " + date[3] // weekday, month, day, year
+}
+
+window.onload = function() {
+    displayDate()
+    displayItems()
 }
 
 function margin(){
@@ -102,71 +160,7 @@ function color(){
         "#ff3de8",
         "#3dc2ff",
         "#FFD100",
-        "#04e022",
+        "#04e021ff",
         "#bc83e6"]
-    if(i > randomColor.length -1){
-        i = 0
-    }
-    return randomColor[i++]
+    return randomColor[Math.floor(Math.random() * randomColor.length)]
 }
-
-// ----------------------------------------------
-// toDoList.js -> mini5
-/*
-// load the array
-function loadItems(){
-    // get old list from local storage, its in a string
-    const oldItems = localStorage.getItem(stickyNote)
-    
-    // convert string into array
-    // converts into a JS object
-    if(oldItems) items = JSON.parse(oldItems)
-    renderItems()
-}
-
-
-// save to array
-    // local storage: in your browser (cient side user side)
-    // can only store list/string
-function saveItems(){
-    const stringItems = JSON.stringify(items);
-    // only storing the most up to date version
-    localStorage.setItem(stickyNote, stringItems)
-}
-
-
-// add to array
-function addItem(){
-    // get value
-    const value = input.value;
-    if (!value) {
-        alert("you cannot add an empty item")
-        return //naked return - get out of the function
-    }
-    items.push(value)
-    renderItems()
-    input.value = ""
-
-    // save items after adding
-    saveItems()
-}
-
-
-// remove from array
-function removeItem(idx){
-    // get idx of item to delete
-    // splice = remove at a certian spot
-    // (idx,1) at this spot and delete 1
-    items.splice(idx,1)
-
-    // refresh list
-    renderItems()
-
-    // save items after removing 
-    saveItems()
-}
-
-// load all html then load items automatically
-document.addEventListener("DOMContentLoaded", loadItems)
-
-*/
