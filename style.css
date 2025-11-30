@@ -398,3 +398,77 @@ footer {
     margin: -20px;
     padding: 5px 5px 10px 5px;
 }
+
+/* infinite carosel */
+/* source: https://www.youtube.com/watch?v=KD1Yo8a_Qis
+ start: 9:15
+  stop: 9:35
+ 20 min */
+
+
+
+
+/* handles the overflow */
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    color: rosybrown;
+    border: 5px solid rgb(41, 135, 151);
+    display: flex;
+    /* add animation */
+    /* removes view of the over flow */
+    /* adds scroll bar */
+    overflow-x: auto;
+    /* add gap - fills in between groups */
+    gap: 1em;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* removes scroll bar */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* handles the elements */
+.carousel .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    /* animation length rotations direction*/
+    animation: spin 50s infinite linear;
+}
+
+.carousel .card {
+    /* flex short hand: stop the shrink to fit */
+    flex: 0 0 5em;
+    height: 5em;
+    /* padding: 1em; */
+    font-size: 3rem;
+    border-radius: .2rem;
+    text-align: center;
+    align-content: center;
+    padding-top: .1em;
+    padding-bottom: .1em;
+}
+
+.carousel .card img {
+    height: 5em;
+}
+
+.carouselHeading {
+    font-size: 30px;
+    padding-top: 2rem;
+}
+
+/* add animation */
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}

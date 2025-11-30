@@ -60,3 +60,8 @@ document.getElementsByClassName("article")[11].addEventListener("click",function
     window.open("quoteGen/quoteGen.html","_self") 
 }
 )
+
+document.getElementsByClassName("article")[12].addEventListener("click",function(){
+    window.open("infiniteCarousel/infiniteCarousel.html","_self") 
+}
+)
