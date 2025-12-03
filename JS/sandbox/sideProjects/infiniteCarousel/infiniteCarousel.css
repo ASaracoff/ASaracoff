@@ -40,7 +40,7 @@
      justify-content: center;
      gap: 1em;
      /* animation length rotations direction*/
-     animation: spin 15s infinite linear;
+     animation: spin 25s infinite linear;
  }
 
  .card {
