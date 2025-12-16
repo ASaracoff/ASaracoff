@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/8b6026b779.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="10projects.css">
     <script src="10projects.js" defer></script>
     <title>10 Projects</title>
 </head>
 <body>
     <h1>10 Projects</h1>
-    
+    <button id="btn"><i class="fa-solid fa-bars"></i></button>
+    <nav id="nav">
+        <ul>
+            <li><a href="/sites/websites.html" target="_blank">Website Archive</a></li>
+            <li><a href="/JS/sandbox/sideProjects/sideProjects.html" target="_blank">Side Projects</a></li>
+            <li><a href="/JS/sandbox/springBoard/springBoard.html" target="_blank">SpringBoard</a></li>
+        </ul>
+    </nav>
+
+<section class="projects">
+    <!-- auto write -->
+    <p id="text"></p>
+
+    <!-- pop up -->
+    <button id="open"><i class="fa-solid fa-bell"></i></button>
+    <div class="popup-container" id="container">
+        <div class="popup">
+            <button id="close"><i class="fa-solid fa-xmark"></i></button>
+            <h1>Pop Up</h1>
+            <p>I either annoy you or inform you... or both?</p>
+            <button id="stop">Stop the Rain</button>
+        </div>
+    </div>
+
+    <!-- change background -->
+    <button id="background">Change Background</button>
+
+</section>
 </body>
 </html>

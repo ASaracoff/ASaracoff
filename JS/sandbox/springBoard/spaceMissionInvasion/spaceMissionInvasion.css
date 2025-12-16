@@ -1,12 +1,29 @@
-body{
+body {
     background-image: url(/img/2c.jpg);
     text-align: center;
     color: rgb(41, 135, 151);
-    text-shadow: 1px 1px 0 white;  
+    text-shadow: 1px 1px 0 white;
 }
 
 h1 {
     color: rosybrown;
+}
+
+button {
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: .5rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .grid {
@@ -16,7 +33,7 @@ h1 {
     height: 606px;
     margin: auto;
     background-image: url('imgs/space.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -38,7 +55,8 @@ h1 {
 #fade {
     width: 300px;
     height: auto;
-    transition: opacity 2s ease; /* Smooth fade-out effect */    
+    transition: opacity 2s ease;
+    /* Smooth fade-out effect */
 }
 
 .home {
@@ -126,8 +144,6 @@ h1 {
     background-position: center;
 }
 
-.timer {
-    
-}
+.timer {}
 
 /* rgb(56, 158, 124) */

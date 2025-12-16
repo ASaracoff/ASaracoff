@@ -1,0 +1,19 @@
+:root {
+    --lightColor: hsla(178, 50%, 91%, .8);
+    --brightLightColor: hsla(178, 50%, 91%, 1);
+    --tableCaptions: hsla(35, 100%, 92%, 1);
+    --darkShadow: hsla(178, 50%, 61%, .8);
+    --primary: hsla(160, 30%, 44%, 1);
+    --darkBorder: hsla(160, 30%, 30%, 1);
+    --brightBorder: hsla(42, 50%, 50%, 1);
+    --navTableShadow: hsla(42, 50%, 46%, 1);
+    --h1ColorAhover: hsla(42, 50%, 55%, 1);
+    --h1Shadow: gold;
+    --hoverh4: hsla(25, 32%, 39%, 1);
+    --primaryColor: hsla(25, 50%, 27%, 1);
+    --black: #111;
+
+    /* how to do fonts:
+    --font-family-primary: "Caveat", cursive;
+    --font-family-secondary: "Poppins", sans-serif; */
+}

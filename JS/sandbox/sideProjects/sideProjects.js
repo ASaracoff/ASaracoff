@@ -65,3 +65,8 @@ document.getElementsByClassName("article")[12].addEventListener("click",function
     window.open("infiniteCarousel/infiniteCarousel.html","_self") 
 }
 )
+
+document.getElementsByClassName("article")[13].addEventListener("click",function(){
+    window.open("currency/currency.html","_self") 
+}
+)

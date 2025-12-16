@@ -1,7 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(/img/2c.jpg);
     text-align: center;
     color: rgb(41, 135, 151);
     margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 1vh;
+}
+
+section {
+    position: fixed;
+    top: 50px;
+    margin-top: 20px;
+}
+
+h1 {
     text-shadow: 1px 1px 0 white;
+}
+
+#text {
+    font-size: 30px;
+    font-weight: 600;
+    color: rosybrown;
+    text-shadow: 1px 1px 0 white;
+}
+
+button {
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+/* button in top right corner */
+#btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    /* animation */
+    transition: transform 0.3 ease-in-out;
+}
+
+/* activate button */
+button.active {
+    transform: translateX(-180px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* position right, 100% view height */
+nav {
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /* padding around, mostly up n down */
+    padding: 2rem;
+    /* hide nav bar */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* activate button */
+nav.active {
+    transform: translateX(0);
+}
+
+/* no bullet points */
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+/* padding up n down */
+nav ul li {
+    padding: 1rem 0;
+}
+
+/* no link decoration */
+nav a {
+    color: hsla(178, 50%, 61%, .8);
+    /* text-shadow: 1px .5px 0 white; */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#text {
+    height: 80px;
+}
+
+/* ----------------------------------------------------- */
+/* pop up */
+
+#open,
+#close {
+    text-align: center;
+    justify-content: center;
+    border: none;
+}
+
+/* notification location - i added */
+#open {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rebeccapurple;
+    text-shadow: 1px 1px 0 white;
+
+    /* hide until open button clicked */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* show the pop up container */
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background-color: rgba(221, 244, 243, 0.904);
+    border-radius: 5px;
+    padding: 2rem;
+    width: 500px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup button {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+/* --------------------------------------------------- */
+/* purple heart rain */
+.heart {
+    color: rebeccapurple;
+    font-size: 20px;
+    position: fixed;
+    top: -5vh;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+
+/* --------------------------------------------------- */
+/* change background */
+
+#background {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
 }
