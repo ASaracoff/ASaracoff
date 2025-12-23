@@ -1,0 +1,136 @@
+:root {
+    --primary: hsla(42, 50%, 46%, 1);
+    --secondary: hsla(160, 30%, 44%, 1);
+    --dark: hsla(160, 30%, 30%, 1);
+    --light: hsla(178, 50%, 91%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-shadow: 1px 1px 0 white;
+    color: rosybrown;
+    text-align: center;
+}
+
+body {
+    background-image: url(/img/2c.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card {
+    /* auto to center */
+    /* margin: 100px auto 0; */
+    width: 400px;
+    height: 600px;
+    /* gives dimension 3d effect */
+    perspective: 1000px;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: tramsform 1s;
+    /* allows it to preserve info */
+    transform-style: preserve-3d;
+    /* looks like its clickable */
+    cursor: pointer;
+    position: relative;
+}
+
+/* add JS to add 'is-flipped' which rotates card for us */
+.card__inner.is-flipped {
+    transform: rotateY('180deg');
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* hides the back of the card */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+    background-image: linear-gradient(to bottom right, var(--light), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front h2 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.card__face--back {
+    background-color: linear-gradient(to bottom right, var(--light), var(--secondary));
+    transform: rotateY('180deg');
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 30pxx 30px 40px;
+}
+
+.card__header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-color: linear-gradient(to bottom left, var(--light) 10%, var(--secondary)115%);
+}
+
+.pp {
+    display: block;
+    width: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.card__header h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__body {
+    padding: 30px;
+}
+
+.card_body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5px;
+}
