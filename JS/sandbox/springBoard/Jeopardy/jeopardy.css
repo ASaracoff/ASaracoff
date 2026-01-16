@@ -15,6 +15,16 @@ h1 {
     text-shadow: 1px 1px 0 white;
 }
 
+#startGame {
+    display: block;
+    font-size: 20px;
+    /* bigger text */
+    padding: 15px 20px;
+    /* more clickable area */
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
 .gameboard {
     height: 840px;
     width: 840px;
@@ -28,6 +38,7 @@ h1 {
     /* justify-content: flex-start; */
     align-content: flex-start;
     margin: 0 auto;
+    margin-top: 8px;
 }
 
 /* holds all elements and determines size of he card */
@@ -129,17 +140,4 @@ button {
     bottom: 5px;
     right: 5px;
     padding: 2px;
-}
-
-
-.startGame {
-    position: absolute;
-    top: 5px;
-    left: 50px;
-    font-size: 36px;
-    /* bigger text */
-    padding: 25px 40px;
-    /* more clickable area */
-    margin: 20px;
-    border-radius: 10px;
 }
