@@ -14,3 +14,8 @@ document.getElementsByClassName("article")[2].addEventListener("click",function(
     window.open("spaceMissionInvasion/spaceMissionInvasion.html","_self")
 }
 )
+
+document.getElementsByClassName("article")[3].addEventListener("click",function(){
+    window.open("jeopardy/jeopardy.html","_self")
+}
+)
