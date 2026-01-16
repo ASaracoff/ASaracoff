@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    ;
+}
+
+body {
+    background-image: url(/img/2c.jpg);
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: rgb(41, 135, 151);
+    text-shadow: 1px 1px 0 white;
+}
+
+.gameboard {
+    height: 720px;
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* gap: 0; */
+    /* justify-content: flex-start; */
+    align-content: flex-start;
+}
+
+/* holds all elements and determines size of he card */
+.maincontainer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: #333 1px solid;
+    box-sizing: border-box;
+    /* background-color: green; */
+}
+
+.cat {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #ffc728;
+    border: #333 1px solid;
+    box-sizing: border-box;
+    font-size: 22px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    padding: 8px;
+    /* background-color: green; */
+}
+
+/* holds front and back elements */
+/* holds hover animation */
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    /* without 2d flip it just shows the reverse of the front card */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background: gold; */
+    perspective: 1000px;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+/* the default face */
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* without: causes flicker */
+    backface-visibility: hidden;
+    background-color: #ffc728;
+    color: #333;
+}
+
+/* back of the card */
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    backface-visibility: hidden;
+    background-color: #711010;
+    color: aliceblue;
+    transform: rotateY(180deg);
+}
+
+button {
+    background-color: rebeccapurple;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    padding: 5px;
+}

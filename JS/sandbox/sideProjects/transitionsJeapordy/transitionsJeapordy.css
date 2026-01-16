@@ -12,85 +12,17 @@
 
 body {
     background-image: url(/img/2c.jpg);
-    text-align: center;
-    color: rgb(41, 135, 151);
-    text-shadow: 1px 1px 0 white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    min-height: 100vh;
 }
-
-h1 {
-    color: rosybrown;
-}
-
-.container {
-    height: 720px;
-    width: 720px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box {
-    height: 120px;
-    width: 120px;
-    border: 10px groove hsla(160, 30%, 30%, 1);
-    box-sizing: border-box;
-    background-color: hsla(160, 30%, 44%, 1);
-    color: hsla(178, 50%, 91%, .8);
-    text-shadow: .2px .2px 0 hsla(42, 50%, 46%, 1);
-    perspective: 1000px;
-}
-
-.box:hover {
-    cursor: pointer;
-}
-
-.category {
-    border: 1.5px groove gold;
-    font-size: 40px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    cursor: none;
-}
-
-.front {
-    font-size: 40px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-}
-
-.back {
-    font: 18px;
-    text-align: center;
-}
-
-.back p {
-    margin-top: 0;
-}
-
-:root {
-    --primary: hsla(178, 50%, 91%, 1);
-    --secondary: hsla(160, 30%, 44%, 1);
-    --dark: hsla(160, 30%, 30%, 1);
-    --light: hsla(178, 50%, 91%, 1);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 
 .card {
-    /* margin: 100px auto 0; */
+    margin: 100px auto 0;
     width: 120px;
     height: 120px;
     /* gives 3d elements - coming off the page */
     perspective: 1000px;
-    display: flex;
 }
 
 /* pointer */

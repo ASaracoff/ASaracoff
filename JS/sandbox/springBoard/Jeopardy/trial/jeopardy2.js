@@ -1,3 +1,9 @@
+const card = document.querySelector('.card__inner')
+
+card.addEventListener("click",function(e) {
+    card.classList.toggle('is-flipped')
+})
+
 function displayItems() {
     // loop each item and create html for each
     let items = ""
